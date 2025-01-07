@@ -6,8 +6,6 @@ WORKDIR /app
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
-ENV PORT=5001
-ENV WORKERS=4
 
 # Copy only backend requirements and app files
 COPY requirements.txt .
@@ -17,12 +15,7 @@ COPY app.py .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port
-EXPOSE $PORT
+EXPOSE 5001
 
 # Command to run Gunicorn
-CMD gunicorn --bind 0.0.0.0:$PORT \
-    --workers $WORKERS \
-    --timeout 120 \
-    --access-logfile - \
-    --error-logfile - \
-    app:app
+CMD ["gunicorn", "--bind", "0.0.0.0:5001", "--workers", "4", "--timeout", "120", "--access-logfile", "-", "--error-logfile", "-", "--reload", "app:app"]
