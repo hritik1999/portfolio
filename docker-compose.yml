@@ -7,6 +7,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80:80"
+    environment:
+      - VITE_API_URL=http://backend:5001/api
     depends_on:
       - backend
 
@@ -17,6 +19,6 @@ services:
     ports:
       - "5001:5001"
     environment:
-      - FLASK_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     volumes:
       - .:/app
