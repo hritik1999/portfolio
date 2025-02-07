@@ -7,10 +7,8 @@ module.exports = {
   prefix: "",
   
   content: [
-    './pages/**/*.{js,jsx,vue}',
-    './components/**/*.{js,jsx,vue}',
-    './app/**/*.{js,jsx,vue}',
-    './src/**/*.{js,jsx,vue}',
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}", 
 	],
   
   theme: {

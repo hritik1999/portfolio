@@ -1,6 +1,6 @@
 <script setup>
 import { cn } from '@/lib/utils';
-import { MenubarSeparator, useForwardProps } from 'radix-vue';
+import { NavigationMenuList, useForwardProps } from 'radix-vue';
 import { computed } from 'vue';
 
 const props = defineProps({
@@ -19,8 +19,15 @@ const forwardedProps = useForwardProps(delegatedProps);
 </script>
 
 <template>
-  <MenubarSeparator
-    :class="cn('-mx-1 my-1 h-px bg-muted', props.class)"
+  <NavigationMenuList
     v-bind="forwardedProps"
-  />
+    :class="
+      cn(
+        'group flex flex-1 list-none items-center justify-center gap-x-1',
+        props.class,
+      )
+    "
+  >
+    <slot />
+  </NavigationMenuList>
 </template>

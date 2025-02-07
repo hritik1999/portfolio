@@ -1,14 +1,15 @@
 <script setup>
-import { MenubarGroup } from 'radix-vue';
+import { AvatarFallback } from 'radix-vue';
 
 const props = defineProps({
+  delayMs: { type: Number, required: false },
   asChild: { type: Boolean, required: false },
   as: { type: null, required: false },
 });
 </script>
 
 <template>
-  <MenubarGroup v-bind="props">
+  <AvatarFallback v-bind="props">
     <slot />
-  </MenubarGroup>
+  </AvatarFallback>
 </template>

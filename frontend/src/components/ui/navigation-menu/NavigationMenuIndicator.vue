@@ -1,10 +1,10 @@
 <script setup>
 import { cn } from '@/lib/utils';
-import { MenubarTrigger, useForwardProps } from 'radix-vue';
+import { NavigationMenuIndicator, useForwardProps } from 'radix-vue';
 import { computed } from 'vue';
 
 const props = defineProps({
-  disabled: { type: Boolean, required: false },
+  forceMount: { type: Boolean, required: false },
   asChild: { type: Boolean, required: false },
   as: { type: null, required: false },
   class: { type: null, required: false },
@@ -20,15 +20,17 @@ const forwardedProps = useForwardProps(delegatedProps);
 </script>
 
 <template>
-  <MenubarTrigger
+  <NavigationMenuIndicator
     v-bind="forwardedProps"
     :class="
       cn(
-        'flex cursor-default select-none items-center rounded-sm px-3 py-1 text-sm font-medium outline-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground',
+        'top-full z-[1] flex h-1.5 items-end justify-center overflow-hidden data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in',
         props.class,
       )
     "
   >
-    <slot />
-  </MenubarTrigger>
+    <div
+      class="relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border shadow-md"
+    />
+  </NavigationMenuIndicator>
 </template>
