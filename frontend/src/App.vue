@@ -66,13 +66,13 @@ const mode = useColorMode('dark')
               class="bg-gray-800 border-gray-700 text-white w-48"
               placeholder="Enter tone..." 
             />
-            <Button variant="default">Change Tone</Button>
+            <Button variant="default" class="rounded-full">Change Tone</Button>
             
             <Input 
               class="bg-gray-800 border-gray-700 text-white w-48"
               placeholder="Enter style..." 
             />
-            <Button variant="default">Change Style</Button>
+            <Button variant="default" class="rounded-full">Change Style</Button>
           </div>
         </NavigationMenuList>
       </NavigationMenu>
@@ -82,4 +82,20 @@ const mode = useColorMode('dark')
       <RouterView class="w-full h-full" />
     </main>
   </div>
+
+    <!-- Footer -->
+    <footer class="border-t">
+      <div class="container mx-auto flex h-16 items-center justify-between px-4">
+        <p class="text-sm text-muted-foreground"> 2025 Hritik Gupta. All rights reserved.</p>
+        <div class="flex space-x-4">
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground">
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </footer>
+
 </template>
