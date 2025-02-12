@@ -3,15 +3,16 @@ import { Button } from '@/components/ui/button'
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { ArrowRight, Terminal, Github, Linkedin, Mail } from 'lucide-vue-next';
+import { ArrowRight, Terminal, Github, Linkedin, Mail,X} from 'lucide-vue-next';
 import ProfilePic from '../assets/IMG_0397_2.jpg'
 export default {
   data() {
     return {
       socialLinks: [
-        { id: 1, icon: 'Github', url: 'https://github.com/yourusername', label: 'GitHub' },
-        { id: 2, icon: 'Linkedin', url: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-        { id: 3, icon: 'Mail', url: 'mailto:you@example.com', label: 'Email' },
+        { id: 1, icon: 'Github', url: 'https://github.com/hritik1999', label: 'GitHub' },
+        { id: 2, icon: 'Linkedin', url: 'https://www.linkedin.com/in/hritik-gupta-985b371a1/', label: 'LinkedIn' },
+        { id: 3, icon: 'Mail', url: 'mailto:guptahritik1999@gmail.com', label: 'Email' },
+        { id: 4, icon: 'X', url: 'https://x.com/AI_Bhaiiii', label: 'X' },
       ],
       Pic: ProfilePic
     };
@@ -30,6 +31,7 @@ export default {
     Terminal,
     Github,
     Linkedin,
+    X,
     Mail,
   }
 };
@@ -119,8 +121,10 @@ export default {
     </section>
 
     <!-- Background Blurs -->
-    <div class="absolute right-20 top-1/3 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
-    <div class="absolute left-32 bottom-1/4 -z-10 h-64 w-64 rounded-full bg-secondary/10 blur-3xl"></div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute right-20 top-1/3 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
+      <div class="absolute left-32 bottom-1/4 -z-10 h-64 w-64 rounded-full bg-secondary/10 blur-3xl"></div>
+    </div>
   </div>
 </template>
 
