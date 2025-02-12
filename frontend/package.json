@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@motionone/vue": "^10.16.4",
     "@radix-icons/vue": "^1.0.0",
     "@vueuse/core": "^12.5.0",
     "class-variance-authority": "^0.7.1",

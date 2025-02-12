@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import {
   NavigationMenu,
@@ -15,87 +16,136 @@ import { useColorMode } from '@vueuse/core'
 import { Button } from '@/components/ui/button'
 
 const mode = useColorMode('dark')
+const isMenuOpen = ref(false)
 
 </script>
 
 <template>
-  <div class="w-full h-screen flex flex-col">
+  <div class="w-full min-h-screen flex flex-col">
+    <!-- Navigation Header -->
     <div class="w-full bg-gray-900 fixed top-0 left-0 right-0 z-50">
-      <NavigationMenu class="w-full">
-        <NavigationMenuList class="w-full p-4 flex items-center">
-          <div class="flex items-center pl-6 pr-20 mr-20">
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/" class="text-xl font-bold tracking-wide text-white">HG</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </div>
+      <div class="w-full p-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <RouterLink to="/" class="text-xl font-bold tracking-wide text-white">HG</RouterLink>
+        </div>
 
-          <div class="flex items-center gap-6 ml-auto pl-20 pr-6 ml-10">
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/about" class="text-white">About</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-4 lg:gap-6">
+          <RouterLink 
+            v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
+            :key="link"
+            :to="`/${link.toLowerCase()}`" 
+            class="text-white hover:text-gray-300"
+          >
+            {{ link }}
+          </RouterLink>
 
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/products" class="text-white">Products</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/projects" class="text-white">Projects</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/contact" class="text-white">Contact</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <RouterLink to="/blog" class="text-white">Blog</RouterLink>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-
-            <Input 
-              class="bg-gray-800 border-gray-700 text-white w-48"
-              placeholder="Enter tone..." 
+          <!-- Tone and Style Controls -->
+          <div class="flex items-center gap-2 lg:gap-4">
+            <Input
+              class="bg-gray-800 border-gray-700 text-white w-32 lg:w-48"
+              placeholder="Enter tone..."
             />
-            <Button variant="default" class="rounded-full">Change Tone</Button>
-            
-            <Input 
-              class="bg-gray-800 border-gray-700 text-white w-48"
-              placeholder="Enter style..." 
+            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Tone</Button>
+            <Input
+              class="bg-gray-800 border-gray-700 text-white w-32 lg:w-48"
+              placeholder="Enter style..."
             />
-            <Button variant="default" class="rounded-full">Change Style</Button>
+            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Style</Button>
           </div>
-        </NavigationMenuList>
-      </NavigationMenu>
+        </div>
+
+        <!-- Mobile Menu Button - Now properly aligned to the right -->
+        <button 
+          class="block md:hidden text-white p-2"
+          @click="isMenuOpen = !isMenuOpen"
+          aria-label="Toggle menu"
+        >
+          <div class="w-6 h-5 relative flex flex-col justify-between">
+            <span 
+              class="w-full h-0.5 bg-white transition-transform duration-200"
+              :class="{ 'rotate-45 translate-y-2': isMenuOpen }"
+            ></span>
+            <span 
+              class="w-full h-0.5 bg-white transition-opacity duration-200"
+              :class="{ 'opacity-0': isMenuOpen }"
+            ></span>
+            <span 
+              class="w-full h-0.5 bg-white transition-transform duration-200"
+              :class="{ '-rotate-45 -translate-y-2': isMenuOpen }"
+            ></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div 
+        v-if="isMenuOpen" 
+        class="md:hidden bg-gray-900 border-t border-gray-800"
+      >
+        <div class="flex flex-col p-4 space-y-4">
+          <RouterLink 
+            v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
+            :key="link"
+            :to="`/${link.toLowerCase()}`" 
+            class="text-white hover:text-gray-300 py-2"
+            @click="isMenuOpen = false"
+          >
+            {{ link }}
+          </RouterLink>
+          
+          <!-- Mobile Tone and Style Controls -->
+          <div class="space-y-4 pt-4 border-t border-gray-800">
+            <div class="space-y-2">
+              <Input
+                class="bg-gray-800 border-gray-700 text-white w-full"
+                placeholder="Enter tone..."
+              />
+              <Button variant="default" class="rounded-full w-full">Change Tone</Button>
+            </div>
+            <div class="space-y-2">
+              <Input
+                class="bg-gray-800 border-gray-700 text-white w-full"
+                placeholder="Enter style..."
+              />
+              <Button variant="default" class="rounded-full w-full">Change Style</Button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <main class="flex-grow w-full pt-[80px]">
+    <!-- Main Content -->
+    <main class="flex-grow w-full pt-[80px] px-4">
       <RouterView class="w-full h-full" />
     </main>
-  </div>
 
     <!-- Footer -->
-    <footer class="border-t">
-      <div class="container mx-auto flex h-16 items-center justify-between px-4">
-        <p class="text-sm text-muted-foreground"> 2025 Hritik Gupta. All rights reserved.</p>
+    <footer class="border-t mt-auto">
+      <div class="container mx-auto flex flex-col sm:flex-row h-auto sm:h-16 items-center justify-between p-4 gap-4 sm:gap-0">
+        <p class="text-sm text-muted-foreground text-center sm:text-left">
+          © 2025 Hritik Gupta. All rights reserved.
+        </p>
         <div class="flex space-x-4">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground">
+          <a 
+            href="https://github.com/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-sm text-muted-foreground hover:text-foreground"
+          >
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="text-sm text-muted-foreground hover:text-foreground">
+          <a 
+            href="https://linkedin.com/in/yourusername" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-sm text-muted-foreground hover:text-foreground"
+          >
             LinkedIn
           </a>
         </div>
       </div>
     </footer>
-
+  </div>
 </template>
