@@ -110,31 +110,31 @@ const toggleTheme = () => {
       <!-- Mobile Menu -->
       <div 
         v-if="isMenuOpen" 
-        class="md:hidden bg-gray-900 border-t border-gray-800"
+        class="md:hidden border-t "
       >
         <div class="flex flex-col p-4 space-y-4">
           <RouterLink 
             v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
             :key="link"
             :to="`/${link.toLowerCase()}`" 
-            class="text-white hover:text-gray-300 py-2"
+            class="hover:text-gray-300 py-2"
             @click="isMenuOpen = false"
           >
             {{ link }}
           </RouterLink>
           
           <!-- Mobile Tone and Style Controls -->
-          <div class="space-y-4 pt-4 border-t border-gray-800">
+          <div class="space-y-4 pt-4 border-t">
             <div class="space-y-2">
               <Input
-                class="bg-gray-800 border-gray-700 text-white w-full"
+                class="w-full"
                 placeholder="Enter tone..."
               />
               <Button variant="default" class="rounded-full w-full">Change Tone</Button>
             </div>
             <div class="space-y-2">
               <Input
-                class="bg-gray-800 border-gray-700 text-white w-full"
+                class=" w-full"
                 placeholder="Enter style..."
               />
               <Button variant="default" class="rounded-full w-full">Change Style</Button>
@@ -145,7 +145,7 @@ const toggleTheme = () => {
     </div>
 
     <!-- Main Content -->
-    <main class="flex-grow w-full pt-[80px] px-4 overflow-x-hidden">
+    <main class="w-full pt-[40px] overflow-x-hidden">
       <RouterView class="w-full h-full" />
     </main>
 
