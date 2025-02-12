@@ -30,11 +30,11 @@ const toggleTheme = () => {
 <template>
    <div class="w-full min-h-screen flex flex-col">
     <!-- Navigation Header -->
-    <div class="w-full bg-gray-900 fixed top-0 left-0 right-0 z-50">
+    <div class="w-full bg-slate-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50">
       <div class="w-full p-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
-          <RouterLink to="/" class="text-xl font-bold tracking-wide text-white">HG</RouterLink>
+          <RouterLink to="/" class="text-xl font-bold tracking-wide ">HG</RouterLink>
         </div>
 
         <!-- Desktop Navigation -->
@@ -43,7 +43,7 @@ const toggleTheme = () => {
             v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
             :key="link"
             :to="`/${link.toLowerCase()}`" 
-            class="text-white hover:text-gray-300"
+            class="hover:text-gray-300"
           >
             {{ link }}
           </RouterLink>
@@ -51,12 +51,12 @@ const toggleTheme = () => {
           <!-- Tone and Style Controls -->
           <div class="flex items-center gap-2 lg:gap-4">
             <Input
-              class="bg-gray-800 border-gray-700 text-white w-32 lg:w-48"
+              class="w-32 lg:w-48"
               placeholder="Enter tone..."
             />
             <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Tone</Button>
             <Input
-              class="bg-gray-800 border-gray-700 text-white w-32 lg:w-48"
+              class="w-32 lg:w-48"
               placeholder="Enter style..."
             />
             <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Style</Button>
