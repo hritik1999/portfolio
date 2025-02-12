@@ -6,6 +6,7 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Terminal, Github, Linkedin, Mail,X} from 'lucide-vue-next';
 import ProfilePic from '../assets/IMG_0397_2.jpg'
 export default {
+  name: 'Home',
   data() {
     return {
       socialLinks: [
