@@ -29,7 +29,7 @@
         name: 'About',
         data() {
             return {
-                Pic: require('@/assets/images/avatar.jpg'),
+            
             }
         },
         components: {

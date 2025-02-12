@@ -40,7 +40,7 @@ const toggleTheme = () => {
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center gap-4 lg:gap-6">
           <RouterLink 
-            v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
+            v-for="link in ['About', 'Products', 'Projects', 'Blog']" 
             :key="link"
             :to="`/${link.toLowerCase()}`" 
             class="hover:text-gray-300"
@@ -114,7 +114,7 @@ const toggleTheme = () => {
       >
         <div class="flex flex-col p-4 space-y-4">
           <RouterLink 
-            v-for="link in ['About', 'Products', 'Projects', 'Contact', 'Blog']" 
+            v-for="link in ['About', 'Products', 'Projects', 'Blog']" 
             :key="link"
             :to="`/${link.toLowerCase()}`" 
             class="hover:text-gray-300 py-2"
