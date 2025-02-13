@@ -270,7 +270,7 @@ import {Badge} from '@/components/ui/badge';
                         {
                           title:'Solo Entrepreneur',
                           date:'March,2025 - Present',
-                          description:'Instead of getting a job and all i am just gonna build products and see where it takes me!'
+                          description:'Instead of getting a job.I am just gonna build products and see where it takes me! My first product will be in the AI entertained industry.'
                         }
 
                         ],
