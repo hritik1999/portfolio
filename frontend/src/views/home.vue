@@ -61,7 +61,7 @@ export default {
         </div>
 
         <!-- Content Section -->
-        <div class="space-y-8 text-center md:text-left">
+        <div class="space-y-6 text-center md:text-left">
           <h1
             class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
           >
@@ -70,14 +70,12 @@ export default {
           <h3
             class="text-1xl md:text-3xl font-bold "
           >
-            Full Stack AI Developer & Entrepreneur
+            Full Stack AI Developer | Aspiring Entrepreneur
           </h3>
           <p class="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-            Passionate about
-            <span class="underline decoration-primary/30 underline-offset-4">
-              AI, ML, and Web Development
-            </span>.
-            I love to build and deploy AI models and web applications.
+            Will be Bringing bold, unconventional ideas to life  
+              and sharing them with the world. <br><br>
+
           </p>
 
           <!-- Buttons -->
@@ -105,7 +103,7 @@ export default {
           </div>
 
           <!-- Social Links -->
-          <div class="flex gap-6 mt-6 text-muted-foreground justify-center md:justify-start">
+          <div class="flex gap-6 mt-8 text-muted-foreground justify-center md:justify-start">
             <a
               v-for="link in socialLinks"
               :key="link.id"
