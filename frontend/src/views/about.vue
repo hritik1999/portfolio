@@ -27,6 +27,23 @@
                 </div>
               </div>
             </div>
+                      <!-- Mission & Vision -->
+              <section class="grid md:grid-rows-2 gap-8">
+              <div class="p-8 rounded-2xl bg-primary/5 border border-primary/20">
+                <h3 class="text-2xl font-bold text-primary mb-4">Mission</h3>
+                <p class="text-muted-foreground">
+                  My mission is to experiment with cutting-edge AI technologies and build innovative solutions.
+                  Find new ways to leverage AI to solve real-world problems and make a positive impact on society.
+                </p>
+              </div>
+              <div class="p-8 rounded-2xl bg-secondary/5 border border-primary/20">
+                <h3 class="text-2xl font-bold mb-4">Vision</h3>
+                <p class="text-muted-foreground">
+                  I envision a future where AI is used to unleash human creativity and potential.
+                  Build a world where AI is accessible to everyone and used to create a better future for all.
+                </p>
+              </div>
+            </section>
           </div>
   
           <!-- Content Column -->
@@ -38,10 +55,28 @@
               </h2>
               <div class="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  A full-stack developer with an AI obsession, building intelligent solutions that bridge 
-                  <span class="text-primary font-medium">technical complexity</span> with 
-                  <span class="font-medium">user-friendly experiences</span>. 
-                  Currently pushing boundaries in generative AI applications while exploring solopreneurship.
+                  Hi, I'm 
+                  <span class="font-bold text-primary">Hritik Gupta</span> - a 
+                  <span class="text-primary font-semibold">Full Stack AI Developer</span> 
+                  with a vision to become an 
+                  <span class="text-primary font-semibold">entrepreneur</span>.
+                </p>
+
+                <p>
+                  I'm deeply passionate about 
+                  <span class="font-semibold">Generative AI</span> 
+                  and its endless possibilities. I firmly believe that  
+                  <span class="italic text-primary font-semibold">in The Era of AI, the only true limitation is our imagination</span>. 
+                  With countless ideas in mind, I'm actively working to turn them into reality.
+                </p>
+
+                <p>
+                  My love for AI runs so deep that my friends even call me 
+                  <span class="text-primary font-semibold">"AI Bhai."</span> 
+                  As I approach 
+                  <span class="underline">graduation this year</span>, 
+                  I'm eager to bring my ideas to life using the skills I've honed over the past two years. 
+                  <span class="animate-pulse text-primary font-semibold">Stay tuned—exciting things are coming in the next few weeks!</span>
                 </p>
               </div>
             </section>
@@ -62,29 +97,17 @@
                     <div>
                       <h4 class="text-lg font-semibold">{{ skill.name }}</h4>
                       <p class="text-sm text-muted-foreground">{{ skill.description }}</p>
+                      <div class="flex flex-wrap gap-2 mt-1">
+                        <div v-for="label in skill.labels" :key="label">
+                          <Badge variant="secondary" class="text-xs text-primary">{{ label }}</Badge>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
   
-            <!-- Mission & Vision -->
-            <section class="grid md:grid-cols-2 gap-8">
-              <div class="p-8 rounded-2xl bg-primary/5 border border-primary/20">
-                <h3 class="text-2xl font-bold text-primary mb-4">Mission</h3>
-                <p class="text-muted-foreground">
-                  Democratize AI capabilities through intuitive interfaces, enabling businesses to harness 
-                  cutting-edge technology without technical overhead.
-                </p>
-              </div>
-              <div class="p-8 rounded-2xl bg-secondary/5 border border-primary/20">
-                <h3 class="text-2xl font-bold mb-4">Vision</h3>
-                <p class="text-muted-foreground">
-                  Create self-sustaining AI systems that empower individuals and small businesses to compete 
-                  with enterprise-level resources.
-                </p>
-              </div>
-            </section>
   
             <!-- Experience & Achievements -->
             <section class="space-y-6">
@@ -110,13 +133,13 @@
       </section>
 
                   <!-- Call to Action -->
-                  <section class="text-center py-16 space-y-6 border-t">
-              <h3 class="text-3xl font-bold text-foreground">Ready to Create Magic?</h3>
-              <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Whether you want to discuss AI innovations, potential collaborations, or just geek out about 
-                the future of technology - let's connect!
-              </p>
-              <div class="flex justify-center gap-4">
+      <section class="text-center py-16 space-y-6 border-t">
+            <h3 class="text-3xl font-bold text-foreground">Ready to Create Magic?</h3>
+            <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Whether you want to discuss AI innovations, potential collaborations, or just geek out about 
+             the future of technology - let's connect!
+          </p>
+        <div class="flex justify-center gap-4">
          <!-- Social Links -->
           <div class="flex gap-6 text-muted-foreground justify-center md:justify-start">
             <a
@@ -146,43 +169,110 @@
 import { MessageSquareText } from 'lucide-vue-next';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
-import { Download, ArrowRight,Github, Linkedin, Mail,X,Brain } from 'lucide-vue-next';
+import { Download, ArrowRight,Github, Linkedin, Mail,X,Brain,Server,Monitor,Cloud } from 'lucide-vue-next';
 import ProfilePic from '../assets/IMG_8346.jpg'
+import {Badge} from '@/components/ui/badge';
 
     export default {
         name: 'About',
         data() {
             return {
                 quickStats :[
-                    { label: 'Projects Completed', value: '50+' },
-                    { label: 'AI Models Deployed', value: '200+' },
-                    { label: 'Years Experience', value: '5' },
-                    { label: 'Open Source Contributions', value: '1.2k' }
+                    { label: 'Projects', value: '20+' },
+                    { label: 'Products', value: '0' },
+                    { label: 'Revenue', value: '0' },
+                    { label: 'Ambition', value: '100'}
                     ],
                 skills : [
                     { 
                         name: 'Generative AI', 
                         icon: 'Brain',
-                        description: 'LLM fine-tuning, RAG systems, AI agent development' 
+                        description: 'LLM fine-tuning, RAG systems, AI agent development',
+                        labels: ['OPENAI', 'HuggingFace', 'Langchain','PyToch'] 
                     },
-                    // Add other skills...
+                    {
+                      name: 'Backend Development',
+                      icon: 'Server',
+                      description: "Building scalable APIs, microservices, and serverless functions",
+                      labels: ['flask','Redis','SQL','RestAPI','DBA']
+                    },
+                    {
+                      name: 'Frontend Development',
+                      icon: 'Monitor',
+                      description: "Crafting responsive web applications with modern frameworks",
+                      labels: ['Vue','Shadcn','TailwindCSS','Bootstrap','JavaScript','HTML','CSS']
+                    },
+                    {
+                      name: 'DevOps & Cloud',
+                      icon: 'Cloud',
+                      description: "Automating CI/CD pipelines, containerization, and cloud deployments",
+                      labels: ['Docker','AWS','Git','CI/CD','Github Actions']
+                    },
+                    {
+                      name: 'Machine Learning & Deeplearning',
+                      icon: 'Brain',
+                      description: "Training models, data preprocessing, and model evaluation",
+                      labels: ['Scikit-learn','Pytorch','Pandas','Numpy','Matplotlib','Seaborn']
+                    },
+                    {
+                      name: 'Communication Skills',
+                      icon: 'MessageSquareText',
+                      description: "Presenting technical concepts, leading teams, and writing documentation",
+                      labels: ['Public Speaking','Technical Writing','Team Leadership','JIRA']
+                    }
                     ],
                     timeline : [
                         {
-                            title: 'Lead AI Developer @TechCo',
-                            date: '2022 - Present',
-                            description: 'Led development of AI-powered SaaS platform with 95% accuracy rate'
+                            title: 'Born',
+                            date: '01-november-1999',
+                            description: 'In Allahabad,UP and raised in Assam.'
                         },
                         {
-                            title: 'Full Stack Engineer @Startup',
-                            date: '2020 - 2022',
-                            description: 'Built scalable web applications with real-time analytics'
+                            title: 'Schooling',
+                            date: '2004-2018',
+                            description: 'Was severely bullied in school, So its all a blank dont remember any thing from this time.'
                         },
                         {
-                            title: 'Computer Science Degree',
-                            date: '2016 - 2020',
-                            description: 'Specialized in AI and Distributed Systems'
+                            title: 'Computer Science Degree, Sharda University',
+                            date: '2018-2019',
+                            description: 'Got kicked out due to low attendance dispite of having good grades. Had to drop out but enjoyed it a lot.'
+                        },
+                        {
+                            title: 'Bachelors of Business Administration, Sharda University',
+                            date: 'august,2019 - july,2021',
+                            description: 'Joined to learn about business learned that commerence is scam.'
+                        },
+                        {
+                          title:'First try at entrepreneurship',
+                          date:'2020-2021',
+                          description:"Started a gaming startup with my friends, failed miserably but Got into Influencer marketing but found it increadibly boring."
+                        },
+                        {
+                          title:'BS in Data Science and AI, IIT,Madras',
+                          date:'April,2021-current',
+                          description:"Joined this degree to follow my passion of tech. Enjoying learning maths,stats,web development,ML and AI."
+                        },
+                        {
+                          title:'MBA, Calcutta Business School , West Bengal',
+                          date:' august,2022 - july, 2024',
+                          description:"Father forced me into this degree and it sucked a lot of my time but thankfully i am done with it."
+                        },
+                        {
+                          title:'AI Developer, Arkca Corporate Solutions',
+                          date:'august,2023- august,2024',
+                          description:"Joined as a AI developer, worked on various projects and learned a lot."
+                        },
+                        {
+                          title:'AI engineer Contract, Quicksand design Studio',
+                          date:'september,2024 - February,2025',
+                          description:'Quicksand is a consulting firm with over 15 year experience and I was hired to develop a RAG Chatbot over all their projects. Challenging but fun.'
+                        },
+                        {
+                          title:'Solo Entrepreneur',
+                          date:'March,2025 - Present',
+                          description:'Instead of getting a job and all i am just gonna build products and see where it takes me!'
                         }
+
                         ],
                         Pic: ProfilePic,
                         socialLinks: [
@@ -204,7 +294,12 @@ import ProfilePic from '../assets/IMG_8346.jpg'
         Linkedin,
         Mail,
         X,
-        Brain
+        Brain,
+        MessageSquareText,
+        Badge,
+        Server,
+        Monitor,
+        Cloud,
         },
     }
   </script>
