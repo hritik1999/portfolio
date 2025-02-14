@@ -33,7 +33,7 @@
                 <h3 class="text-2xl font-bold text-primary mb-4">Mission</h3>
                 <p class="text-muted-foreground">
                   My mission is to experiment with cutting-edge AI technologies and build innovative solutions.
-                  Find new ways to leverage AI to solve real-world problems and make a positive impact on society.
+                  Find new ways to leverage AI to make a positive impact on society.
                 </p>
               </div>
               <div class="p-8 rounded-2xl bg-secondary/5 border border-primary/20">
@@ -63,7 +63,8 @@
                 </p>
 
                 <p>
-                  I'm deeply passionate about 
+                  I have always been fascinated by the world of technology, Trying out every new technology that comes out.
+                  Now I'm deeply passionate about
                   <span class="font-semibold">Generative AI</span> 
                   and its endless possibilities. I firmly believe that  
                   <span class="italic text-primary font-semibold">in The Era of AI, the only true limitation is our imagination</span>. 
@@ -119,6 +120,7 @@
                   class="relative pl-10 border-l-2 border-border group"
                 >
                   <div class="absolute w-4 h-4 bg-primary rounded-full -left-[9px] top-1 border-2 border-background transition-transform group-hover:scale-125" />
+
                   <h4 class="text-xl font-semibold">{{ item.title }}</h4>
                   <div class="text-sm text-primary mb-2">{{ item.date }}</div>
                   <p class="text-muted-foreground">{{ item.description }}</p>
@@ -206,7 +208,7 @@ import {Badge} from '@/components/ui/badge';
                       name: 'DevOps & Cloud',
                       icon: 'Cloud',
                       description: "Automating CI/CD pipelines, containerization, and cloud deployments",
-                      labels: ['Docker','AWS','Git','CI/CD','Github Actions']
+                      labels: ['Docker','AWS','Git','CI/CD']
                     },
                     {
                       name: 'Machine Learning & Deeplearning',
@@ -218,59 +220,59 @@ import {Badge} from '@/components/ui/badge';
                       name: 'Communication Skills',
                       icon: 'MessageSquareText',
                       description: "Presenting technical concepts, leading teams, and writing documentation",
-                      labels: ['Public Speaking','Technical Writing','Team Leadership','JIRA']
+                      labels: ['Public Speaking','Technical Writing','Team Leadership']
                     }
                     ],
                     timeline : [
                         {
                             title: 'Born',
                             date: '01-november-1999',
-                            description: 'In Allahabad,UP and raised in Assam.'
+                            description: 'In Allahabad,UP and raised in Assam.',
                         },
                         {
                             title: 'Schooling',
                             date: '2004-2018',
-                            description: 'Was severely bullied in school, So its all a blank dont remember any thing from this time.'
+                            description: 'Was severely bullied in school, So its all a blank dont remember any thing from this time.',
                         },
                         {
-                            title: 'Computer Science Degree, Sharda University',
+                            title: 'Bachelor of Technology in Computer sicence Engineering, Sharda University',
                             date: '2018-2019',
-                            description: 'Got kicked out due to low attendance dispite of having good grades. Had to drop out but enjoyed it a lot.'
+                            description: 'Was asked to repeat first year due to low attendance dispite of having good grades.So had to drop out but enjoyed it a lot.',
                         },
                         {
                             title: 'Bachelors of Business Administration, Sharda University',
                             date: 'august,2019 - july,2021',
-                            description: 'Joined to learn about business learned that commerence is scam.'
+                            description: 'Joined to learn about business learned that business school don\'t teach you business they do business! But had complete it.',
                         },
                         {
                           title:'First try at entrepreneurship',
                           date:'2020-2021',
-                          description:"Started a gaming startup with my friends, failed miserably but Got into Influencer marketing but found it increadibly boring."
+                          description:"Started a gaming startup with my friends, failed miserably but Got into Influencer marketing made money, met youtubers but it was not my thing.",
                         },
                         {
                           title:'BS in Data Science and AI, IIT,Madras',
                           date:'April,2021-current',
-                          description:"Joined this degree to follow my passion of tech. Enjoying learning maths,stats,web development,ML and AI."
+                          description:"Joined this degree to follow my passion of tech. Enjoyed learning maths,stats,web development,ML and AI.",
                         },
                         {
-                          title:'MBA, Calcutta Business School , West Bengal',
+                          title:'Master in Business Administration, Calcutta Business School , West Bengal',
                           date:' august,2022 - july, 2024',
-                          description:"Father forced me into this degree and it sucked a lot of my time but thankfully i am done with it."
+                          description:"After BBA apperently it is compulsory to do MBA. After few fights with my parents I joined this college. Sucked a lot of my time but thankfully i am done with it.",
                         },
                         {
                           title:'AI Developer, Arkca Corporate Solutions',
                           date:'august,2023- august,2024',
-                          description:"Joined as a AI developer, worked on various projects and learned a lot."
+                          description:"Joined as a AI developer, worked on various projects and learned a lot.",
                         },
                         {
                           title:'AI engineer Contract, Quicksand design Studio',
                           date:'september,2024 - February,2025',
-                          description:'Quicksand is a consulting firm with over 15 year experience and I was hired to develop a RAG Chatbot over all their projects. Challenging but fun.'
+                          description:'Quicksand is a consulting firm with over 15 year experience and I was hired to develop a RAG Chatbot over all their projects.It Challenging but fun.',
                         },
                         {
                           title:'Solo Entrepreneur',
                           date:'March,2025 - Present',
-                          description:'Instead of getting a job.I am just gonna build products and see where it takes me! My first product will be in the AI entertained industry.'
+                          description:'Instead of getting a job.I am just gonna build products and see where it takes me! My first product will be launched Soon!',
                         }
 
                         ],
