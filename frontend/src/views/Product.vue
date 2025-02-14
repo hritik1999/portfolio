@@ -1,7 +1,7 @@
 <script>
 import { Button } from '@/components/ui/button'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
-import { Terminal, Github, Linkedin, Mail, X, Hammer } from 'lucide-vue-next';
+import { Terminal, Github, Linkedin, Mail, X, Hammer, ArrowRight } from 'lucide-vue-next';
 
 export default {
   name: 'Products',
@@ -26,7 +26,8 @@ export default {
     Linkedin,
     X,
     Mail,
-    Hammer
+    Hammer,
+    ArrowRight
   }
 };
 </script>
