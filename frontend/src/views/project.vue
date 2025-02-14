@@ -36,7 +36,7 @@ export default {
             image: iit,
             tech: ['Flask', 'VueJs', 'RAG','NLP','Langchain','LLama2'],
             date:'May 2024'
-        }
+        },
         
         // Add more projects as needed
       ]
