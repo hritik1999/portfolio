@@ -7,6 +7,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 import os
 
+load_dotenv()
 app = Flask(__name__)
 CORS(app)
 
@@ -14,7 +15,7 @@ CORS(app)
 llm = ChatOpenAI(
     model="gpt-4o-mini",
     temperature=0.7,
-    api_key=os.getenv('OPENAI_API_KEY')
+    api_key=os.getenv("OPENAI_API_KEY")
 )
 
 @app.route('/api/change/tone', methods=['POST'])
