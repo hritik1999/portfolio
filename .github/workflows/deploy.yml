@@ -17,9 +17,12 @@ jobs:
     - name: Setup SSH
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+        echo "${{ secrets.EC2_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+    
+    - name: Debug SSH Connection
+      run: ssh -vvv -i ~/.ssh/id_rsa -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "echo SSH Connection Successful"
 
     - name: Deploy to EC2
       run: |
