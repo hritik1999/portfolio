@@ -15,7 +15,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "5001:5001"
+      - "5000:5001"
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
     volumes:
