@@ -50,6 +50,7 @@ router.afterEach(() => {
   if (tone.value) updateToneContent() // Only update if tone is set
 })
 
+
 </script>
 
 <template>
@@ -154,7 +155,7 @@ router.afterEach(() => {
             <div class="space-y-2">
               <Input
                 class="w-full"
-                placeholder="Enter tone...",
+                placeholder="Enter tone..."
                 v-model="tone"
               />
               <Button variant="default" class="rounded-full w-full" @click="updateToneContent(tone)">Change Tone</Button>
