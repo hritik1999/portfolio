@@ -12,16 +12,28 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.8.0
-        with:
-          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
-
+      - name: Setup SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          
+          # Debug key format (safely)
+          echo "Key file permissions:"
+          ls -la ~/.ssh/id_rsa
+          echo "Key format check:"
+          ssh-keygen -l -f ~/.ssh/id_rsa || echo "Invalid key format"
+          
       - name: Add known hosts
         run: |
-          echo "${{ secrets.EC2_KNOWN_HOSTS }}" >> ~/.ssh/known_hosts
+          ssh-keyscan -H -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+          
+      - name: Test SSH connection
+        run: |
+          ssh -v -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} echo "SSH connection successful"
 
       - name: Deploy to EC2
+        if: success()
         env:
           SSH_PORT: ${{ secrets.EC2_SSH_PORT }}
           SSH_USER: ${{ secrets.EC2_USER }}
