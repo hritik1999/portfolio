@@ -20,14 +20,6 @@ jobs:
         printf "%s" "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
-  
-    - name: Debug SSH Key
-      run: |
-        ls -lah ~/.ssh
-        cat ~/.ssh/id_rsa | head -n 5
-    
-    - name: Debug SSH Connection
-      run: ssh -vvv -i ~/.ssh/id_rsa -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "echo SSH Connection Successful"
 
     - name: Deploy to EC2
       run: |
