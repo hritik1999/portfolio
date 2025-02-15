@@ -180,7 +180,7 @@ import {Badge} from '@/components/ui/badge';
         data() {
             return {
                 quickStats :[
-                    { label: 'Projects', value: '20+' },
+                    { label: 'Anime\'s watched', value: '100+' },
                     { label: 'Products', value: '0' },
                     { label: 'Revenue', value: '0' },
                     { label: 'Ambition', value: '100'}
