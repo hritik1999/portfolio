@@ -27,7 +27,7 @@ const updateToneContent = async () => {
     const originalText = element.innerText
     element.innerHTML = `<span class="animate-pulse">⏳ Changing tone...</span>` // Show loading state
 
-    fetch('http:backend:5001/api/change/tone', {
+    fetch('http://23.22.207.182/api/change/tone', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ tone: tone.value, context: originalText }),
