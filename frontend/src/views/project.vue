@@ -174,6 +174,7 @@ export default {
                 <p 
                     class="text-muted-foreground leading-relaxed transition-all duration-300" 
                     :class="{ 'line-clamp-3': !project.expanded }"
+                    id = "text"
                 >
                     {{ project.description }}
                 </p>

@@ -70,9 +70,9 @@ export default {
           <h3
             class="text-1xl md:text-3xl font-bold "
           >
-            Full Stack AI Developer | Aspiring Solopreneur
+            Full Stack AI Developer | Aspiring Entrepreneur
           </h3>
-          <p class="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+          <p class="text-xl md:text-2xl text-muted-foreground leading-relaxed" id="text">
             Will be Bringing bold, unconventional ideas to life  
               and sharing them with the world. <br><br>
 

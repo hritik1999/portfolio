@@ -1,29 +1,53 @@
 <script setup>
-import { ref } from 'vue'
-import { RouterLink, RouterView } from 'vue-router'
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from '@/components/ui/navigation-menu'
+import { ref,watch,onMounted,  nextTick } from 'vue'
+import { RouterLink, RouterView,useRouter } from 'vue-router'
+import { Skeleton } from '@/components/ui/skeleton'
 import { Input } from '@/components/ui/input'
 import { useColorMode } from '@vueuse/core'
 import { Button } from '@/components/ui/button'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import { Icon } from '@iconify/vue'
 
 const mode = useColorMode('dark')
 const isMenuOpen = ref(false)
+const router = useRouter()
 
+const tone = ref('')
 // Manually toggle between 'dark' and 'light'
 const toggleTheme = () => {
   mode.value = mode.value === 'dark' ? 'light' : 'dark'
 }
+
+// Function to update text dynamically across all pages
+const updateToneContent = async () => {
+  if (!tone.value) return // Only update if tone is set
+  console.log('Updating tone:', tone.value)
+  await nextTick() // Ensure DOM is updated before selecting elements
+
+  document.querySelectorAll('main #text').forEach((element) => {
+    const originalText = element.innerText
+    element.innerHTML = `<span class="animate-pulse">⏳ Changing tone...</span>` // Show loading state
+
+    fetch('http://127.0.0.1:5000/api/change/tone', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ tone: tone.value, context: originalText }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        element.innerText = data.result
+      })
+      .catch((error) => {
+        console.error('Error:', error)
+        element.innerText = originalText // Restore original text on error
+      })
+  })
+}
+
+// Ensure content updates when the page loads & when route changes
+onMounted(updateToneContent)
+router.afterEach(() => {
+  if (tone.value) updateToneContent() // Only update if tone is set
+})
 
 </script>
 
@@ -53,8 +77,9 @@ const toggleTheme = () => {
             <Input
               class="w-32 lg:w-48"
               placeholder="Enter tone..."
+              v-model="tone"
             />
-            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Tone</Button>
+            <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)">Change Tone</Button>
             <Input
               class="w-32 lg:w-48"
               placeholder="Enter style..."
@@ -128,9 +153,10 @@ const toggleTheme = () => {
             <div class="space-y-2">
               <Input
                 class="w-full"
-                placeholder="Enter tone..."
+                placeholder="Enter tone...",
+                v-model="tone"
               />
-              <Button variant="default" class="rounded-full w-full">Change Tone</Button>
+              <Button variant="default" class="rounded-full w-full" @click="updateToneContent(tone)">Change Tone</Button>
             </div>
             <div class="space-y-2">
               <Input

@@ -54,7 +54,7 @@ export default {
               <span class="font-mono text-sm">hritik@build-process:~/products</span>
             </div>
             
-            <p class="text-xl md:text-2xl leading-relaxed">
+            <p class="text-xl md:text-2xl leading-relaxed" id="text">
               Crafting something extraordinary behind the scenes.<br>
               <span class="text-primary">Innovation in progress</span> - stay tuned for the grand reveal!
             </p>
@@ -85,7 +85,7 @@ export default {
             <component :is="link.icon" class="h-6 w-6" />
           </a>
         </div>
-        <p class='mt-6 text-m md:text-xl leading-relaxed'>PS: Would you like to see the change style and change tone features as a browser extension? Making the whole internet practically customizable🤯</p>
+        <p class='mt-6 text-m md:text-xl leading-relaxed' id="text">PS: Would you like to see the change style and change tone features as a browser extension? Making the whole internet practically customizable🤯</p>
       </div>
     </section>
     <!-- Background Effects -->

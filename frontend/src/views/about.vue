@@ -31,14 +31,14 @@
               <section class="grid md:grid-rows-2 gap-8">
               <div class="p-8 rounded-2xl bg-primary/5 border border-primary/20">
                 <h3 class="text-2xl font-bold text-primary mb-4">Mission</h3>
-                <p class="text-muted-foreground">
+                <p class="text-muted-foreground" id="text">
                   My mission is to experiment with cutting-edge AI technologies and build innovative solutions.
                   Find new ways to leverage AI to make a positive impact on society.
                 </p>
               </div>
               <div class="p-8 rounded-2xl bg-secondary/5 border border-primary/20">
                 <h3 class="text-2xl font-bold mb-4">Vision</h3>
-                <p class="text-muted-foreground">
+                <p class="text-muted-foreground" id="text">
                   I envision a future where AI is used to unleash human creativity and potential.
                   Build a world where AI is accessible to everyone and used to create a better future for all.
                 </p>
@@ -53,7 +53,7 @@
               <h2 class="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
                 Who Am I?
               </h2>
-              <div class="space-y-4 text-lg text-muted-foreground">
+              <div class="space-y-4 text-lg text-muted-foreground" id="text">
                 <p>
                   Hi, I'm 
                   <span class="font-bold text-primary">Hritik Gupta</span> - a 
@@ -97,7 +97,7 @@
                     </div>
                     <div>
                       <h4 class="text-lg font-semibold">{{ skill.name }}</h4>
-                      <p class="text-sm text-muted-foreground">{{ skill.description }}</p>
+                      <p class="text-sm text-muted-foreground" id="text">{{ skill.description }}</p>
                       <div class="flex flex-wrap gap-2 mt-1">
                         <div v-for="label in skill.labels" :key="label">
                           <Badge variant="secondary" class="text-xs text-primary">{{ label }}</Badge>
@@ -123,7 +123,7 @@
 
                   <h4 class="text-xl font-semibold">{{ item.title }}</h4>
                   <div class="text-sm text-primary mb-2">{{ item.date }}</div>
-                  <p class="text-muted-foreground">{{ item.description }}</p>
+                  <p class="text-muted-foreground" id="text">{{ item.description }}</p>
                   <div v-if="item.achievement" class="mt-3 p-3 rounded-lg bg-secondary/5 border border-secondary/20">
                     🏆 {{ item.achievement }}
                   </div>
@@ -136,8 +136,8 @@
 
                   <!-- Call to Action -->
       <section class="text-center py-16 space-y-6 border-t">
-            <h3 class="text-3xl font-bold text-foreground">Ready to Create Magic?</h3>
-            <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <h3 class="text-3xl font-bold text-foreground" id="text">Ready to Create Magic?</h3>
+            <p class="text-lg text-muted-foreground max-w-2xl mx-auto" id="text">
               Whether you want to discuss AI innovations, potential collaborations, or just geek out about 
              the future of technology - let's connect!
           </p>

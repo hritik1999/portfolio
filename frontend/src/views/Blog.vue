@@ -24,7 +24,7 @@ export default {
         </CardTitle>
       </CardHeader>
       <CardContent class="text-center">
-        <p class="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+        <p class="text-xl md:text-2xl text-muted-foreground leading-relaxed" id="text">
           I haven’t written any blog posts yet, but in the future I will share my thoughts and experiences here. Stay tuned!
         </p>
       </CardContent>
