@@ -181,9 +181,9 @@ import {Badge} from '@/components/ui/badge';
             return {
                 quickStats :[
                     { label: 'Anime\'s watched', value: '100+' },
-                    { label: 'Products', value: '0' },
-                    { label: 'Revenue', value: '0' },
-                    { label: 'Ambition', value: '100'}
+                    { label: 'Books read', value: '50+' },
+                    { label: 'Unfinished Projects', value: '20+' },
+                    { label: 'Ambition', value: '100+'}
                     ],
                 skills : [
                     { 
