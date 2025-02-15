@@ -14,19 +14,18 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v3
 
-    - name: Setup SSH
+    - name: Setup SSH Key
       run: |
         mkdir -p ~/.ssh
-        echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
+        echo "${{ secrets.EC2_SSH_KEY }}" | sed 's/\\n/\n/g' > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
+        echo "${{ secrets.EC2_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
 
-    - name: Debug SSH Command (Optional)
-      run: echo "ssh -p $PORT $USER@$HOST"
-      env:
-        PORT: ${{ secrets.EC2_SSH_PORT }}
-        USER: ${{ secrets.EC2_USER }}
-        HOST: ${{ secrets.EC2_HOST }}
+    - name: Debug SSH Key
+      run: |
+          ls -lah ~/.ssh
+          cat ~/.ssh/id_rsa | head -n 5  # Show first few lines to confirm key exists
+          ssh-keygen -l -f ~/.ssh/id_rsa || echo "Invalid SSH key"
 
     - name: Deploy to EC2
       run: |
