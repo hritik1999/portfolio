@@ -17,31 +17,33 @@ jobs:
           mkdir -p ~/.ssh
           echo "${{ secrets.EC2_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          
-          # Debug key format (safely)
-          echo "Key file permissions:"
-          ls -la ~/.ssh/id_rsa
-          echo "Key format check:"
-          ssh-keygen -l -f ~/.ssh/id_rsa || echo "Invalid key format"
-          
+
       - name: Add known hosts
         run: |
           ssh-keyscan -H -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_HOST }} >> ~/.ssh/known_hosts
-          
-      - name: Test SSH connection
-        run: |
-          ssh -v -p ${{ secrets.EC2_SSH_PORT }} ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} echo "SSH connection successful"
 
       - name: Deploy to EC2
-        if: success()
         env:
           SSH_PORT: ${{ secrets.EC2_SSH_PORT }}
           SSH_USER: ${{ secrets.EC2_USER }}
           SSH_HOST: ${{ secrets.EC2_HOST }}
         run: |
           ssh -p $SSH_PORT "$SSH_USER@$SSH_HOST" << 'EOF'
-            cd /portfolio
+            cd /home/ubuntu/portfolio
+            
+            # Stash any local changes
+            git stash
+            
+            # Pull latest changes
             git pull origin main
+            
+            # Rebuild and restart containers
             docker-compose down
             docker-compose up -d --build
+            
+            # Show container status
+            docker-compose ps
+            
+            # Clean up old images
+            docker image prune -f
           EOF
