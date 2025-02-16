@@ -84,9 +84,9 @@ router.afterEach(() => {
             <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)">Change Tone</Button>
             <Input
               class="w-32 lg:w-48"
-              placeholder="Enter style..."
+              placeholder="Enter theme..."
             />
-            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Style</Button>
+            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Theme</Button>
           </div>
 
           <!-- Dark mode toggle button for Desktop -->
@@ -163,9 +163,9 @@ router.afterEach(() => {
             <div class="space-y-2">
               <Input
                 class=" w-full"
-                placeholder="Enter style..."
+                placeholder="Enter theme..."
               />
-              <Button variant="default" class="rounded-full w-full">Change Style</Button>
+              <Button variant="default" class="rounded-full w-full">Change theme</Button>
             </div>
           </div>
         </div>

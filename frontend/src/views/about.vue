@@ -190,7 +190,7 @@ import {Badge} from '@/components/ui/badge';
                         name: 'Generative AI', 
                         icon: 'Brain',
                         description: 'LLM fine-tuning, RAG systems, AI agent development',
-                        labels: ['OPENAI', 'HuggingFace', 'Langchain','PyToch'] 
+                        labels: ['OPENAI', 'HuggingFace', 'Langchain','PyTorch'] 
                     },
                     {
                       name: 'Backend Development',
@@ -226,7 +226,7 @@ import {Badge} from '@/components/ui/badge';
                     timeline : [
                         {
                             title: 'Born',
-                            date: '01-november-1999',
+                            date: '09-november-1999',
                             description: 'In Allahabad,UP and raised in Assam.',
                         },
                         {
@@ -235,7 +235,7 @@ import {Badge} from '@/components/ui/badge';
                             description: 'Was severely bullied in school, So its all a blank dont remember any thing from this time.',
                         },
                         {
-                            title: 'Bachelor of Technology in Computer sicence Engineering, Sharda University',
+                            title: 'Bachelor of Technology in Computer science Engineering, Sharda University',
                             date: '2018-2019',
                             description: 'Was asked to repeat first year due to low attendance dispite of having good grades.So had to drop out but enjoyed it a lot.',
                         },
