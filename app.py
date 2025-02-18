@@ -103,36 +103,6 @@ def generate_theme():
         class ThemeResponse(BaseModel):
             lightTheme: ThemeTemplate
             darkTheme: ThemeTemplate 
-
-            class Config:
-                json_schema_extra = {
-                    "type": "object",
-                    "properties": {
-                        "lightTheme": {
-                            "type": "object",
-                            "properties": {
-                                "theme": {"type": "object"},
-                                "typography": {"type": "object"},  # Just define as object, no required here
-                                "components": {"type": "object"},
-                                "spacing": {"type": "object"},
-                                "effects": {"type": "object"},
-                            },
-                            "required": ["theme", "typography", "components", "spacing", "effects"]  # Only these top-level fields are required
-                        },
-                        "darkTheme": {
-                            "type": "object",
-                            "properties": {
-                                "theme": {"type": "object"},
-                                "typography": {"type": "object"},  # Same fix here, no required in nested properties
-                                "components": {"type": "object"},
-                                "spacing": {"type": "object"},
-                                "effects": {"type": "object"},
-                            },
-                            "required": ["theme", "typography", "components", "spacing", "effects"]  # Only top-level fields
-                        }
-                    },
-                    "required": ["lightTheme", "darkTheme"]  # Light and dark themes are required
-                }
                 
 
         # Create the prompt template
