@@ -65,44 +65,109 @@ def generate_theme():
             return jsonify({"error": "missing theme"}), 400
 
         class Theme(BaseModel):
-            background: str = Field(description="Color value for background, consider gradients")
-            text: str = Field(description="Primary text color")
-            primary: str = Field(description="Main brand color")
-            secondary: str = Field(description="Supporting color")
-            accent: str = Field(description="Highlight color")
-            patterns: List[str] = Field(description="Optional background patterns or textures")
+            background: str = Field(description="HSL value for background color")
+            foreground: str = Field(description="HSL value for foreground (text) color")
 
-        class Typography(BaseModel):
-            headings: Dict[str, List[str]] = Field(description="Font settings for headings")
-            body: Dict[str, List[str]] = Field(description="Font settings for body text")
-            sizes: Dict[str, str] = Field(description="Font sizes for different elements")
+            muted: str = Field(description="HSL value for muted background color")
+            muted_foreground: str = Field(description="HSL value for muted foreground color")
 
-        class Components(BaseModel):
-            card: List[str] = Field(description="Extensive card styling")
-            button: List[str] = Field(description="Distinctive button styling")
-            nav: List[str] = Field(description="Unique navigation styling")
-            section: List[str] = Field(description="Section-specific styling")
+            popover: str = Field(description="HSL value for popover background color")
+            popover_foreground: str = Field(description="HSL value for popover foreground color")
 
-        class Spacing(BaseModel):
-            section: str = Field(description="Dramatic padding/margin values")
-            container: str = Field(description="Container-specific spacing")
-            elements: str = Field(description="Inter-element spacing")
+            card: str = Field(description="HSL value for card background color")
+            card_foreground: str = Field(description="HSL value for card foreground color")
 
-        class Effects(BaseModel):
-            hover: List[str] = Field(description="Hover transformations")
-            transition: List[str] = Field(description="Multi-step transitions")
-            animation: List[str] = Field(description="Optional subtle animations")
+            border: str = Field(description="HSL value for border color")
+            input: str = Field(description="HSL value for input fields")
 
-        class ThemeTemplate(BaseModel):
-            theme: Theme
-            typography: Typography
-            components: Components
-            spacing: Spacing
-            effects: Effects
+            primary: str = Field(description="HSL value for primary color")
+            primary_foreground: str = Field(description="HSL value for primary foreground text")
+
+            secondary: str = Field(description="HSL value for secondary color")
+            secondary_foreground: str = Field(description="HSL value for secondary foreground text")
+
+            accent: str = Field(description="HSL value for accent color")
+            accent_foreground: str = Field(description="HSL value for accent foreground text")
+
+            destructive: str = Field(description="HSL value for destructive elements (like error states)")
+            destructive_foreground: str = Field(description="HSL value for foreground text in destructive elements")
+
+            ring: str = Field(description="HSL value for focus ring color")
+            radius: str = Field(description="Border radius for rounded elements")
 
         class ThemeResponse(BaseModel):
-            lightTheme: ThemeTemplate
-            darkTheme: ThemeTemplate 
+            lightTheme: Theme = Field(description="Light mode theme settings")
+            darkTheme: Theme = Field(description="Dark mode theme settings")
+
+            class Config:
+                json_schema_extra = {
+                    "type": "object",
+                    "properties": {
+                        "lightTheme": {
+                            "type": "object",
+                            "properties": {
+                                "background": {"type": "string"},
+                                "foreground": {"type": "string"},
+                                "muted": {"type": "string"},
+                                "muted_foreground": {"type": "string"},
+                                "popover": {"type": "string"},
+                                "popover_foreground": {"type": "string"},
+                                "card": {"type": "string"},
+                                "card_foreground": {"type": "string"},
+                                "border": {"type": "string"},
+                                "input": {"type": "string"},
+                                "primary": {"type": "string"},
+                                "primary_foreground": {"type": "string"},
+                                "secondary": {"type": "string"},
+                                "secondary_foreground": {"type": "string"},
+                                "accent": {"type": "string"},
+                                "accent_foreground": {"type": "string"},
+                                "destructive": {"type": "string"},
+                                "destructive_foreground": {"type": "string"},
+                                "ring": {"type": "string"},
+                                "radius": {"type": "string"}
+                            },
+                            "required": [
+                                "background", "foreground", "muted", "muted_foreground", "popover", "popover_foreground",
+                                "card", "card_foreground", "border", "input", "primary", "primary_foreground",
+                                "secondary", "secondary_foreground", "accent", "accent_foreground",
+                                "destructive", "destructive_foreground", "ring", "radius"
+                            ]
+                        },
+                        "darkTheme": {
+                            "type": "object",
+                            "properties": {
+                                "background": {"type": "string"},
+                                "foreground": {"type": "string"},
+                                "muted": {"type": "string"},
+                                "muted_foreground": {"type": "string"},
+                                "popover": {"type": "string"},
+                                "popover_foreground": {"type": "string"},
+                                "card": {"type": "string"},
+                                "card_foreground": {"type": "string"},
+                                "border": {"type": "string"},
+                                "input": {"type": "string"},
+                                "primary": {"type": "string"},
+                                "primary_foreground": {"type": "string"},
+                                "secondary": {"type": "string"},
+                                "secondary_foreground": {"type": "string"},
+                                "accent": {"type": "string"},
+                                "accent_foreground": {"type": "string"},
+                                "destructive": {"type": "string"},
+                                "destructive_foreground": {"type": "string"},
+                                "ring": {"type": "string"},
+                                "radius": {"type": "string"}
+                            },
+                            "required": [
+                                "background", "foreground", "muted", "muted_foreground", "popover", "popover_foreground",
+                                "card", "card_foreground", "border", "input", "primary", "primary_foreground",
+                                "secondary", "secondary_foreground", "accent", "accent_foreground",
+                                "destructive", "destructive_foreground", "ring", "radius"
+                            ]
+                        }
+                    },
+                    "required": ["lightTheme", "darkTheme"]
+                }
                 
 
         # Create the prompt template
@@ -162,6 +227,7 @@ def generate_theme():
         theme_chain = theme_prompt | structured_llm
 
         result = theme_chain.invoke({"theme": theme})
+        print(result.model_dump())
         return jsonify(result.model_dump())
 
     except Exception as e:

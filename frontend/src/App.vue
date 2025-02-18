@@ -55,25 +55,29 @@ const updateToneContent = async () => {
   })
 }
 
-// Apply CSS variables to root
 const applyTheme = (theme) => {
   if (!theme || typeof theme !== 'object') {
     console.warn('Invalid theme data received');
     return;
   }
-  
-  const root = document.documentElement
+
+  console.log('Applying theme:', theme); // Debugging
+
+  const root = document.documentElement;
   Object.entries(theme).forEach(([key, value]) => {
-    root.style.setProperty(`--${key}`, value)
-  })
-}
+    root.style.setProperty(`--${key}`, value);
+  });
+
+  console.log('Theme applied successfully');
+};
+
 
 const generateTheme = async () => {
   if (!theme.value) return;
   
   isGenerating.value = true;
   try {
-    const response = await fetch('http://192.168.0.131:5001/api/change/theme', {
+    const response = await fetch('http://192.168.1.3:5001/api/change/theme', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ theme: theme.value })
@@ -99,9 +103,6 @@ const generateTheme = async () => {
     // Apply current mode's theme
     applyTheme(mode.value === 'dark' ? themeData.darkTheme : themeData.lightTheme);
 
-    // Save to localStorage
-    localStorage.setItem('customThemes', JSON.stringify(customThemes.value));
-
   } catch (error) {
     console.error('Theme generation failed:', error);
   } finally {
@@ -115,10 +116,9 @@ onMounted(generateTheme)
 router.afterEach(() => {
   if (tone.value) updateToneContent()
   
-  const savedThemes = localStorage.getItem('customThemes')
-  if (savedThemes) {
+  if (theme.modelValue) {
     try {
-      const parsed = JSON.parse(savedThemes)
+      const parsed = JSON.parse(customThemes)
       if (parsed && parsed[mode.value]) {
         customThemes.value = parsed
         applyTheme(mode.value === 'dark' ? parsed.dark : parsed.light)
