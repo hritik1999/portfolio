@@ -12,9 +12,20 @@ const isMenuOpen = ref(false)
 const router = useRouter()
 
 const tone = ref('')
-// Manually toggle between 'dark' and 'light'
+const theme = ref('')
+const isGenerating = ref(false)
+const customThemes = ref({
+  light: null,
+  dark: null
+})
+
+// Toggle between dark/light modes
 const toggleTheme = () => {
   mode.value = mode.value === 'dark' ? 'light' : 'dark'
+  // Apply stored theme for current mode
+  if (customThemes.value[mode.value]) {
+    applyTheme(customThemes.value[mode.value])
+  }
 }
 
 // Function to update text dynamically across all pages
@@ -27,7 +38,7 @@ const updateToneContent = async () => {
     const originalText = element.innerText
     element.innerHTML = `<span class="animate-pulse">⏳ Changing tone...</span>` // Show loading state
 
-    fetch("https://hritikgupta.com/api/change/tone", {
+    fetch("http://192.168.0.131:5001/api/change/tone", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ tone: tone.value, context: originalText }),
@@ -44,10 +55,78 @@ const updateToneContent = async () => {
   })
 }
 
+// Apply CSS variables to root
+const applyTheme = (theme) => {
+  if (!theme || typeof theme !== 'object') {
+    console.warn('Invalid theme data received');
+    return;
+  }
+  
+  const root = document.documentElement
+  Object.entries(theme).forEach(([key, value]) => {
+    root.style.setProperty(`--${key}`, value)
+  })
+}
+
+const generateTheme = async () => {
+  if (!theme.value) return;
+  
+  isGenerating.value = true;
+  try {
+    const response = await fetch('http://192.168.0.131:5001/api/change/theme', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ theme: theme.value })
+    });
+
+    const data = await response.json();
+
+    if (response.status !== 200) {
+      throw new Error(data.error || 'Server error occurred');
+    }
+
+    let themeData = data;
+
+    if (!themeData.lightTheme || !themeData.darkTheme) {
+      throw new Error('Missing theme data in response');
+    }
+
+    customThemes.value = {
+      light: themeData.lightTheme,
+      dark: themeData.darkTheme
+    };
+
+    // Apply current mode's theme
+    applyTheme(mode.value === 'dark' ? themeData.darkTheme : themeData.lightTheme);
+
+    // Save to localStorage
+    localStorage.setItem('customThemes', JSON.stringify(customThemes.value));
+
+  } catch (error) {
+    console.error('Theme generation failed:', error);
+  } finally {
+    isGenerating.value = false;
+  }
+};
+
 // Ensure content updates when the page loads & when route changes
 onMounted(updateToneContent)
+onMounted(generateTheme)
 router.afterEach(() => {
-  if (tone.value) updateToneContent() // Only update if tone is set
+  if (tone.value) updateToneContent()
+  
+  const savedThemes = localStorage.getItem('customThemes')
+  if (savedThemes) {
+    try {
+      const parsed = JSON.parse(savedThemes)
+      if (parsed && parsed[mode.value]) {
+        customThemes.value = parsed
+        applyTheme(mode.value === 'dark' ? parsed.dark : parsed.light)
+      }
+    } catch (error) {
+      console.error('Error loading saved themes:', error)
+    }
+  }
 })
 
 
@@ -85,8 +164,9 @@ router.afterEach(() => {
             <Input
               class="w-32 lg:w-48"
               placeholder="Enter theme..."
+              v-model="theme"
             />
-            <Button variant="default" class="rounded-full whitespace-nowrap text-sm">Change Theme</Button>
+            <Button @click="generateTheme":disabled="isGenerating" class="rounded-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
           </div>
 
           <!-- Dark mode toggle button for Desktop -->
@@ -164,8 +244,9 @@ router.afterEach(() => {
               <Input
                 class=" w-full"
                 placeholder="Enter theme..."
+                v-model="theme"
               />
-              <Button variant="default" class="rounded-full w-full">Change theme</Button>
+              <Button @click="generateTheme":disabled="isGenerating" class="rounded-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
             </div>
           </div>
         </div>
