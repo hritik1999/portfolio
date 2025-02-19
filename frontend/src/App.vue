@@ -38,7 +38,7 @@ const updateToneContent = async () => {
     const originalText = element.innerText
     element.innerHTML = `<span class="animate-pulse">⏳ Changing tone...</span>` // Show loading state
 
-    fetch("http://192.168.0.131:5001/api/change/tone", {
+    fetch("https://hritikgupta.com/api/change/tone", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ tone: tone.value, context: originalText }),
@@ -61,7 +61,7 @@ const generateTheme = async ()=> {
       isGenerating.value = true;
       try {
         const mainContent = document.querySelector('main');
-        const response = await fetch('http://192.168.0.131:5001/api/change/style', {
+        const response = await fetch('http://hritikgupta.com/api/change/style', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

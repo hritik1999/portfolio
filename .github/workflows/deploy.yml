@@ -24,31 +24,31 @@ jobs:
 
       - name: Deploy to EC2
         env:
-            SSH_PORT: ${{ secrets.EC2_SSH_PORT }}
-            SSH_USER: ${{ secrets.EC2_USER }}
-            SSH_HOST: ${{ secrets.EC2_HOST }}
-            ENV_VARS: ${{ secrets.ENV_VARS }}
+          SSH_PORT: ${{ secrets.EC2_SSH_PORT }}
+          SSH_USER: ${{ secrets.EC2_USER }}
+          SSH_HOST: ${{ secrets.EC2_HOST }}
+          ENV_VARS: ${{ secrets.ENV_VARS }}
         run: |
-            ssh -p $SSH_PORT "$SSH_USER@$SSH_HOST" << 'EOF'
-              cd /home/ubuntu/portfolio
-              
-              # Stash any local changes
-              git stash
-              
-              # Pull latest changes
-              git pull origin main
-              
-              # Ensure the .env file is correctly written
-              echo -e "${ENV_VARS}" > .env
-              cat .env  # Debugging step to verify contents
-              
-              # Restart containers
-              docker-compose down
-              docker-compose up -d --build
-              
-              # Show running containers
-              docker-compose ps
-              
-              # Clean up old images
-              docker image prune -f
-            EOF
+          ssh -p $SSH_PORT "$SSH_USER@$SSH_HOST" << 'EOF'
+            cd /home/ubuntu/portfolio
+            
+            # Stash any local changes
+            git stash
+            
+            # Pull latest changes
+            git pull origin main
+
+            # Update environment variables
+            echo "$ENV_VARS" > .env
+            cat .env  # Debugging step to verify contents
+
+            # Rebuild and restart containers
+            docker-compose down
+            docker-compose up -d --build
+            
+            # Show container status
+            docker-compose ps
+            
+            # Clean up old images
+            docker image prune -f
+          EOF
