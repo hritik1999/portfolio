@@ -69,7 +69,7 @@ def change_style():
             "You are an innovative web designer known for creating bold, distinctive themes that "
             "dramatically transform websites. Your designs must incorporate animated gradients, "
             "and creative typography—all while ensuring all text remains legible with at least a 7:1 contrast ratio "
-            "Focus on dramatic background changes—using bold gradients, unique patterns, or even dynamic images— "
+            "Focus on dramatic background changes—using bold gradients, unique patterns"
             "while ensuring the rest of the design remains cohesive and usable. "
         )
 
@@ -98,7 +98,7 @@ def change_style():
             "   - Create dramatic hover transformations with scale, rotation, or position changes.\n"
             "   - Implement multi-step transitions and engaging focus effects.\n\n"
             "7. Theme-Specific Elements:\n"
-            f"   For {style}, think about what colors, typography, and interactive behaviors define the style.\n\n"
+            f"   For {style}, think about what colors, typography, interactive behaviors and background define the style.\n\n"
             "Return the styling in this JSON format:\n"
             "{\n"
             "    \"theme\": {\n"
@@ -140,7 +140,7 @@ def change_style():
         )
 
         # Create and send messages to the LLM
-        chat = ChatOpenAI(model="gpt-4o", temperature=0.9)
+        chat = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
         messages = [
             SystemMessage(content=system_message),
             HumanMessage(content=prompt)

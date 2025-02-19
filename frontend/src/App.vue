@@ -109,8 +109,6 @@ const generateTheme = async ()=> {
               font-family: ${styles.typography.body[0]};
               font-weight: ${styles.typography.body[1]};
               line-height: ${styles.typography.body[2] || '1.5'};
-              /* Fallback text shadow to boost contrast */
-              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
             }
             /* Dramatically enhanced background overlay (if needed) */
             .background-overlay {
@@ -128,7 +126,6 @@ const generateTheme = async ()=> {
               letter-spacing: ${styles.typography.headings[2] || 'normal'};
               text-transform: ${styles.typography.headings[3] || 'none'};
               color: var(--foreground);
-              text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
             }
             h1 { ${styles.typography.sizes.h1} }
             h2 { ${styles.typography.sizes.h2} }
