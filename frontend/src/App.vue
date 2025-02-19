@@ -55,78 +55,192 @@ const updateToneContent = async () => {
   })
 }
 
-const applyTheme = (theme) => {
-  if (!theme || typeof theme !== 'object') {
-    console.warn('Invalid theme data received');
-    return;
-  }
 
-  console.log('Applying theme:', theme); // Debugging
+const generateTheme = async ()=> {
+      if (!theme.value) return;
+      isGenerating.value = true;
+      try {
+        const mainContent = document.querySelector('main');
+        const response = await fetch('http://192.168.0.131:5001/api/change/style', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            style: theme.value,
+            html: mainContent.innerHTML,
+          }),
+        });
+        const data = await response.json();
+        if (data.error) {
+          console.error('Server error:', data.error);
+          return;
+        }
+        if (data.result) {
+          const styles = data.result;
+          // Remove any previously added dynamic style tags
+          const oldStyles = document.querySelectorAll('style[data-dynamic-style]');
+          oldStyles.forEach((style) => style.remove());
 
-  const root = document.documentElement;
-  Object.entries(theme).forEach(([key, value]) => {
-    root.style.setProperty(`--${key}`, value);
-  });
+          // Create a new style element for dynamic styles
+          const styleSheet = document.createElement('style');
+          styleSheet.setAttribute('data-dynamic-style', 'true');
 
-  console.log('Theme applied successfully');
-};
+          // Build CSS Variables (make sure your Tailwind config uses these variables)
+          const cssVars = `
+            :root {
+              --background: ${styles.theme.background};
+              --foreground: ${styles.theme.text};
+              --primary: ${styles.theme.primary};
+              --secondary: ${styles.theme.secondary};
+              --accent: ${styles.theme.accent};
+              --card-bg: ${styles.theme.background};
+              --button-bg: ${styles.theme.primary};
+              --button-text: ${styles.theme.background};
+              --nav-bg: ${styles.theme.background};
+              --section-bg: ${styles.theme.secondary};
+            }
+          `;
 
+          // Build component CSS using the provided styling tokens
+          const componentStyles = `
+            /* Base Styles */
+            body {
+              background-color: var(--background);
+              color: var(--foreground);
+              font-family: ${styles.typography.body[0]};
+              font-weight: ${styles.typography.body[1]};
+              line-height: ${styles.typography.body[2] || '1.5'};
+              /* Fallback text shadow to boost contrast */
+              text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+            }
+            /* Dramatically enhanced background overlay (if needed) */
+            .background-overlay {
+              background: rgba(0,0,0,0.3);
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+            /* Headings with neon glow */
+            h1, h2, h3, h4, h5, h6 {
+              font-family: ${styles.typography.headings[0]};
+              font-weight: ${styles.typography.headings[1]};
+              letter-spacing: ${styles.typography.headings[2] || 'normal'};
+              text-transform: ${styles.typography.headings[3] || 'none'};
+              color: var(--foreground);
+              text-shadow: 0 0 5px var(--accent), 0 0 10px var(--accent);
+            }
+            h1 { ${styles.typography.sizes.h1} }
+            h2 { ${styles.typography.sizes.h2} }
+            p  { ${styles.typography.sizes.body} }
+            
+            /* Component Styles */
+            .card {
+              ${styles.components.card.join(';')};
+              background-color: var(--card-bg);
+              ${styles.theme.patterns && styles.theme.patterns.length ? `background-image: ${styles.theme.patterns[0]};` : ''}
+              transition: all 0.3s ease;
+            }
+            .button, button {
+              ${styles.components.button.join(';')};
+              background-color: var(--button-bg);
+              color: var(--button-text);
+              transition: all 0.3s ease;
+              position: relative;
+              overflow: hidden;
+            }
+            nav {
+              ${styles.components.nav.join(';')};
+              background-color: var(--nav-bg);
+            }
+            section {
+              ${styles.components.section.join(';')};
+              padding: ${styles.spacing.section};
+            }
+            .container {
+              padding: ${styles.spacing.container};
+              margin: ${styles.spacing.elements || '0 auto'};
+            }
+            /* Hover & transition effects */
+            .card:hover {
+              ${styles.effects.hover.join(';')};
+              transform: translateY(-2px);
+              box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            .button:hover, button:hover {
+              transform: translateY(-1px);
+              filter: brightness(110%);
+              ${styles.effects.hover.join(';')};
+            }
+            .card, .button, button, nav, section {
+              ${styles.effects.transition.join(';')};
+            }
+            /* Optional animations */
+            ${styles.effects.animation ? `
+              @keyframes theme-animation {
+                ${styles.effects.animation.join(';')}
+              }
+              .animated-element {
+                animation: theme-animation 1s ease-in-out infinite;
+              }
+            ` : ''}
+            /* Links and badges */
+            a {
+              color: var(--primary);
+              transition: color 0.3s ease;
+            }
+            a:hover {
+              color: var(--accent);
+            }
+            .badge {
+              background-color: var(--accent);
+              color: var(--background);
+            }
+            .text-muted-foreground {
+              color: var(--secondary);
+            }
+            .element-spacing {
+              margin: ${styles.spacing.elements || 'inherit'};
+            }
+          `;
+          // Inject the built styles
+          styleSheet.textContent = cssVars + componentStyles;
+          document.head.appendChild(styleSheet);
 
-const generateTheme = async () => {
-  if (!theme.value) return;
-  
-  isGenerating.value = true;
-  try {
-    const response = await fetch('http://192.168.1.3:5001/api/change/theme', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ theme: theme.value })
-    });
+          // Optionally update a preview area with the updated main content
+          this.styledContent = document.querySelector('main').innerHTML;
 
-    const data = await response.json();
+          // Add a theme-specific class to body (for any further style targeting)
+          document.body.className = `theme-${this.theme.toLowerCase()}`;
 
-    if (response.status !== 200) {
-      throw new Error(data.error || 'Server error occurred');
+          // Apply background patterns if provided
+          if (styles.theme.patterns && styles.theme.patterns.length > 0) {
+            document.body.style.backgroundImage = styles.theme.patterns[0];
+          } else {
+            // Otherwise, ensure the background is fully dynamic
+            document.body.style.background = styles.theme.background;
+          }
+
+          // Add animation classes if animations are defined
+          if (styles.effects.animation) {
+            const animatedElements = document.querySelectorAll('.animate-theme');
+            animatedElements.forEach(el => el.classList.add('animated-element'));
+          }
+        }
+      } catch (error) {
+        console.error('Error changing style:', error);
+      } finally {
+        isGenerating.value = false;
+      }
     }
 
-    let themeData = data;
 
-    if (!themeData.lightTheme || !themeData.darkTheme) {
-      throw new Error('Missing theme data in response');
-    }
 
-    customThemes.value = {
-      light: themeData.lightTheme,
-      dark: themeData.darkTheme
-    };
-
-    // Apply current mode's theme
-    applyTheme(mode.value === 'dark' ? themeData.darkTheme : themeData.lightTheme);
-
-  } catch (error) {
-    console.error('Theme generation failed:', error);
-  } finally {
-    isGenerating.value = false;
-  }
-};
 
 // Ensure content updates when the page loads & when route changes
 onMounted(updateToneContent)
-onMounted(generateTheme)
 router.afterEach(() => {
   if (tone.value) updateToneContent()
-  
-  if (theme.modelValue) {
-    try {
-      const parsed = JSON.parse(customThemes)
-      if (parsed && parsed[mode.value]) {
-        customThemes.value = parsed
-        applyTheme(mode.value === 'dark' ? parsed.dark : parsed.light)
-      }
-    } catch (error) {
-      console.error('Error loading saved themes:', error)
-    }
-  }
 })
 
 
@@ -135,7 +249,7 @@ router.afterEach(() => {
 <template>
    <div class="w-full min-h-screen flex flex-col">
     <!-- Navigation Header -->
-    <div class="w-full bg-slate-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50">
+    <nav class="w-full bg-slate-200 dark:bg-gray-900 fixed top-0 left-0 right-0 z-50">
       <div class="w-full p-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center">
@@ -251,7 +365,7 @@ router.afterEach(() => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
 
     <!-- Main Content -->
     <main class="w-full pt-[40px] overflow-x-hidden">

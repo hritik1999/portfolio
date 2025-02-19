@@ -45,7 +45,7 @@ export default {
           <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#4f46e525_0%,transparent_70%)]"></div>
           <CardHeader>
             <CardTitle class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Digital Workshop
+              <h1>Digital Workshop</h1>
             </CardTitle>
           </CardHeader>
           <CardContent class="space-y-6">

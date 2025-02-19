@@ -9,17 +9,11 @@ from pydantic import BaseModel, Field
 from typing import List, Dict
 import json
 import os
+import json, re
 
 load_dotenv()
 app = Flask(__name__)
 CORS(app)
-
-# Initialize ChatOpenAI
-llm = ChatOpenAI(
-    model="gpt-4o-mini",
-    temperature=0.7,
-    api_key=os.getenv("OPENAI_API_KEY")
-)
 
 @app.route('/api/change/tone', methods=['POST'])
 def change_tone():
@@ -30,6 +24,12 @@ def change_tone():
         if not tone or not context:
             return jsonify({"error": "Missing tone or context"}), 400
         
+        llm = ChatOpenAI(
+            model="gpt-4o-mini",
+            temperature=0.7,
+            api_key=os.getenv("OPENAI_API_KEY")
+        )
+                
         # Use Langchain to get response
         tone_template = """  
             As part of Hritik Gupta's professional portfolio website, Rewrite the following text in a {tone} tone while preserving its original meaning and information.  
@@ -55,186 +55,115 @@ def change_tone():
         print("Error:", str(e))
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/change/theme', methods=['POST'])
-def generate_theme():
+@app.route('/api/change/style', methods=['POST'])
+def change_style():
     try:
         data = request.json
-        theme = data.get('theme')
-        
-        if not theme:
-            return jsonify({"error": "missing theme"}), 400
+        style = data.get('style', '').lower()
+        html = data.get('html', '')
+        if not style or not html:
+            return jsonify({'error': 'Style and HTML are required'}), 400
 
-        class Theme(BaseModel):
-            background: str = Field(description="HSL value for background color")
-            foreground: str = Field(description="HSL value for foreground (text) color")
+        # Enhanced system message with emphasis on bold design and high contrast
+        system_message = (
+            "You are an innovative web designer known for creating bold, distinctive themes that "
+            "dramatically transform websites. Your designs must incorporate animated gradients, "
+            "and creative typography—all while ensuring all text remains legible with at least a 7:1 contrast ratio "
+            "Focus on dramatic background changes—using bold gradients, unique patterns, or even dynamic images— "
+            "while ensuring the rest of the design remains cohesive and usable. "
+        )
 
-            muted: str = Field(description="HSL value for muted background color")
-            muted_foreground: str = Field(description="HSL value for muted foreground color")
+        # Enhanced prompt to drive dramatic styling
+        prompt = (
+            f"Transform this HTML content into an extremely distinctive {style} theme that completely overhauls "
+            "the look and feel of the website.\n\n"
+            "Key Requirements:\n"
+            "1. Color Scheme:\n"
+            "   - Use bold, theme-specific color combinations with at least 7:1 contrast for text.\n"
+            "   - Include multiple shades, accents, and gradient effects if appropriate.\n"
+            "   - Ensure that text remains readable even over gradients or patterns.\n\n"
+            "2. Typography:\n"
+            "   - Choose dramatic font sizes, weights, and creative letter spacing.\n"
+            "   - Consider inventive uppercase/lowercase styles and line heights.\n\n"
+            "3. Layout and Spacing:\n"
+            "   - Create unique, asymmetric layouts with dramatic padding/margin patterns.\n\n"
+            "4. Components:\n"
+            "   - Give each component a strong, unique identity using bold shadows, borders, and creative corner treatments.\n"
+            "   - Optionally include subtle background patterns or textures.\n\n"
+            "5. Background Transformation:\n"
+            "   - Drastically change the background using bold gradients, dynamic images, or intricate patterns.\n"
+            "   - Ensure the background is the most dramatic change, setting a completely new tone for the site.\n"
+            "   - If using gradients or patterns, incorporate overlays to maintain text legibility (at least 7:1 contrast).\n\n"
+            "6. Interactive Elements:\n"
+            "   - Create dramatic hover transformations with scale, rotation, or position changes.\n"
+            "   - Implement multi-step transitions and engaging focus effects.\n\n"
+            "7. Theme-Specific Elements:\n"
+            f"   For {style}, think about what colors, typography, and interactive behaviors define the style.\n\n"
+            "Return the styling in this JSON format:\n"
+            "{\n"
+            "    \"theme\": {\n"
+            "         \"background\": \"completely transformed background style (e.g., a gradient or patterned image)\",\n"
+            "        \"text\": \"primary text color\",\n"
+            "        \"primary\": \"main brand color\",\n"
+            "        \"secondary\": \"supporting color\",\n"
+            "        \"accent\": \"highlight color\",\n"
+            "        \"patterns\": [\" background patterns/textures\"]\n"
+            "    },\n"
+            "    \"typography\": {\n"
+            "        \"headings\": [\"font-family\", \"weight\", \"letter-spacing\", \"text-transform\"],\n"
+            "        \"body\": [\"font-family\", \"weight\", \"line-height\"],\n"
+            "        \"sizes\": {\n"
+            "            \"h1\": \"dramatic size\",\n"
+            "            \"h2\": \"distinctive size\",\n"
+            "            \"body\": \"comfortable reading size\"\n"
+            "        }\n"
+            "    },\n"
+            "    \"components\": {\n"
+            "        \"card\": [\"extensive card styling including shadows/borders\"],\n"
+            "        \"button\": [\"distinctive button styling with multiple states\"],\n"
+            "        \"nav\": [\"unique navigation styling\"],\n"
+            "        \"section\": [\"section-specific styling\"]\n"
+            "    },\n"
+            "    \"spacing\": {\n"
+            "        \"section\": \"dramatic padding/margin values\",\n"
+            "        \"container\": \"container-specific spacing\",\n"
+            "        \"elements\": \"inter-element spacing\"\n"
+            "    },\n"
+            "    \"effects\": {\n"
+            "        \"hover\": [\"dramatic hover transformations\"],\n"
+            "        \"transition\": [\"multi-step transitions\"],\n"
+            "        \"animation\": [\"optional subtle animations\"]\n"
+            "    }\n"
+            "}\n\n"
+            f"HTML Content to Style: {html}\n\n"
+            "Be bold and creative while ensuring all text remains legible and accessible."
+        )
 
-            popover: str = Field(description="HSL value for popover background color")
-            popover_foreground: str = Field(description="HSL value for popover foreground color")
+        # Create and send messages to the LLM
+        chat = ChatOpenAI(model="gpt-4o", temperature=0.9)
+        messages = [
+            SystemMessage(content=system_message),
+            HumanMessage(content=prompt)
+        ]
+        response = chat.invoke(messages)
 
-            card: str = Field(description="HSL value for card background color")
-            card_foreground: str = Field(description="HSL value for card foreground color")
-
-            border: str = Field(description="HSL value for border color")
-            input: str = Field(description="HSL value for input fields")
-
-            primary: str = Field(description="HSL value for primary color")
-            primary_foreground: str = Field(description="HSL value for primary foreground text")
-
-            secondary: str = Field(description="HSL value for secondary color")
-            secondary_foreground: str = Field(description="HSL value for secondary foreground text")
-
-            accent: str = Field(description="HSL value for accent color")
-            accent_foreground: str = Field(description="HSL value for accent foreground text")
-
-            destructive: str = Field(description="HSL value for destructive elements (like error states)")
-            destructive_foreground: str = Field(description="HSL value for foreground text in destructive elements")
-
-            ring: str = Field(description="HSL value for focus ring color")
-            radius: str = Field(description="Border radius for rounded elements")
-
-        class ThemeResponse(BaseModel):
-            lightTheme: Theme = Field(description="Light mode theme settings")
-            darkTheme: Theme = Field(description="Dark mode theme settings")
-
-            class Config:
-                json_schema_extra = {
-                    "type": "object",
-                    "properties": {
-                        "lightTheme": {
-                            "type": "object",
-                            "properties": {
-                                "background": {"type": "string"},
-                                "foreground": {"type": "string"},
-                                "muted": {"type": "string"},
-                                "muted_foreground": {"type": "string"},
-                                "popover": {"type": "string"},
-                                "popover_foreground": {"type": "string"},
-                                "card": {"type": "string"},
-                                "card_foreground": {"type": "string"},
-                                "border": {"type": "string"},
-                                "input": {"type": "string"},
-                                "primary": {"type": "string"},
-                                "primary_foreground": {"type": "string"},
-                                "secondary": {"type": "string"},
-                                "secondary_foreground": {"type": "string"},
-                                "accent": {"type": "string"},
-                                "accent_foreground": {"type": "string"},
-                                "destructive": {"type": "string"},
-                                "destructive_foreground": {"type": "string"},
-                                "ring": {"type": "string"},
-                                "radius": {"type": "string"}
-                            },
-                            "required": [
-                                "background", "foreground", "muted", "muted_foreground", "popover", "popover_foreground",
-                                "card", "card_foreground", "border", "input", "primary", "primary_foreground",
-                                "secondary", "secondary_foreground", "accent", "accent_foreground",
-                                "destructive", "destructive_foreground", "ring", "radius"
-                            ]
-                        },
-                        "darkTheme": {
-                            "type": "object",
-                            "properties": {
-                                "background": {"type": "string"},
-                                "foreground": {"type": "string"},
-                                "muted": {"type": "string"},
-                                "muted_foreground": {"type": "string"},
-                                "popover": {"type": "string"},
-                                "popover_foreground": {"type": "string"},
-                                "card": {"type": "string"},
-                                "card_foreground": {"type": "string"},
-                                "border": {"type": "string"},
-                                "input": {"type": "string"},
-                                "primary": {"type": "string"},
-                                "primary_foreground": {"type": "string"},
-                                "secondary": {"type": "string"},
-                                "secondary_foreground": {"type": "string"},
-                                "accent": {"type": "string"},
-                                "accent_foreground": {"type": "string"},
-                                "destructive": {"type": "string"},
-                                "destructive_foreground": {"type": "string"},
-                                "ring": {"type": "string"},
-                                "radius": {"type": "string"}
-                            },
-                            "required": [
-                                "background", "foreground", "muted", "muted_foreground", "popover", "popover_foreground",
-                                "card", "card_foreground", "border", "input", "primary", "primary_foreground",
-                                "secondary", "secondary_foreground", "accent", "accent_foreground",
-                                "destructive", "destructive_foreground", "ring", "radius"
-                            ]
-                        }
-                    },
-                    "required": ["lightTheme", "darkTheme"]
-                }
-                
-
-        # Create the prompt template
-        theme_prompt = ChatPromptTemplate.from_messages([
-            ("system", """You are an innovative web designer known for creating bold, distinctive themes that dramatically transform websites.
-            Your designs should be striking and immediately recognizable, pushing the boundaries while maintaining usability.
-            Each theme should feel like a complete transformation, not just a color change.
-            Use the full power of Tailwind CSS classes to create dramatic visual effects.
-            Consider every aspect of design: typography, spacing, shadows, animations, and layout.
-            Each style should have its own unique personality and feel completely different from other styles.
-             
-                Key Requirements:
-                1. Color Scheme:
-                - Use bold, theme-specific color combinations
-                - Include multiple shades and accents
-                - Consider gradient effects where appropriate
-                - Use contrast strategically for visual impact
-                
-                2. Typography:
-                - Choose dramatic font size differences between elements
-                - Use distinctive font weights and letter spacing
-                - Consider uppercase/lowercase styling
-                - Implement creative line heights and text decorations
-                
-                3. Layout and Spacing:
-                - Create unique rhythm with dramatic spacing differences
-                - Use asymmetric layouts where appropriate
-                - Implement distinctive padding and margin patterns
-                - Consider negative space as a design element
-                
-                4. Components:
-                - Give each component a strong, unique identity
-                - Use bold shadows and borders
-                - Implement distinctive corner treatments
-                - Add subtle background patterns or textures
-                
-                5. Interactive Elements:
-                - Create dramatic hover state transformations
-                - Use scale, rotation, or position changes
-                - Implement multi-step transitions
-                - Consider cursor effects and focus states
-                
-                6. Theme-Specific Elements:
-                For {theme} specifically, consider:
-                - What colors are iconic to this style?
-                - What typography defines this style era/mood?
-                - What shapes and patterns are associated with it?
-                - What interactive behaviors would users expect?
-
-             """),
-            ("human", "Generate matching light and dark themes for {theme}. Use HSL format for all colors.")
-        ])
-
-
-        structured_llm = llm.with_structured_output(ThemeResponse)
-        # Create and run the chain
-        theme_chain = theme_prompt | structured_llm
-
-        result = theme_chain.invoke({"theme": theme})
-        print(result.model_dump())
-        return jsonify(result.model_dump())
+        try:
+            style_data = json.loads(response.content)
+            return jsonify({'result': style_data})
+        except json.JSONDecodeError:
+            # Try to extract JSON if the response contains extra text
+            json_match = re.search(r'({[\s\S]*})', response.content)
+            if json_match:
+                try:
+                    style_data = json.loads(json_match.group(1))
+                    return jsonify({'result': style_data})
+                except json.JSONDecodeError:
+                    return jsonify({'error': 'Invalid style data format'}), 500
+            return jsonify({'error': 'Invalid style data format'}), 500
 
     except Exception as e:
-        print("Error:", str(e))
-        return jsonify({"error": str(e)}), 500
-
-
+        print(f"Error in change_style: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5001,debug=True)
