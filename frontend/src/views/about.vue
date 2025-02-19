@@ -61,24 +61,7 @@
                   with a vision to become an 
                   <span class="text-primary font-semibold">entrepreneur</span>.
                 </p>
-
-                <p>
-                  I have always been fascinated by the world of technology, Trying out every new technology that comes out.
-                  Now I'm deeply passionate about
-                  <span class="font-semibold">Generative AI</span> 
-                  and its endless possibilities. I firmly believe that  
-                  <span class="italic text-primary font-semibold">in The Era of AI, the only true limitation is our imagination</span>. 
-                  With countless ideas in mind, I'm actively working to turn them into reality.
-                </p>
-
-                <p>
-                  My love for AI runs so deep that my friends even call me 
-                  <span class="text-primary font-semibold">"AI Bhai."</span> 
-                  As I approach 
-                  <span class="underline">graduation this year</span>, 
-                  I'm eager to bring my ideas to life using the skills I've honed over the past two years. 
-                  <span class="animate-pulse text-primary font-semibold">Stay tuned—exciting things are coming in the next few weeks!</span>
-                </p>
+                <p> My passion for technology has always pushed me to dive into every new breakthrough. Now, the boundless promise of <span class="font-semibold">Generative AI</span> has truly captured my imagination. I’m convinced that <span class="italic text-primary font-semibold">in the AI era, the only limits we face are those set by our own creativity</span>. Overflowing with fresh ideas, I’m on a relentless mission to turn them into reality. </p> <p> My dedication to AI runs so deep that friends affectionately call me <span class="text-primary font-semibold">"AI Bhai."</span> With <span class="underline">graduation just around the corner</span>, I’m more eager than ever to bring my visions to life using the skills I've honed over the past two years. <span class="animate-pulse text-primary font-semibold">Stay tuned—big, exciting developments are on the horizon!</span> </p>
               </div>
             </section>
   
