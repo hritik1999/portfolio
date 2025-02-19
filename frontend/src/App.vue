@@ -18,6 +18,13 @@ const customThemes = ref({
   light: null,
   dark: null
 })
+const toneSubmitted = ref(false)
+// Reset the submitted flag if the tone input changes.
+watch(tone, (newTone, oldTone) => {
+  if (newTone !== oldTone) {
+    toneSubmitted.value = false
+  }
+})
 
 // Toggle between dark/light modes
 const toggleTheme = () => {
@@ -32,6 +39,7 @@ const toggleTheme = () => {
 const updateToneContent = async () => {
   if (!tone.value) return // Only update if tone is set
   console.log('Updating tone:', tone.value)
+  toneSubmitted.value = true 
   await nextTick() // Ensure DOM is updated before selecting elements
 
   document.querySelectorAll('main #text').forEach((element) => {
@@ -290,7 +298,7 @@ router.afterEach(() => {
               placeholder="Enter tone..."
               v-model="tone"
             />
-            <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)" :disabled="!tone">Change Tone</Button>
+            <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)" :disabled="toneSubmitted">Change Tone</Button>
             <Input
               class="w-32 lg:w-48"
               placeholder="Enter theme..."
@@ -368,7 +376,7 @@ router.afterEach(() => {
                 placeholder="Enter tone..."
                 v-model="tone"
               />
-              <Button variant="default" class="rounded-full w-full" @click="updateToneContent(tone)" :disabled="!tone">Change Tone</Button>
+              <Button variant="default" class="rounded-full w-full" @click="updateToneContent(tone)" :disabled="toneSubmitted">Change Tone</Button>
             </div>
             <div class="space-y-2">
               <Input
