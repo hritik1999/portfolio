@@ -376,7 +376,7 @@ router.afterEach(() => {
                 placeholder="Enter theme..."
                 v-model="theme"
               />
-              <Button @click="generateTheme":disabled="isGenerating" class="rounded-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
+              <Button @click="generateTheme":disabled="isGenerating" class="rounded-full w-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
             </div>
           </div>
         </div>
