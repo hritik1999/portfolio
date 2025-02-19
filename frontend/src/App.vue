@@ -137,6 +137,15 @@ const generateTheme = async () => {
         h1 { ${styles.typography.sizes.h1} }
         h2 { ${styles.typography.sizes.h2} }
         p  { ${styles.typography.sizes.body} }
+
+        input {
+          color: var(--foreground);
+          background-color: var(--card-bg);
+          border: 1px solid var(--secondary);
+        }
+        input::placeholder {
+          color: var(--secondary);
+        }
         
         /* Component Styles */
         .card {
