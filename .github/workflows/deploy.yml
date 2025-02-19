@@ -37,7 +37,11 @@ jobs:
             
             # Pull latest changes
             git pull origin main
-            
+
+            # Update environment variables
+            echo "$ENV_VARS" > .env
+            cat .env  # Debugging step to verify contents
+
             # Rebuild and restart containers
             docker-compose down
             docker-compose up -d --build
