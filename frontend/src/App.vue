@@ -295,13 +295,13 @@ router.afterEach(() => {
           <div class="flex items-center gap-2 lg:gap-4">
             <Input
               class="w-32 lg:w-48"
-              placeholder="Enter tone..."
+              placeholder="change tone of the content..."
               v-model="tone"
             />
             <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)" :disabled="toneSubmitted">Change Tone</Button>
             <Input
               class="w-32 lg:w-48"
-              placeholder="Enter theme..."
+              placeholder="change look of the site..."
               v-model="theme"
             />
             <Button @click="generateTheme":disabled="isGenerating" class="rounded-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
@@ -373,7 +373,7 @@ router.afterEach(() => {
             <div class="space-y-2">
               <Input
                 class="w-full"
-                placeholder="Enter tone..."
+                placeholder="change tone of the content..."
                 v-model="tone"
               />
               <Button variant="default" class="rounded-full w-full" @click="updateToneContent(tone)" :disabled="toneSubmitted">Change Tone</Button>
@@ -381,7 +381,7 @@ router.afterEach(() => {
             <div class="space-y-2">
               <Input
                 class=" w-full"
-                placeholder="Enter theme..."
+                placeholder="change the look of the site..."
                 v-model="theme"
               />
               <Button @click="generateTheme":disabled="isGenerating" class="rounded-full w-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
