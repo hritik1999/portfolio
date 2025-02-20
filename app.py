@@ -140,7 +140,7 @@ def change_style():
         )
 
         # Create and send messages to the LLM
-        chat = ChatOpenAI(model="gpt-4o-mini", temperature=0.9)
+        chat = ChatOpenAI(model="gpt-4o-mini", temperature=0.3)
         messages = [
             SystemMessage(content=system_message),
             HumanMessage(content=prompt)
