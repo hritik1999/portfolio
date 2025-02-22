@@ -2,8 +2,12 @@
 
 A modern, responsive portfolio website built with Vue 3 and Tailwind CSS, featuring a clean design and dark mode support.
 
+https://hritikgupta.com
+
 ## Features
 
+- Change tone of content using AI
+- change the the look of the site using AI
 - 🎨 Modern UI with Tailwind CSS and shadcn/vue components
 - 🌗 Dark/Light mode toggle
 - 📱 Fully responsive design
