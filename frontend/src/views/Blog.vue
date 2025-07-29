@@ -84,7 +84,7 @@ export default {
           </Button>
           <Card class="w-full shadow-lg">
             <CardHeader class="p-8 md:p-12">
-              <CardTitle class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <CardTitle class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" id="text">
                 {{ currentPost.title }}
               </CardTitle>
               <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-muted-foreground mt-4">
@@ -94,7 +94,7 @@ export default {
                 <Badge variant="secondary" class="ml-2">Day {{ currentPost.day }}</Badge>
               </div>
             </CardHeader>
-            <CardContent class="p-8 md:p-12 text-lg text-foreground/90 leading-relaxed space-y-6" v-html="currentPost.content">
+            <CardContent class="p-8 md:p-12 text-lg text-foreground/90 leading-relaxed space-y-6" v-html="currentPost.content" id="text">
             </CardContent>
           </Card>
         </div>
