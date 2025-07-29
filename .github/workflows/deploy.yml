@@ -29,26 +29,27 @@ jobs:
           SSH_HOST: ${{ secrets.EC2_HOST }}
           ENV_VARS: ${{ secrets.ENV_VARS }}
         run: |
-          ssh -p $SSH_PORT "$SSH_USER@$SSH_HOST" << 'EOF'
+          ssh -p $SSH_PORT "$SSH_USER@$SSH_HOST" << EOF
+            # Navigate to the project directory
             cd /home/ubuntu/portfolio
             
-            # Stash any local changes
-            git stash
+            # Ensure the repository is clean before pulling
+            git reset --hard HEAD
+            git clean -fd
             
-            # Pull latest changes
+            # Pull the latest changes from the main branch
             git pull origin main
 
             # Update environment variables
             echo "$ENV_VARS" > .env
-            cat .env  # Debugging step to verify contents
-
-            # Rebuild and restart containers
+            
+            # Rebuild and restart Docker containers
             docker-compose down
             docker-compose up -d --build
             
-            # Show container status
+            # Show the status of running containers
             docker-compose ps
             
-            # Clean up old images
-            docker image prune -f
+            # Clean up dangling Docker images to save space
+            docker image prune -af
           EOF
