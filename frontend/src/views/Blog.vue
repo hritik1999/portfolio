@@ -100,21 +100,21 @@ export default {
         </div>
 
         <div v-else>
-          <h1 class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <h1 class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" id="text">
             My Blog
           </h1>
           <div class="space-y-8">
             <Card v-for="post in posts" :key="post.id" class="hover:shadow-xl transition-shadow duration-300">
                <RouterLink :to="'/blog/' + post.slug" class="block">
                 <CardHeader>
-                  <CardTitle class="text-2xl font-bold group-hover:text-primary">{{ post.title }}</CardTitle>
+                  <CardTitle class="text-2xl font-bold group-hover:text-primary" id="text">{{ post.title }}</CardTitle>
                   <div class="flex items-center gap-4 text-sm text-muted-foreground pt-2">
                     <span>{{ post.date }}</span>
                     <Badge variant="outline">Day {{ post.day }}</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p class="text-muted-foreground">{{ post.snippet }}</p>
+                  <p class="text-muted-foreground" id="text">{{ post.snippet }}</p>
                 </CardContent>
                 <CardFooter>
                    <p class="text-primary font-semibold">Read More &rarr;</p>
