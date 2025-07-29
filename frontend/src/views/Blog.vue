@@ -22,7 +22,7 @@ export default {
         {
           id: 1,
           slug: '100-days-of-entrepreneurship-day-1', // <-- Added slug
-          title: '100 Days of Entrepreneurship',
+          title: '100 Days of Entrepreneurship Day 1',
           date: 'July 29, 2025',
           day: 1,
           snippet: 'I’m Hritik Gupta, 25 years old, and as of now—accomplishments? Nothing. Since I was a kid, my only passion has been creating new things and becoming an entrepreneur.',
