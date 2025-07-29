@@ -26,6 +26,11 @@ const routes = [
     name: 'Blog',
     component: Blog
   },
+    {
+    path: '/blog/:slug', 
+    name: 'blog-post',
+    component: Blog
+  },
   {
     path: '/projects',
     name: 'Projects',

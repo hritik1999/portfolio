@@ -295,13 +295,13 @@ router.afterEach(() => {
           <div class="flex items-center gap-2 lg:gap-4">
             <Input
               class="w-32 lg:w-48"
-              placeholder="change tone of the content..."
+              placeholder="change tone..."
               v-model="tone"
             />
             <Button variant="default" class="rounded-full whitespace-nowrap text-sm" @click="updateToneContent(tone)" :disabled="toneSubmitted">Change Tone</Button>
             <Input
               class="w-32 lg:w-48"
-              placeholder="change look of the site..."
+              placeholder="Change theme..."
               v-model="theme"
             />
             <Button @click="generateTheme":disabled="isGenerating" class="rounded-full whitespace-nowrap text-sm">{{ isGenerating ? 'Generating...' : 'Apply Theme' }}</Button>
