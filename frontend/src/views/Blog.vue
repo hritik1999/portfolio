@@ -54,6 +54,53 @@ export default {
             </ul>
             <p class="font-bold text-center pt-4">Let the journey begin.</p>
           `
+        },
+        {
+          id: 2,
+          title:'100 Days of Entrepreneurship Day 2',
+          slug: '100-days-of-entrepreneurship-day-2',
+          day: 2,
+          date: 'July 30, 2025',
+          snippet: 'On the first day, we made some very big and ambitious plans—and on day two, when it was time to actually start working, those plans came crashing down.',
+          content: `
+            <p>Hello readers,</p>
+
+    <p>On the first day, we made some very big and ambitious plans. But on Day 2, when it was time to actually work, those plans came crashing down.</p>
+
+    <p>I started off my day with some sitcom and breakfast. The sitcom lasted a little longer than it should have, but then I remembered that I’ve committed to writing for 100 days and I need content for that. So I sat down with my laptop to run the code and start working again after a 2-month break.</p>
+
+    <p>Well, the code threw a bunch of errors for some goddamn unknown reason—despite working perfectly the last time I ran it. It seemed like dependency issues, both in the frontend and backend. So I did what all programmers do in this era—I turned to ChatGPT. It gave me some commands, and the errors changed. This went on for an hour. Eventually, I deleted the code, recloned it from my GitHub repo, set up the environment again, and finally, the code worked.</p>
+
+    <p>That was enough programming for me for the day.</p>
+
+    <p>Next, I decided to do some research on what I’ll need and how I plan to implement things. I’d found a guy on Reddit who built an app to create short-form videos. I tried it out to figure out how it works. The most interesting concept I found there was “storyboarding,” which apparently is a standard procedure in the video industry. It’s like a roadmap for video creation.</p>
+
+    <p>Then I dug into video models. Turns out, these models can only generate 5 to 20-second clips at a time—and even those are full of errors and need multiple attempts. Only a few models can generate both video and audio. They’re also extremely expensive. So, creating a 20-minute sitcom episode is pretty much algorithmically impossible right now.</p>
+
+    <p>Next, I found some models that can generate lip-synced videos using a character image. So, for the initial version, I could just have videos of the characters speaking their dialogues one by one.</p>
+
+    <p>Then I looked into audio models. This space is super competitive. Currently, Eleven Labs offers a model where you can control a lot of parameters like emotions and emphasis in the speech. This could help add realism to the episodes.</p>
+
+    <p>But then came another hurdle: voice cloning. It's an ethically grey area. I could use models where cloning is easier, but the quality wouldn’t be great. Another option is RVC models that can change the voice of any audio. I could use them to change the Eleven Labs-generated audio so that it sounds like the actual characters. But that would require a lot of testing.</p>
+
+    <p>On the bright side, comics are a well-established use case for image generation models, so that part should be easy.</p>
+
+    <p>That was most of my day.</p>
+
+    <p>Then came the part that felt like it lasted forever—reading the chats to understand what can be improved in the storytelling. I don’t know why, but I just couldn’t stay focused. Coincidentally, around the same time, my friend Naman, my mom, and my girlfriend all remembered I existed and needed to talk to me. As someone who has a hard time saying no, I entertained them all.</p>
+
+    <p>So, with my interrupted analysis session, I discovered that my stories have repeated dialogues, many plotlines don’t make sense, the chats over-focus on the player—but somehow also ignore them just to push the story forward. Sometimes, it even sends a message <em>from</em> the player just to progress the story (amazing). Half the time, even I didn’t know what the story was trying to say.</p>
+
+    <p>That was a bit depressing. The core part of my tech sucks ass.</p>
+
+    <p>These are things that <strong>can</strong> be fixed, and this is where I should really be spending most of my time. But I know I’ll probably drift off chasing some shiny new feature.</p>
+
+    <p>After all this, I somehow found myself watching sitcoms again—which I tell myself is part of developing “Sitchat” 😂.</p>
+
+    <p>For tomorrow, I think I should focus on developing the mobile app since that will take time to get through the approval and bug-fixing cycle. But honestly, I don’t want to do that right now—it’s tedious and not fun. I <em>want</em> to work on audio, video, and comics. The cool, fun stuff. But unfortunately, the boring stuff like fixing the chat and building the mobile app is way more important.</p>
+
+    <p>Well, I’ll see what mood I wake up in and go from there.</p>
+            `
         }
         // Future blog posts will be added here with their own unique slug
       ]
