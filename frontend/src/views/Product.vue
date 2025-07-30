@@ -15,7 +15,7 @@ export default {
           id: 1,
           name: 'Sitchat',
           logo: SitchatLogo,
-          tagline: 'Interactive Storytelling Reimagined.',
+          tagline: 'Experience your favourite show!',
           description: 'A storytelling platform where you can create new episodes and listen to them, watch them, read them, or even experience them in an interactive group chat.',
           url: 'https://sitchat.ai',
           features: ['Listen', 'Watch', 'Read', 'Interactive Chat', 'AI-Powered']
@@ -73,12 +73,12 @@ export default {
                   <CardTitle class="text-3xl font-bold text-foreground">
                     {{ product.name }}
                   </CardTitle>
-                  <p class="text-lg text-muted-foreground">{{ product.tagline }}</p>
+                  <p class="text-lg text-muted-foreground" id="text">{{ product.tagline }}</p>
                 </div>
               </div>
             </CardHeader>
             <CardContent class="space-y-6">
-              <p class="text-lg leading-relaxed">
+              <p class="text-lg leading-relaxed" id="text">
                 {{ product.description }}
               </p>
 
