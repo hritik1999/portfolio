@@ -65,7 +65,7 @@ export default {
           content: `
             <p>Hello readers,</p>
 
-    <p>On the first day, we made some very big and ambitious plans. But on Day 2, when it was time to actually work, those plans came crashing down.</p>
+    <p>On the first day, I made some very big and ambitious plans. But on Day 2, when it was time to actually work, those plans came crashing down.</p>
 
     <p>I started off my day with some sitcom and breakfast. The sitcom lasted a little longer than it should have, but then I remembered that I’ve committed to writing for 100 days and I need content for that. So I sat down with my laptop to run the code and start working again after a 2-month break.</p>
 
