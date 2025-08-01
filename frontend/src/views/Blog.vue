@@ -101,9 +101,65 @@ export default {
 
     <p>Well, I’ll see what mood I wake up in and go from there.</p>
             `
+        },
+        {
+          id:3,
+          title:'100 days of entrepreneurship day 3',
+          slug:'100-days-of-entrepreneurship-day-3',
+          day:3,
+          date:'July 31, 2025',
+          snippet:'It’s the third day, and I’ve already failed. I procrastinated the whole day—but that doesn’t mean I’ve lost.',
+          content:`
+          <p>Hello readers,</p>
+
+  <p>It’s the third day, and I’ve already failed. I procrastinated the whole day—but that doesn’t mean I’ve lost.</p>
+
+  <p>I didn’t get a good night’s sleep yesterday and woke up feeling very tired. This happens from time to time, and I usually manage. But the biggest mistake was starting <em>The Studio</em>. The first episode had me hooked, and I couldn’t stop. I ended up binge-watching the whole show. I felt deeply guilty about it, as I broke my commitment on just the third day.</p>
+
+  <p>I also read a chapter about procrastination in the book <em>Tiny Experiments</em>. According to it, we often treat procrastination as an enemy—but it’s not. It’s a messenger. We should listen to it instead of feeling guilty or treating it as something to fight against.</p>
+
+  <p>That’s hard to do, though.</p>
+
+  <p>To make it a bit easier, the book suggests a “Triple Check” based on a study about motivation. There are three factors that affect our motivation to do something:</p>
+
+  <ul>
+    <li><strong>Head</strong> – Is it logical/appropriate to do the task?</li>
+    <li><strong>Heart</strong> – Is it exciting for us?</li>
+    <li><strong>Hand</strong> – Can we do it? (i.e., do we have the skills?)</li>
+  </ul>
+
+  <p>The suggested solutions are:</p>
+  <ul>
+    <li>Refine the strategy (Head)</li>
+    <li>Redesign the experience (Heart)</li>
+    <li>Upskill or take help (Hand)</li>
+  </ul>
+
+  <p>It also mentioned that other factors like sleep and overall health can influence motivation too.</p>
+
+  <p>So based on that, I tried to understand why I was actually procrastinating—instead of drowning in negative self-talk about how useless I am.</p>
+
+  <ul>
+    <li><strong>Head</strong>: It’s logical and appropriate for me to work on this; this is my career.</li>
+    <li><strong>Heart</strong>: Just the idea of publishing on the App Store excites me.</li>
+    <li><strong>Hand</strong>: This is where I think I’m struggling. I don’t feel confident that I can actually do it.</li>
+  </ul>
+
+  <p>To overcome this, I realized I need to learn whatever I want to implement. I had tried using AI previously to develop an app, but I kept running into errors and wasted weeks without significant progress. Maybe that’s why I was hesitant to move forward this time.</p>
+
+  <p>So, I’ve decided to start learning Capacitor.js using tutorial videos.</p>
+
+  <p>Then I remembered—I’m also a student who hasn’t studied for the past two months, missed my first exam, and has another exam coming up on Sunday. The sheer volume of what I need to study overwhelmed me, and I continued to procrastinate instead of getting started.</p>
+
+  <p>So until the exam is over, there probably won’t be much progress on the app front.</p>
+
+  <p>At midnight, the guilt had really piled up. So I got up and decided to do <em>something</em> related to my product. I used Veo 3 to create a few clips and see how it works. I also created an account on ElevenLabs to explore voice cloning, its quality, and capabilities. That gave me some peace of mind.</p>
+
+  <p>Well, let’s hope Day 4 turns out better than Day 3.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
-      ]
+      ] 
     };
   },
   computed: {
