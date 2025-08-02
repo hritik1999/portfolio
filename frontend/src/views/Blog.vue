@@ -174,9 +174,9 @@ export default {
 
   <p>This course is based on the book <em>Karmic Design Thinking</em>, and the professor teaching it is the author of the book. I had heard of it before—it’s held in high regard. The course focuses on human-centric product design and is structured around four key phases: <strong>Empathize</strong>, <strong>Analyze</strong>, <strong>Solve</strong>, and <strong>Test</strong>.</p>
 
-  <p>In the <strong>Empathize</strong> phase, we create user personas and customer journeys to understand our users as deeply as possible. The goal is to empathize with them. Then, we ask the question: <em>“How might we help them?”</em>—across different points in their journey—without jumping to solutions, just focusing on questions.</p>
+  <p>In the <strong>Empathize</strong> phase, we create user personas and customer journeys to understand our users as deeply as possible. The goal is to empathize with them. .</p>
 
-  <p>Next, in the <strong>Analyze</strong> phase, we answer those <em>How Might We</em> questions by conducting a multi-why analysis, which involves asking <em>why</em> repeatedly until we reach the root cause. This is best done with an expert or the user themselves for the most accurate insights.</p>
+  <p>Next, in the <strong>Analyze</strong> phase, we question the problem by conducting a multi-why analysis, which involves asking <em>why</em> repeatedly until we reach the root cause. This is best done with an expert or the user themselves for the most accurate insights.Then, we ask the question: <em>“How might we help them?”</em>—across different points in their journey and using the analysis we did—without jumping to solutions, just focusing on questions</p>
 
   <p>In the <strong>Solve</strong> stage, we conduct silent brainstorming—each team member contributes ideas in writing. Then we analyze those ideas and develop a final product concept.</p>
 
@@ -187,7 +187,6 @@ export default {
   <p>Let’s see—I’ll try to incorporate what I’ve learned into my journey after exams are over.</p>
 
   <p>Tomorrow, I’ll be studying again, so there won’t be much progress on the startup front. But I promise that once the exams are done, I’ll give my full focus to it.</p>
-
           `
         }
         // Future blog posts will be added here with their own unique slug
