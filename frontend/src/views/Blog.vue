@@ -157,6 +157,38 @@ export default {
 
   <p>Well, let’s hope Day 4 turns out better than Day 3.</p>
           `
+        },
+        {
+          id:4,
+          title:'100 days of entrepreneurship day 4',
+          slug:'100-days-of-entrepreneurship-day-4',
+          day:4,
+          date:'August 1, 2025',
+          snippet:'I thought studying for my exam would be a distraction from my goals, but the subject Design Thinking turned out to be more relevant to my journey than anything else.',
+          content:`
+          <p>Hello readers,</p>
+
+  <p>I thought studying for my exam would be a distraction from my goals, but the subject <em>Design Thinking</em> turned out to be more relevant to my journey than anything else. I dropped all my other courses except this one, and I’m glad I didn’t drop it.</p>
+
+  <p>Although I did mess up by not submitting the assignments on time, and I might fail this term, the learning itself is what truly matters.</p>
+
+  <p>This course is based on the book <em>Karmic Design Thinking</em>, and the professor teaching it is the author of the book. I had heard of it before—it’s held in high regard. The course focuses on human-centric product design and is structured around four key phases: <strong>Empathize</strong>, <strong>Analyze</strong>, <strong>Solve</strong>, and <strong>Test</strong>.</p>
+
+  <p>In the <strong>Empathize</strong> phase, we create user personas and customer journeys to understand our users as deeply as possible. The goal is to empathize with them. Then, we ask the question: <em>“How might we help them?”</em>—across different points in their journey—without jumping to solutions, just focusing on questions.</p>
+
+  <p>Next, in the <strong>Analyze</strong> phase, we answer those <em>How Might We</em> questions by conducting a multi-why analysis, which involves asking <em>why</em> repeatedly until we reach the root cause. This is best done with an expert or the user themselves for the most accurate insights.</p>
+
+  <p>In the <strong>Solve</strong> stage, we conduct silent brainstorming—each team member contributes ideas in writing. Then we analyze those ideas and develop a final product concept.</p>
+
+  <p>Finally, in the <strong>Test</strong> phase, we create a prototype and test it with real users. We observe them, revise our assumptions, and update the customer journey map. The cycle is then repeated to further refine the product.</p>
+
+  <p>I never did any of this for my startup idea. Maybe I should have. It would’ve given me a clearer direction rather than just following what I <em>thought</em> was right. The concepts are simple and intuitive, but I imagine they’ll be challenging to apply effectively.</p>
+
+  <p>Let’s see—I’ll try to incorporate what I’ve learned into my journey after exams are over.</p>
+
+  <p>Tomorrow, I’ll be studying again, so there won’t be much progress on the startup front. But I promise that once the exams are done, I’ll give my full focus to it.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
