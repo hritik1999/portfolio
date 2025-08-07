@@ -194,7 +194,7 @@ export default {
           title:'100 days of entrepreneurship day 5-10',
           slug:'100-days-of-entrepreneurship-day-5-10',
           day:5,
-          date:'August 2-7, 2025',
+          date:'August 7, 2025',
           snippet:'Why is it that whenever we want to do something, some unexpected problem comes up to derail us? Or are we self-sabotaging?',
           content:`
           <p>Hello readers,</p>
