@@ -188,6 +188,43 @@ export default {
 
   <p>Tomorrow, I’ll be studying again, so there won’t be much progress on the startup front. But I promise that once the exams are done, I’ll give my full focus to it.</p>
           `
+        },
+        {
+          id:5,
+          title:'100 days of entrepreneurship day 5-10',
+          slug:'100-days-of-entrepreneurship-day-5-10',
+          day:5,
+          date:'August 2-7, 2025',
+          snippet:'Why is it that whenever we want to do something, some unexpected problem comes up to derail us? Or are we self-sabotaging?',
+          content:`
+          <p>Hello readers,</p>
+    <p>Why is it that whenever we want to do something, some unexpected problem comes up to derail us? Or are we self-sabotaging?</p>
+
+    <p><strong>2nd August:</strong> I spent the day studying for the exam and went through previous years’ papers while also binge-watching <em>Foundation</em>. Apple TV is on a whole other level.</p>
+
+    <p><strong>3rd August:</strong> I gave the exam and it went excellently well. But I still might not clear the subject because I forgot to update the sheet at the right time. I’ve sent an email to support—hopefully, this gets fixed. Apparently, it was Friendship Day too. So, plans were made: dinner, a movie, drinks. I thought, “It’s Sunday and Friendship Day, why not enjoy?” And enjoy I did.</p>
+
+    <p><strong>4th August:</strong> I woke up feeling normal. But in the afternoon, after eating, I started feeling gassy—uncomfortably so, even while just moving around. It was my first time experiencing gas, and now I understand why people complain about it so much. I didn’t take any meds because I believe they should be a last resort. But in the evening, I puked, and while the gas was gone, a much bigger problem started: food poisoning.</p>
+
+    <p>If I drank water, I’d puke. There was constant diarrhea, and a very high fever. On the 5th, I didn’t eat or drink anything. Someone told me I’d suffer from severe dehydration if I kept that up, so I got some ORS and drank it. Before that, I genuinely felt like I was going to die.</p>
+
+    <p><strong>6th August:</strong> The fever had almost gone. I felt weak, had no appetite, but I was slowly getting better. What fascinated me most was seeing this reflected in the data from my Whoop band. My recovery hit <strong>1%</strong> for two days straight. I hope I never see that again, but it was interesting to witness it in data form.</p>
+
+    <p>By evening, I was feeling better. I couldn’t eat much, but I managed a cup of khichdi and a few litres of ORS. I decided to meet my friend <strong>Harshal Bhaiya</strong>, who was visiting my town after a long time. He used to live here but doesn’t anymore.</p>
+
+    <p>While catching up, the conversation got serious. He told me things I needed to hear. He asked me what I’m doing with my life and how I plan to live like this. He reminded me I can’t keep living off my father’s income. I’m 25—I need to become self-resilient. It’s high time.</p>
+
+    <p>He was right. His words hit me in a way I can’t explain. I often think about productivity and why I can’t stay consistent, but I never really thought about <em>why</em> it’s important. If I don’t become self-resilient, who’s going to take care of my family? Not my friends, not the TV shows I watch, not the games I play. I <strong>have</strong> to become capable. There is no other option.</p>
+
+    <p>With this perspective shift, it’s becoming easier to prioritize.</p>
+
+    <p><strong>7th August:</strong> I’m writing this today. I’m going to focus on completing and launching the mobile app as soon as possible. After that, I’ll begin redesigning it. No more delays. No more wasting time.</p>
+
+    <p>My friend also made me realize something else: I can’t do this alone, no matter how much I believe I can. Companies like Netflix are spending billions every year to create content—and here I am, thinking I can do it solo without spending anything. That’s not realistic. I’ll make the MVP myself, but once that’s done, I’ll shift my focus to gaining traction and securing funding.</p>
+
+    <p>For the 5 days I lost, I’m going to write 5 more blog posts. At this point, this isn’t even an entrepreneurship blog anymore—it’s about my life now 😭</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
