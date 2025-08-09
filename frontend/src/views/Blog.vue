@@ -231,7 +231,7 @@ export default {
           title:'100 days of entrepreneurship day 11',
           slug:'100-days-of-entrepreneurship-day-11',
           day:'11',
-          date:'August 9, 2025',
+          date:'August 8, 2025',
           snippet:'So, the work has finally started moving at a proper pace now. I’m still lazing around, but I’m managing to cover a significant amount of work.',
           content:`
                 <p>Hello readers,</p>
