@@ -225,6 +225,25 @@ export default {
     <p>For the 5 days I lost, I’m going to write 5 more blog posts. At this point, this isn’t even an entrepreneurship blog anymore—it’s about my life now 😭</p>
 
           `
+        },
+        {
+          id:6,
+          title:'100 days of entrepreneurship day 11',
+          slug:'100-days-of-entrepreneurship-day-11',
+          day:'11',
+          date:'August 9, 2025',
+          snippet:'So, the work has finally started moving at a proper pace now. I’m still lazing around, but I’m managing to cover a significant amount of work.',
+          content:`
+                <p>Hello readers,</p>
+
+      <p>So, the work has finally started moving at a proper pace now. I’m still lazing around, but I’m managing to cover a significant amount of work. Before the surgery, I had wasted a week trying to get the login to work in the mobile app using my current web implementation. I tried a browser plugin for it, but it didn’t work. Most of that code is gone now, and I thought, <em>let’s explore some other methods.</em></p>
+
+      <p>I found one that’s simple yet works perfectly. Google login is done; now I just need to implement Apple login. But for some reason, I can’t log in to my Apple account. Well, I’ll figure it out.</p>
+
+      <p>Aside from login, I think the rest of the features should work as is, since I kept mobile compatibility in mind the whole time while coding the web app. Let’s see if that holds true.</p>
+
+      <p>The rest of the day, I spent playing with GPT-5. I implemented it in Sitchat, but it was too slow. The story has improved a little, though. Let’s see what happens when we modify the prompt to fit GPT-5 better, but the promises made by OpenAI give me high hopes.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
