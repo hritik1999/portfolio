@@ -244,6 +244,33 @@ export default {
 
       <p>The rest of the day, I spent playing with GPT-5. I implemented it in Sitchat, but it was too slow. The story has improved a little, though. Let’s see what happens when we modify the prompt to fit GPT-5 better, but the promises made by OpenAI give me high hopes.</p>
           `
+        },
+        {
+          id:6,
+          title:'100 days of entrepreneurship day 12',
+          slug:'100-days-of-entrepreneurship-day-12',
+          day:'12',
+          date:'August 9, 2025',
+          snippet:'<p>I’ve decided—fuck it—I’m taking a break from SitChat. I still believe in the idea with my whole heart, but right now, something else is sparking my interest. Another idea.</p>',
+          content:`
+          <p>Hello readers,</p>
+
+    <p>I’ve decided—fuck it—I’m taking a break from SitChat. I still believe in the idea with my whole heart, but right now, something else is sparking my interest. Another idea.</p>
+
+    <p>This is something I thought of a long time ago, and it’s something I’m personally passionate about. I want to create an app where you can upload your chat history, and it will do a personality analysis—MBTI, alignment, Enneagram, etc. I know this works because I’ve had friends who use ChatGPT a lot ask it to guess their type, and it’s been surprisingly accurate. It works even better than standard tests because it doesn’t rely on the person’s self-awareness.</p>
+
+    <p>For privacy concerns, I won’t save any chats, and I’ll use open-source models. The app will support chats from all platforms—Facebook, Slack, Discord, everything.</p>
+
+    <p>I’ve been wanting to build this for a few weeks now, but I didn’t want to stop working on SitChat. I was afraid that if I started this, I’d forget about SitChat. It’s been weighing on me—forcing myself to work on SitChat when all I really wanted was to build this new thing.</p>
+
+    <p>Yesterday, during my regular drive with Naman, I shared my thoughts. He asked how long it would take to build, and I said, “One week.” He told me, “Take a break and work on this idea—it has potential.” Hearing that reassured me that pausing SitChat wasn’t a bad decision. Talking to him is always a good idea. I don’t know why I delayed this for so long.</p>
+
+    <p>Since that chat, I’ve been thinking about names. I came up with many, but the one I liked most was <span class="highlight">VibeType</span>—unfortunately, it’s taken. I thought of <span class="highlight">VibeTyper</span>, but the .com domain is taken and currently used for a voice-to-text AI tool. The .ai domain, however, is available. <span class="highlight">TypeMyVibe</span> is another option. For now, I’ll move ahead with <span class="highlight">VibeTyper.ai</span> until I think of something better.</p>
+
+    <p>Tomorrow, I’m going to start building the app. I’m excited and fired up. I think it could be a viral success—but we’ll see. I’m planning to charge $5 per analysis report.</p>
+
+    <p class="muted">— Ready to ship</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
