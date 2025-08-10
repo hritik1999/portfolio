@@ -246,7 +246,7 @@ export default {
           `
         },
         {
-          id:6,
+          id:7,
           title:'100 days of entrepreneurship day 12',
           slug:'100-days-of-entrepreneurship-day-12',
           day:'12',
