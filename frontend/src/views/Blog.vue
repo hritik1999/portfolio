@@ -271,6 +271,36 @@ export default {
 
     <p class="muted">— Ready to ship</p>
           `
+        },
+        {
+          id:8,
+          title:'100 days of entrepreneurship day 13',
+          slug:'100-days-of-entrepreneurship-day-13',
+          day:'13',
+          date:'August 10, 2025',
+          snippet:'Working on a new idea is always exciting. I made the landing page yesterday and used GPT-5 for it.',
+          content:`
+          <p>Hello readers,</p>
+<p>Working on a new idea is always exciting. I made the landing page yesterday and used GPT-5 for it.</p>
+<p>It’s true — GPT-5 feels like the end of frontend developers. The landing page is glorious.</p>
+<p>It’s not perfect, but it’s better than anything I could have done myself.</p>
+<p>I’ve decided I will be charging $5 for one person’s analysis and I will support all the major websites.</p>
+<p>One of my concerns is that people might be too lazy to export their chats and upload them, but there’s only one way to find out.</p>
+<p>Some platforms, like Discord and Slack, will be easier since we can use their APIs to access data.</p>
+<p>“Vibetyper” is already being used by a company for a text-to-voice product, so I’ll be going with TypeMyVibe instead. It’s not my first choice, but I think it will work.</p>
+<p>Now it’s time to create a plan of action. Here are the things I need to implement for the product to work properly:</p>
+<p>Authentication.</p>
+<p>Support for all major chat apps.</p>
+<p>A function to extract and process chats.</p>
+<p>A function to split chats into chunks and generate analysis.</p>
+<p>A function to compile those chunks into a final result.</p>
+<p>A function to generate a text-to-PDF report.</p>
+<p>A function to send the report via email.</p>
+<p>A function to manage queues and handle processing tasks.</p>
+<p>Payment and billing integration.</p>
+<p>My target is to complete everything within this week. The landing page is done, and tomorrow I will start implementing authentication and building support for chat extraction and processing across social media platforms.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
