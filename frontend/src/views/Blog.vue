@@ -301,6 +301,24 @@ export default {
 <p>My target is to complete everything within this week. The landing page is done, and tomorrow I will start implementing authentication and building support for chat extraction and processing across social media platforms.</p>
 
           `
+        },
+        {
+          id:9,
+          title:'100 days of entrepreneurship day 14',
+          slug:'100-days-of-entrepreneurship-day-14',
+          day:'13',
+          date:'August 11, 2025',
+          snippet:'<p>I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.</p>',
+          content:`
+          <p>Hello readers,</p>
+<p>I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.</p>
+<p>I’m 25 years old, and I feel ashamed that I left my job to pursue entrepreneurship but haven’t been able to push myself to work. I feel like I’m scared of hard work or something. I have no sense of urgency. I take things too slow.</p>
+<p>Yesterday, while trying to work, I made some progress—but then I took a break. I don’t understand why. This year, I have to become capable no matter what. If I’m not successful this year, next year I will take whatever job I can get—be it as an Uber driver, Zomato delivery person, or anything else.</p>
+<p>It’s time to be capable. Living with my parents has made me complacent. I have big ambitions, but no drive. This is depressing. I put on a brave face in public, but inside I feel lost. I wonder if my depression ever really got cured, or if I just learned to cope with it. I haven’t had suicidal thoughts in years, though.</p>
+<p>This new product idea, TypeMyVibe, is extremely exciting to me. I can’t stop thinking about how to make it and how to market it. But when it comes to actually doing the work, I start lazing around. I don’t know why.</p>
+<p>I need to work 12 hours a day to make up for all the losses I’ve incurred in life. I’m going to start my day with work and keep going, even if my head hurts or my heart aches. That’s the only way I can redeem myself in my own eyes. Forget everything else—it’s high time.</p>
+<p>I need to take care of my family. I want to marry my girlfriend and start a family. I’m 25—it’s time for that. I can’t waste any more of my life on distractions. For me, it’s going to be 24 hours of work, until I launch a product that succeeds. I’m going to be a solopreneur, launching product after product until one of them takes off.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
