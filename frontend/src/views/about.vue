@@ -219,7 +219,7 @@ import {Badge} from '@/components/ui/badge';
                         },
                         {
                             title: 'Bachelors of Business Administration, Sharda University',
-                            date: 'august,2019 - july,2021',
+                            date: 'august,2019 - july,2022',
                             description: 'Joined to learn about business learned that business school don\'t teach you business they do business! But had complete it.',
                         },
                         {
