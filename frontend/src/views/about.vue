@@ -54,14 +54,9 @@
                 Who Am I?
               </h2>
               <div class="space-y-4 text-lg text-muted-foreground" id="text">
-                <p>
-                  Hi, I'm 
-                  <span class="font-bold text-primary">Hritik Gupta</span> - a 
-                  <span class="text-primary font-semibold">Full Stack AI Developer</span> 
-                  with a vision to become an 
-                  <span class="text-primary font-semibold">entrepreneur</span>.
-                </p>
-                <p> My passion for technology has always pushed me to dive into every new breakthrough. Now, the boundless promise of <span class="font-semibold">Generative AI</span> has truly captured my imagination. I’m convinced that <span class="italic text-primary font-semibold">in the AI era, the only limits we face are those set by our own creativity</span>. Overflowing with fresh ideas, I’m on a relentless mission to turn them into reality. </p> <p> My dedication to AI runs so deep that friends affectionately call me <span class="text-primary font-semibold">"AI Bhai."</span> With <span class="underline">graduation just around the corner</span>, I’m more eager than ever to bring my visions to life using the skills I've honed over the past two years. <span class="animate-pulse text-primary font-semibold">Stay tuned—big, exciting developments are on the horizon!</span> </p>
+                <p>I’m Hritik Gupta, 25 years old, and as of now—accomplishments? Nothing. Since I was a kid, my only passion has been creating new things and becoming an entrepreneur. To chase that dream, I spent the last 20 years mostly daydreaming, thinking big, and ignoring almost every other aspect of life.</p>
+                <p>As a result, I now find myself with a shallow understanding of many things but deep expertise in none. I’m not employable in the traditional sense—but entrepreneurship? That’s something I can still pursue. I have a ton of ideas and a little knowledge about domains ranging from product design and development to marketing and finance.</p>
+                <p class="font-semibold text-primary">My plan is simple: keep launching products until one of them succeeds.</p>
               </div>
             </section>
   
