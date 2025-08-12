@@ -251,7 +251,7 @@ export default {
           slug:'100-days-of-entrepreneurship-day-12',
           day:'12',
           date:'August 9, 2025',
-          snippet:'<p>I’ve decided—fuck it—I’m taking a break from SitChat. I still believe in the idea with my whole heart, but right now, something else is sparking my interest. Another idea.</p>',
+          snippet:'I’ve decided—fuck it—I’m taking a break from SitChat. I still believe in the idea with my whole heart, but right now, something else is sparking my interest. Another idea.',
           content:`
           <p>Hello readers,</p>
 
@@ -308,7 +308,7 @@ export default {
           slug:'100-days-of-entrepreneurship-day-14',
           day:'13',
           date:'August 11, 2025',
-          snippet:'<p>I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.</p>',
+          snippet:'I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.',
           content:`
           <p>Hello readers,</p>
 <p>I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.</p>
