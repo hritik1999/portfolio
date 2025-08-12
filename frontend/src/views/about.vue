@@ -198,7 +198,7 @@ import {Badge} from '@/components/ui/badge';
                       name: 'Communication Skills',
                       icon: 'MessageSquareText',
                       description: "Presenting technical concepts, leading teams, and writing documentation",
-                      labels: ['Public Speaking','Technical Writing','Team Leadership']
+                      labels: ['Public Speaking','Technical Writing','Team Leadership','Marketing','Design Thinking']
                     }
                     ],
                     timeline : [
