@@ -306,7 +306,7 @@ export default {
           id:9,
           title:'100 days of entrepreneurship day 14',
           slug:'100-days-of-entrepreneurship-day-14',
-          day:'13',
+          day:'14',
           date:'August 11, 2025',
           snippet:'I have decided on something else: I’m not going to spend any of my father’s money unless it’s absolutely necessary. I won’t buy any clothes, eat outside food, drink, or spend on anything unnecessary. I will earn first, and only then will I buy.',
           content:`
@@ -318,6 +318,22 @@ export default {
 <p>This new product idea, TypeMyVibe, is extremely exciting to me. I can’t stop thinking about how to make it and how to market it. But when it comes to actually doing the work, I start lazing around. I don’t know why.</p>
 <p>I need to work 12 hours a day to make up for all the losses I’ve incurred in life. I’m going to start my day with work and keep going, even if my head hurts or my heart aches. That’s the only way I can redeem myself in my own eyes. Forget everything else—it’s high time.</p>
 <p>I need to take care of my family. I want to marry my girlfriend and start a family. I’m 25—it’s time for that. I can’t waste any more of my life on distractions. For me, it’s going to be 24 hours of work, until I launch a product that succeeds. I’m going to be a solopreneur, launching product after product until one of them takes off.</p>
+          `
+        },
+        {
+          id:10,
+          title:'100 days of entrepreneurship day 15',
+          slug:'100-days-of-entrepreneurship-day-15',
+          day:'13',
+          date:'August 12, 2025',
+          snippet:'This is the third time I’m setting up authentication, and it’s always frustrating. I ended up spending the whole day just trying to get auth working properly.',
+          content:`
+          <p>Hello readers,</p>
+<p>This is the third time I’m setting up authentication, and it’s always frustrating. I ended up spending the whole day just trying to get auth working properly.</p>
+<p>It’s easier with Supabase, but creating the page, setting up Google’s client, configuring the SMTP server, and making backend auth work still takes time. I think this process could definitely be simplified.</p>
+<p>With authentication and the landing page done, I can finally start focusing on the core application. Next up is setting up the chat extraction process and the data processing pipeline. Once that’s done, about 70% of the work will be complete. After that, I just need to set up the analysis part, and finally, the email and payment systems. I think I can finish everything this week.</p>
+<p>I’m also thinking about starting to tweet. Building a public presence is important if I want to succeed as a solopreneur. I’m not sure what to tweet or how to tweet yet, but I’ll learn by trial and error—just sharing things I find valuable and seeing what resonates.</p>
+<p>On another note, I’ve also joined Google’s Gen-AI Hackathon with a friend. Our idea is to build an insurance purchasing assistant using LLMs. It’s a fun project that could even become a product. I’ll be dedicating around two hours a day to it until the deadline on September 14th.</p>
           `
         }
         // Future blog posts will be added here with their own unique slug
