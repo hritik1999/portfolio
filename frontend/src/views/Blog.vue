@@ -324,7 +324,7 @@ export default {
           id:10,
           title:'100 days of entrepreneurship day 15',
           slug:'100-days-of-entrepreneurship-day-15',
-          day:'13',
+          day:'15',
           date:'August 12, 2025',
           snippet:'This is the third time I’m setting up authentication, and it’s always frustrating. I ended up spending the whole day just trying to get auth working properly.',
           content:`
@@ -334,6 +334,38 @@ export default {
 <p>With authentication and the landing page done, I can finally start focusing on the core application. Next up is setting up the chat extraction process and the data processing pipeline. Once that’s done, about 70% of the work will be complete. After that, I just need to set up the analysis part, and finally, the email and payment systems. I think I can finish everything this week.</p>
 <p>I’m also thinking about starting to tweet. Building a public presence is important if I want to succeed as a solopreneur. I’m not sure what to tweet or how to tweet yet, but I’ll learn by trial and error—just sharing things I find valuable and seeing what resonates.</p>
 <p>On another note, I’ve also joined Google’s Gen-AI Hackathon with a friend. Our idea is to build an insurance purchasing assistant using LLMs. It’s a fun project that could even become a product. I’ll be dedicating around two hours a day to it until the deadline on September 14th.</p>
+          `
+        },
+        {
+          id:11,
+          title:'100 days of entrepreneurship day 16',
+          slug:'100-days-of-entrepreneurship-day-16',
+          day:'16',
+          date:'August 13, 2025',
+          snippet:'The tweet I posted didn’t get many views or much engagement, but a few people followed me and some even DM’d me. It was fun engaging with them.',
+          content:`
+          <p>Hello readers,</p>
+<p>The tweet I posted didn’t get many views or much engagement, but a few people followed me and some even DM’d me. It was fun engaging with them.</p>
+<p>It’s important to be public in my field. I have severe social media anxiety due to the childhood cyberbullying I went through. This is why I don’t have any social media accounts. Every time I tweet something or make a Reddit post, I feel anxious and scared—even though it’s anonymous and I know most people don’t care. Posting on social media will probably always be a challenge for me.</p>
+<p>Part of the reason I’m writing this blog is to improve my writing skills and reduce my fear of presenting myself online.</p>
+<p>I’ve built the first page of the application, where the user selects the platform they want to analyze, follows the instructions to get the data, and uploads it. Now I need to set up the backend to process the data into a common format across all platforms.</p>
+<p>The next part is the hard part—once the processing is set up, 80% of the application will be done.</p>
+<p>I also bought the domains typemyvibe.ai and typemyvibe.com. That always makes me happy. I want to deploy as soon as possible.</p>
+          `
+        },
+        {
+          id:12,
+          title:'100 days of entrepreneurship day 17',
+          slug:'100-days-of-entrepreneurship-day-17',
+          day:'17',
+          date:'August 14, 2025',
+          snippet:'The hard part of my application needs to start, and I have been procrastinating since the morning.',
+          content:`
+          <p>Hello readers,</p>
+<p>It’s mid-day, but I am writing the blog. The hard part of my application needs to start, and I have been procrastinating since the morning. I don’t understand my fear of working hard. All the challenges I have had until now I’ve overcome, but I still feel some kind of dread when thinking about doing something I’m not sure how to do.</p>
+<p>I will take a break today and just do research work, add screenshots, and elaborate on the instructions. Currently, there are only instructions for extracting from desktop. I will add instructions for Android and iOS.</p>
+<p>I will also look into options where I can use an API or something similar to get access to the chat, to make it easier for users. I will also add to the landing page that users can analyze group chats and gather information about their friends, and that corporations can get insights into their employees to help them improve. This increases the total addressable market.</p>
+
           `
         }
         // Future blog posts will be added here with their own unique slug
