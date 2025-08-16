@@ -367,6 +367,30 @@ export default {
 <p>I will also look into options where I can use an API or something similar to get access to the chat, to make it easier for users. I will also add to the landing page that users can analyze group chats and gather information about their friends, and that corporations can get insights into their employees to help them improve. This increases the total addressable market.</p>
 
           `
+        },
+        {
+          id:13,
+          title:'100 days of entrepreneurship day 18',
+          slug:'100-days-of-entrepreneurship-day-18',
+          day:'18',
+          date:'August 15, 2025',
+          snippet:'Happy indipendence day!',
+          content:`
+          <p>Hello readers,</p>
+          <p> So someone i have convinced myself that today is holiday and its okay not to be productive today. So happy independence day</p>
+          `
+        },
+        {
+          id:14,
+          title:'100 days of entrepreneurship day 19',
+          slug:'100-days-of-entrepreneurship-day-19',
+          day:'19',
+          date:'August 16, 2025',
+          snippet:'Millionaire fastlane is an awesome book',
+          content:`
+          <p>Hello readers,</p>
+          <p> I think my independence day is still not over. I started reading millionaire fastlane yesterday and something about the book is so interesting to me that i can't stop. Maybe i am just avoiding work because its hard or it will fail or i am just so interested in this book</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
