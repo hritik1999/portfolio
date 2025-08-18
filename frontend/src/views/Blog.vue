@@ -391,6 +391,21 @@ export default {
           <p>Hello readers,</p>
           <p> I think my independence day is still not over. I started reading millionaire fastlane yesterday and something about the book is so interesting to me that i can't stop. Maybe i am just avoiding work because its hard or it will fail or i am just so interested in this book</p>
           `
+        },
+        {
+          id:15,
+          title:'100 days of entrepreneurship day 20',
+          slug:'100-days-of-entrepreneurship-day-20',
+          day:'20',
+          date:'August 17, 2025',
+          snippet:'Sunday i take it light even tho every day is a sunday for me.I think i should stop including sunday’s in the day count. ',
+          content:`
+          <p>Hello readers,</p>
+<p>Sunday, I take it light—even though every day feels like a Sunday for me. I think I should stop including Sundays in my day count.</p>
+<p>Even today, I wasted most of my time just thinking, planning, and researching what I could do, how I could do it, how things should work, how to market it, what marketing really is, the types of content, etc. But there was no actual work or progress.</p>
+<p>Half the day went into reading The Millionaire Fastlane. I started it just three days ago, and I’ve already read 200 pages. I think only I can manage to procrastinate by reading a book. But this isn’t right—I’ve wasted four days without making any real progress.</p>
+<p>I need to take action and make good decisions. If I keep going like this, failure is inevitable. Let’s hope for the best tomorrow.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
