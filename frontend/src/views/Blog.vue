@@ -413,7 +413,7 @@ export default {
           slug:'100-days-of-entrepreneurship-day-21',
           day:'21',
           date:'August 18, 2025',
-          snippet:'Marketing is interesting',
+          snippet:'Marketing is interesting,I spent the whole day learning about marketing, and it’s much more complicated than I thought. Looking back, all my previous plans were pretty stupid.',
           content:`
           <p>Hello readers,</p>
 
@@ -505,6 +505,9 @@ export default {
       const slug = this.$route.params.slug;
       if (!slug) return null;
       return this.posts.find(post => post.slug === slug);
+    },
+    sortedPosts() {
+      return this.posts.sort((a, b) => b.day - a.day);
     }
   },
   // We no longer need the 'methods' block for selectPost/goBack
@@ -514,7 +517,7 @@ export default {
 <template>
   <div class="min-h-screen relative overflow-hidden bg-background py-20 md:py-24">
     <div class="container mx-auto px-4">
-      <main class="max-w-4xl mx-auto">
+      <main class="max-w-6xl mx-auto">
         <div v-if="currentPost">
           <Button as-child variant="outline" class="mb-8 gap-2">
             <RouterLink to="/blog">
@@ -524,40 +527,68 @@ export default {
           </Button>
           <Card class="w-full shadow-lg">
             <CardHeader class="p-8 md:p-12">
-              <CardTitle class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" id="text">
+              <CardTitle
+                class="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+                id="text"
+              >
                 {{ currentPost.title }}
               </CardTitle>
-              <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-muted-foreground mt-4">
+              <div
+                class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-muted-foreground mt-4"
+              >
                 <span>By Hritik Gupta</span>
                 <span class="hidden md:inline">|</span>
                 <span>Published on {{ currentPost.date }}</span>
                 <Badge variant="secondary" class="ml-2">Day {{ currentPost.day }}</Badge>
               </div>
             </CardHeader>
-            <CardContent class="p-8 md:p-12 text-lg text-foreground/90 leading-relaxed space-y-6" v-html="currentPost.content" id="text">
+            <CardContent
+              class="p-8 md:p-12 text-lg text-foreground/90 leading-relaxed space-y-6"
+              v-html="currentPost.content"
+              id="text"
+            >
             </CardContent>
           </Card>
         </div>
 
+        <!-- Blog list -->
         <div v-else>
-          <h1 class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent" id="text">
+          <h1
+            class="text-5xl font-bold text-center mb-12 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
+            id="text"
+          >
             My Blog
           </h1>
-          <div class="space-y-8">
-            <Card v-for="post in posts" :key="post.id" class="hover:shadow-xl transition-shadow duration-300">
-               <RouterLink :to="'/blog/' + post.slug" class="block">
+
+          <!-- Grid layout -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card
+              v-for="post in sortedPosts"
+              :key="post.id"
+              class="hover:shadow-xl transition-shadow duration-300"
+            >
+              <RouterLink :to="'/blog/' + post.slug" class="block">
                 <CardHeader>
-                  <CardTitle class="text-2xl font-bold group-hover:text-primary" id="text">{{ post.title }}</CardTitle>
-                  <div class="flex items-center gap-4 text-sm text-muted-foreground pt-2">
+                  <CardTitle
+                    class="text-2xl font-bold group-hover:text-primary"
+                    id="text"
+                  >
+                    {{ post.title }}
+                  </CardTitle>
+                  <div
+                    class="flex items-center gap-4 text-sm text-muted-foreground pt-2"
+                  >
                     <span>{{ post.date }}</span>
                     <Badge variant="outline">Day {{ post.day }}</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p class="text-muted-foreground" id="text">{{ post.snippet }}</p>
+                  <p class="text-muted-foreground" id="text">
+                    {{ post.snippet }}
+                  </p>
                 </CardContent>
                 <CardFooter>
-                   <p class="text-primary font-semibold">Read More &rarr;</p>
+                  <p class="text-primary font-semibold">Read More &rarr;</p>
                 </CardFooter>
               </RouterLink>
             </Card>
@@ -566,9 +597,14 @@ export default {
       </main>
     </div>
 
+    <!-- background decoration -->
     <div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
-      <div class="absolute right-20 top-1/3 h-72 w-72 rounded-full bg-primary/10 blur-3xl"></div>
-      <div class="absolute left-32 bottom-1/4 h-64 w-64 rounded-full bg-secondary/10 blur-3xl"></div>
+      <div
+        class="absolute right-20 top-1/3 h-72 w-72 rounded-full bg-primary/10 blur-3xl"
+      ></div>
+      <div
+        class="absolute left-32 bottom-1/4 h-64 w-64 rounded-full bg-secondary/10 blur-3xl"
+      ></div>
     </div>
   </div>
 </template>
