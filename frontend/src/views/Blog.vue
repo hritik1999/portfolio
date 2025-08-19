@@ -406,6 +406,94 @@ export default {
 <p>Half the day went into reading The Millionaire Fastlane. I started it just three days ago, and I’ve already read 200 pages. I think only I can manage to procrastinate by reading a book. But this isn’t right—I’ve wasted four days without making any real progress.</p>
 <p>I need to take action and make good decisions. If I keep going like this, failure is inevitable. Let’s hope for the best tomorrow.</p>
           `
+        },
+        {
+          id:16,
+          title:'100 days of entrepreneurship day 21',
+          slug:'100-days-of-entrepreneurship-day-21',
+          day:'21',
+          date:'August 18, 2025',
+          snippet:'Marketing is interesting',
+          content:`
+          <p>Hello readers,</p>
+
+<p>Man, marketing is <em>fucking interesting</em>. I spent the whole day learning about marketing, and it’s much more complicated than I thought. Looking back, all my previous plans were pretty stupid.</p>
+
+<p>Here’s what I’ve understood after today’s deep dive into marketing:</p>
+
+<h2>1. Market Research</h2>
+<p>The first step is to do proper market research: Who are my competitors? How do they work, market, and position themselves? What gaps exist? This helps me understand their strengths but, more importantly, their weaknesses. With this knowledge, I can position my products much better.</p>
+
+<h2>2. Building Buyer Personas</h2>
+<p>I need to create buyer personas by understanding my target customers’ demographics, psychographics, and problem-centric profiles. I also need to define who my customer <em>isn’t</em>. This step is crucial—it will be my guiding light for content and marketing strategies. Buyer personas aren’t final; they should be regularly updated based on the data I receive.</p>
+
+<h2>3. Creating a Unique Value Proposition (UVP)</h2>
+<p>The UVP will be the core of my marketing strategy. It must be built with the buyer persona in mind, using their language and focusing on customer benefits. Like the buyer persona, this won’t be final—it should evolve as new information comes in.</p>
+
+<p>I haven’t executed these steps yet—I’ve only studied them. I’ll start working on them tomorrow.</p>
+
+<hr>
+
+<h2>The Next Step: Building a Conversion Engine</h2>
+
+<p>Before today, I thought conversion was all about “going viral.” But in reality, it’s about consistency, data, and experimentation.</p>
+
+<h3>1. Landing Page</h3>
+<p>My landing page is basically my 24/7 salesperson. It needs thorough A/B testing and constant optimization. The message should be crystal clear—users must understand what the product does within 5 seconds. The visuals should be hierarchical and flow logically:</p>
+<ul>
+    <li>Hero section → outlines the key benefit with a call-to-action</li>
+    <li>Benefits listed below</li>
+    <li>Social proof</li>
+    <li>Final call-to-action</li>
+</ul>
+
+<h3>2. Content on the Landing Page</h3>
+<p>All content should be written for the buyer persona, in a unified language designed to convert. Social proof is essential to eliminate user fears.</p>
+
+<h3>3. SEO</h3>
+<p>SEO brings inbound leads. To leverage this, I need a content calendar and must regularly publish:</p>
+<ul>
+    <li><strong>Top of Funnel (Awareness)</strong> content</li>
+    <li><strong>Middle of Funnel (Consideration)</strong> content</li>
+    <li><strong>Bottom of Funnel (Decision)</strong> content</li>
+</ul>
+<p>This content can also be repurposed into short-form videos, Reddit posts, and X (Twitter) posts. Again, all of it should be tailored to the buyer persona.</p>
+<p>Off-page SEO is about backlinks. That can be built via paid PR or by genuinely being helpful in relevant communities.</p>
+
+<h3>4. Short-Form Content</h3>
+<p>For the best conversions, short-form content should follow this structure:</p>
+<ul>
+    <li>A 3-second hook</li>
+    <li>Authenticity</li>
+    <li>Leveraging trends</li>
+    <li>Designed to work with sound off</li>
+</ul>
+
+<h3>5. Paid Ads</h3>
+<p>Budget allocation should follow the 70/20/10 rule:</p>
+<ul>
+    <li>70% → Boosting proven content</li>
+    <li>20% → Promising strategies</li>
+    <li>10% → High-risk, high-reward experiments</li>
+</ul>
+
+<h3>6. Influencers</h3>
+<p>I need to find influencers my target customers actually follow. Instead of cold approaching them, I should first warm up by engaging with their content. When I do reach out, the most important factors will be the product’s relevance to their content and how well the creator resonates with their audience.</p>
+
+<h3>7. Metrics</h3>
+<p>Finally, I need to track key metrics:</p>
+<ul>
+    <li>Customer Acquisition Cost (CAC)</li>
+    <li>Customer Lifetime Value (LTV)</li>
+    <li>Customer Churn Rate</li>
+    <li>North Star Metric: LTV-to-CAC Ratio</li>
+</ul>
+
+<hr>
+
+<p>If I diligently execute all of the above, I believe I can turn any one of my products into a rockstar product—like how the “pet rock” became a hit. Marketing is going to be an exciting challenge. I just hope I can pull it off.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
