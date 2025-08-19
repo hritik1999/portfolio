@@ -507,7 +507,7 @@ export default {
       return this.posts.find(post => post.slug === slug);
     },
     sortedPosts() {
-      return this.posts.sort((a, b) => b.day - a.day);
+      return this.posts.sort((a, b) => b.id - a.id);
     }
   },
   // We no longer need the 'methods' block for selectPost/goBack
