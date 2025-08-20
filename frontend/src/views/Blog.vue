@@ -513,6 +513,36 @@ export default {
   <p>If I skip all this and just build and sell my product, I lose the benefits of having a separate legal entity. I won’t be able to deduct expenses, and I’ll be taxed on revenue, which would be catastrophic.</p>
   <p>Well, I guess the only option is to try and learn all of this.</p>
           `
+        },
+        {
+          id:18,
+          title:'100 days of entrepreneurship day 23',
+          slug:'100-days-of-entrepreneurship-day-23',
+          day:'23',
+          date:'August 20, 2025',
+          snippet:"Finally, a productive day that I’m actually happy about. From the moment I woke up until now—past midnight—I’ve been working.",
+          content:`
+          <p>Hello readers,</p>
+
+  <p>Finally, a productive day that I’m actually happy about. From the moment I woke up until now—past midnight—I’ve been working. The main reason for this sudden drive is that a lot of ideas from <em>The Millionaire Fastlane</em> really resonated with me. I’ve realized I have to do whatever it takes to achieve what I want.</p>
+
+  <p>So, about the long-term marketing plans we discussed two blogs ago—we’re still going to pursue those. But in the meantime, I’ve had some fun and interesting marketing ideas that I want to try out during the launch month. For example:</p>
+
+  <ul>
+    <li>Doing MBTI analyses of big Twitter influencers and tagging/sharing it with them.</li>
+    <li>Analyzing the MBTI of my favorite TV show characters and sharing those in Reddit, Facebook communities, etc. (and turning them into blog posts).</li>
+    <li>Offering free MBTI analyses for Reddit users as a way to promote and share my work.</li>
+  </ul>
+
+  <p>This will be my main launch plan. After that, I’ll transition into the long-term consistent marketing strategy we discussed earlier.</p>
+
+  <p>As for company registration and other formalities—I’m going to skip that for now. I found out about the concept of presumptive tax, where it’s assumed that 50% of your revenue is profit, and you’re taxed on that. As long as my costs stay under 50%, it’s actually a pretty good deal without much headache. There are still some concerns about GST and international trade, but I’ll figure those out along the way.</p>
+
+  <p>Regarding the product: about 80% of the MVP is done, and I should be able to finish it this week. Then the really interesting part begins—enabling payments, integrating PostHog, setting up A/B testing, and optimizing for SEO. Once that’s in place, I’ll start marketing. My target is to launch in the first week of next month.</p>
+
+  <p>I feel much better and more relaxed now. I think this product has potential, but the real test is whether people will be willing to share their data with me. Even though I’m not storing it, will they feel comfortable? Another concern is the friction of having to export and upload their chats. Will people actually do it? Only time will tell—but I’m hopeful.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
