@@ -494,6 +494,25 @@ export default {
 <p>If I diligently execute all of the above, I believe I can turn any one of my products into a rockstar product—like how the “pet rock” became a hit. Marketing is going to be an exciting challenge. I just hope I can pull it off.</p>
 
           `
+        },
+        {
+          id:17,
+          title:'100 days of entrepreneurship day 22',
+          slug:'100-days-of-entrepreneurship-day-22',
+          day:'22',
+          date:'August 19, 2025',
+          snippet:'Yesterday I enjoyed learning about marketing. So today I thought, let’s dive into company registration and what needs to be done after registering. Man, I really hate bureaucracy.',
+          content:`
+            <p>Hello readers,</p>
+  <p>Yesterday I enjoyed learning about marketing. So today I thought, let’s dive into company registration and what needs to be done after registering. Man, I really hate bureaucracy.</p>
+  <p>There are 5–6 options to choose from, ranging from sole proprietorship to private limited. Since I want to register as a startup, my only real options are LLP or Pvt Ltd. The problem is that both require at least 2 partners. I’m a solopreneur, so I’ll probably have to involve my father or mother.</p>
+  <p>The registration process itself is cumbersome and lengthy—it’ll take at least a month. I thought I could start today, but nope. I need an office address. Like, what the hell? Apparently, I can use my home as an office. But for that, I need a rent agreement with my mother and an NOC stating I can use the place as an office. To create the rent agreement, though, I first need the flat’s mutation or something—which I don’t even understand.</p>
+  <p>Next, after the company is registered, I’ll need to get a trade license, which will almost definitely involve corruption. Then I’ll have to register as a startup, which is another cumbersome process. But fine, all this is just a one-time headache. Once that’s done, I can finally open a bank account.</p>
+  <p>But after all this, I’ll need to maintain every transaction, file monthly GST forms (three of them!), quarterly TDS returns, quarterly board meeting reports, quarterly financial reports to the ROC and MCA, and finally, annual reports on top of all that.</p>
+  <p>If I miss any of these, I’ll face penalties. If I make mistakes, I could even face jail time. No wonder there are so few solopreneurs in India and so few startups overall. Just dealing with all this bureaucracy is a full-time job. If I start a company, all my focus will be wasted on this stuff—when will I have time to code or market? I’d probably need to hire a full-time person just to manage compliance.</p>
+  <p>If I skip all this and just build and sell my product, I lose the benefits of having a separate legal entity. I won’t be able to deduct expenses, and I’ll be taxed on revenue, which would be catastrophic.</p>
+  <p>Well, I guess the only option is to try and learn all of this.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
