@@ -543,6 +543,46 @@ export default {
   <p>I feel much better and more relaxed now. I think this product has potential, but the real test is whether people will be willing to share their data with me. Even though I’m not storing it, will they feel comfortable? Another concern is the friction of having to export and upload their chats. Will people actually do it? Only time will tell—but I’m hopeful.</p>
 
           `
+        },
+        {
+          id:19,
+          title:'100 days of entrepreneurship day 24',
+          slug:'100-days-of-entrepreneurship-day-24',
+          day:'24',
+          date:'August 21, 2025',
+          snippet:'I had a grand vision of what the product could become and how it might help millions of people. ',
+          content:`
+          <p>Last night, I had a grand vision of what the product could become and how it might help millions of people. 
+  I truly believe it has the potential to be revolutionary. These thoughts kept me up all night—thinking about 
+  how I’m going to achieve it and what it needs in order to truly make an impact. Unfortunately, this lack of 
+  sleep ruined my day today. I felt extremely tired and lazy, stuck between wanting to work and needing rest. 
+  As a result, I wasted a lot of time without even realizing it, and no meaningful work got done.</p>
+
+  <p>That said, I did manage to tweet, make a Reddit post, and engage with the community. I also came up with 
+  some useful ideas. One key realization was that pricing plays a very important role in marketing. Initially, 
+  I was planning to price the product at $5 so that everyone could afford it and benefit from it. But I realized 
+  that at such a low price, people might perceive it as a cheap, fun tool rather than a serious productivity tool. 
+  So I’ve decided to set the price at $20, with a 50% launch discount. Hopefully, this helps position it better.</p>
+
+  <p>Another idea I’m considering is offering a free one-page introductory report. I’ll need to think more about 
+  whether this is the right choice.</p>
+
+  <h2>Revenue Goal</h2>
+  <p>I also spent time calculating what it would take to reach my goal of earning $1 million a year. 
+  To achieve that, I would need 50,000 customers at $20 each. That works out to around 5,000 new customers 
+  per month. Assuming a 10% conversion rate, I’d need about 50,000 monthly visitors to my website. With a 
+  5% click-through rate, that means I’d need around 1 million views per month. Breaking that down further, 
+  I’d need roughly 35,000 daily views across six platforms.</p>
+
+  <h2>Content Plan</h2>
+  <p>To make that happen, my plan is to create two pieces of content daily: one long-form post (for Reddit, 
+  X, and LinkedIn) and one short-form video (for Reels, Shorts, and TikTok). This feels doable and far more 
+  realistic now that I’ve broken it down. Before, I thought it might not be possible.</p>
+
+  <p>Hopefully, I get a good night’s sleep today and can make real progress on the product tomorrow. 
+  My goal is still to launch during the first week of next month.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
