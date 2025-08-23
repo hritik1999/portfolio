@@ -583,6 +583,257 @@ export default {
   My goal is still to launch during the first week of next month.</p>
 
           `
+        },
+        {
+          id:20,
+          title:'100 days of entrepreneurship day 25',
+          slug:'100-days-of-entrepreneurship-day-25',
+          day:'25',
+          date:'August 22, 2025',
+          snippet:"I love learning above everything else. I have ordered about 5–6 books on marketing, product design, and building a company. Yesterday, when I should have been focusing on building the product.",
+          content:`
+          <p>Hello readers,</p>
+          <p>I love learning above everything else. I have ordered about 5–6 books on marketing, product design, and building a company. Yesterday, when I should have been focusing on building the product, I just kept absorbing information about marketing and how I can implement those strategies in my product’s go-to-market strategy. So, no progress in product development, but a bunch of progress in how to distribute and grow the business.</p>
+
+  <p>The first thing I did was conduct a competitor analysis. I found that there are <strong>four types of businesses in my domain</strong>, which can be mapped across two axes: Business Model (free vs. paid) and Target Audience (consumer vs. business).</p>
+
+  <ul>
+    <li><strong>Quadrant 1</strong>: Businesses like <em>16 Personalities</em> and <em>Truity</em> that give free tests and results to consumers, then upsell them on more insights.</li>
+    <li><strong>Quadrant 2</strong>: Paid niche products for people who are deep into psychology and personality types. This is the quadrant where my product <em>TypeMyVibe</em> will be placed.</li>
+    <li><strong>Quadrant 3</strong>: B2B paid products targeting HRs and professionals.</li>
+    <li><strong>Quadrant 4</strong>: Community-driven apps like PDB, where people vote on which celebrity or character matches which type.</li>
+  </ul>
+
+  <p>👉 The <strong>Free business quadrant is empty</strong>, showing a real opportunity.</p>
+
+  <hr>
+
+  <h2>Competitor Analysis</h2>
+
+  <ol>
+    <li>
+      <strong>16 Personalities</strong>
+      <ul>
+        <li><em>Strengths</em>: Offers free tests and results, then upsells premium reports. It is the default for everyone and is the king of SEO and word-of-mouth.</li>
+        <li><em>Weaknesses</em>: It is a false MBTI type test because it is based more on Big Five instead of cognitive functions. The descriptions are vague to please most people.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Crystal Knows</strong>
+      <ul>
+        <li><em>Strengths</em>: Provides HR analysis using public LinkedIn profile data of potential hires. Offers Big Five and DISC results. It is very well integrated with CRM tools.</li>
+        <li><em>Weaknesses</em>: Very costly and works on a subscription model.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>PDB</strong>
+      <ul>
+        <li><em>Strengths</em>: Cultivated a high level of community engagement and participation.</li>
+        <li><em>Weaknesses</em>: Based on user votes and can be highly inaccurate.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Personality Reveal.ai</strong>
+      <ul>
+        <li><em>Strengths</em>: Direct competitor that also reveals personality using text, presented in a chat interface. Very simple and straightforward approach.</li>
+        <li><em>Weaknesses</em>: Limited by input data and can change depending on the user’s mood.</li>
+      </ul>
+    </li>
+  </ol>
+
+  <hr>
+
+  <h2>Insights Based on Competitor Analysis</h2>
+  <ul>
+    <li>There is a gap between casual users of <em>16 Personalities</em> and hardcore users of PDB and Reddit communities. There is <strong>no solution for mid-core users</strong> who want to go deeper but don’t have the time or energy.</li>
+    <li>I can offer healthcare professionals and companies compatibility and personality analysis of their teams at a much cheaper, more affordable price.</li>
+    <li>I can use subtitles of shows to analyze characters — a creative marketing opportunity.</li>
+    <li>For users concerned about uploading chats, I can give them a chatbot to get their results.</li>
+  </ul>
+
+  <hr>
+
+  <h2>Buyer Persona: Alex, The Reflective Achiever</h2>
+
+  <p><strong>Overview</strong><br>
+  Alex is a digitally native, intellectually curious professional invested in personal growth as a path to effectiveness and fulfillment.</p>
+
+  <p><strong>Demographics</strong></p>
+  <ul>
+    <li>Age: 25–38</li>
+    <li>University-educated, employed in knowledge industries (tech, marketing, design, education)</li>
+    <li>Urban/suburban, household income $75K+</li>
+    <li>Has disposable income for high-value digital products</li>
+  </ul>
+
+  <p><strong>Psychographics &amp; Values</strong></p>
+  <ul>
+    <li>Values authenticity, continuous self-improvement, efficiency, and intellectual rigor</li>
+    <li>Progressive in social/political views; supports value-aligned brands</li>
+    <li>Busy professional, protective of leisure time, invests in tools with tangible benefits</li>
+    <li>Interests: non-fiction, psychology/productivity podcasts, strategic/creative hobbies</li>
+    <li>Personality (Big Five): High Openness (curious), High Conscientiousness (organized, disciplined), Moderate Extraversion (prefers deep over broad connections)</li>
+  </ul>
+
+  <p><strong>Motivations &amp; Goals</strong></p>
+  <ul>
+    <li>Seeks deeper self-awareness for better decisions in career, relationships, and personal growth</li>
+    <li>Desires a coherent framework to explain recurring thought/behavior patterns</li>
+    <li>Craves validation — being accurately “seen” by an objective system</li>
+  </ul>
+
+  <p><strong>Frustrations &amp; Pain Points</strong></p>
+  <ol>
+    <li><em>Horoscope Effect</em>: Frustrated by vague, flattering, pseudoscientific tests; wants evidence-based insights</li>
+    <li><em>Performance Paradox</em>: Distrusts self-report bias; resents “performing” for tests or outcomes</li>
+    <li><em>Label Limbo</em>: Wants frameworks, but not rigid, oversimplified labels</li>
+    <li><em>Privacy Concerns</em>: Data-savvy; skeptical of opaque terms, excessive permissions, or misuse of personal info</li>
+  </ol>
+
+  <hr>
+
+  <h2>Unique Value Proposition</h2>
+
+  <p><strong>Core Problem</strong><br>
+  "I want deep, accurate self-knowledge to improve my life, but current tools force me to choose between superficial, free quizzes that I don't trust, and complex, time-consuming theories I don't have time to master."</p>
+
+  <p><strong>TypeMyVibe’s UVP</strong><br>
+  For the self-aware individual seeking genuine personal insight, <em>TypeMyVibe</em> is the only AI-powered personality analysis service that uses your authentic, real-world conversations to deliver a deep, multi-faceted report with absolute privacy. Unlike questionnaire-based tests, we reveal who you truly are, not who you think you should be.</p>
+
+  <p><strong>Pillars</strong></p>
+  <ol>
+    <li>
+      <strong>Unquestionable Authenticity</strong><br>
+      <em>Message</em>: "Your True Personality, Revealed from Your Real Conversations."<br>
+      <em>Proof</em>: Grounded in the objective reality of a user's linguistic patterns, tone, and communication style over time. Not based on biased, aspirational, or situational self-reporting.
+    </li>
+    <li>
+      <strong>Absolute Privacy</strong><br>
+      <em>Message</em>: "Deep Insights. Zero Data Footprint."<br>
+      <em>Proof</em>: TypeMyVibe never stores user chat data.
+    </li>
+    <li>
+      <strong>Actionable Depth</strong><br>
+      <em>Message</em>: "Beyond the Label. A 360° View of Your Vibe."<br>
+      <em>Proof</em>: Reports are comprehensive and multi-model (MBTI, Enneagram, Big Five/OCEAN). The OCEAN model adds scientific credibility. A custom <strong>Vibe Card</strong> provides a nuanced, visually rich summary beyond a simple four-letter code.
+    </li>
+  </ol>
+
+  <p><strong>Strategic Messaging &amp; Tone of Voice</strong></p>
+  <ul>
+    <li><strong>Key Phrases to Use</strong>: "Evidence-based insights," "Your authentic communication style," "Discover the patterns in your words," "Beyond the stereotypes," "A private space for self-discovery."</li>
+    <li><strong>Key Phrases to Avoid</strong>: "Find your true self" (too vague), "The most accurate test ever" (unprovable, arrogant), "Unlock your destiny" (overly dramatic, misaligned with science).</li>
+  </ul>
+
+  <p><strong>Pricing Strategy</strong><br>
+  The $20 one-time fee is a quality signal in a market saturated with free alternatives. The landing page must frame this as a <em>worthwhile investment in genuine, private self-discovery</em>.</p>
+
+  <hr>
+
+  <h2>Landing Page</h2>
+
+  <p><strong>Hero Section</strong></p>
+  <ul>
+    <li><em>Headline</em>: <em>Discover your true personality — no test, no bias, just the real you!</em></li>
+    <li>With an image of the Vibe Card and a link to “My Vibe Report.”</li>
+    <li><em>Subheadline</em>: <em>Upload your chats and get your real MBTI, Enneagram, alignment, strengths, weaknesses, career fit, and more — in minutes.</em></li>
+    <li>CTA: "Get My Report"</li>
+    <li>Metrics: <em>Vibes typed (total, this month, today)</em></li>
+  </ul>
+
+  <p><strong>Value Section</strong></p>
+  <ul>
+    <li>Visual: All types pointing an arrow toward the user.</li>
+    <li>Text: <em>We show a complete and truly personal picture. Truly personalized reports about relationships, career, productivity, etc. You are one in a million, not one in 16.</em></li>
+  </ul>
+
+  <p><strong>Comparison Table</strong></p>
+  <table border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>TypeMyVibe</th>
+        <th>Traditional Quizzes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Basis of Analysis</td>
+        <td>Your Real Conversations</td>
+        <td>Your Biased Answers</td>
+      </tr>
+      <tr>
+        <td>Data Privacy</td>
+        <td>Never Stored</td>
+        <td>Stored in User Profiles</td>
+      </tr>
+      <tr>
+        <td>Result</td>
+        <td>Objective &amp; Nuanced</td>
+        <td>Stereotypical &amp; Vague</td>
+      </tr>
+      <tr>
+        <td>Insight</td>
+        <td>Evidence-Based</td>
+        <td>Aspirational</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p><strong>How Section</strong></p>
+  <ul>
+    <li>The three steps: Upload Chat → Analyze → Report.</li>
+    <li>Animation idea: Chats go into open-source AI for analysis → report generated → chats deleted.</li>
+  </ul>
+
+  <p><strong>Other Sections</strong></p>
+  <ul>
+    <li>Supported Apps</li>
+    <li>Social Proof</li>
+    <li>Quote: <em>"There are three things extremely hard: steel, a diamond, and to know one's self." – Benjamin Franklin</em> — <em>Not anymore.</em></li>
+    <li>Price</li>
+    <li>FAQ</li>
+  </ul>
+
+  <hr>
+
+  <h2>Practical Lessons from X and YouTube</h2>
+
+  <ul>
+    <li>Consistency is the key.</li>
+    <li>Marketing is both art and science, requiring experimentation and iterations.</li>
+  </ul>
+
+  <p><strong>Checklist</strong></p>
+  <ul>
+    <li>[ ] Get VPN</li>
+    <li>[ ] Get domain email ID</li>
+    <li>[ ] Make accounts on Shorts, Reels, and TikTok</li>
+    <li>[ ] Follow psychology, growth, and self-help influencers</li>
+    <li>[ ] Warm up accounts by watching their content and gaining inspiration (Good artists copy, great artists steal)</li>
+    <li>[ ] Make a list of influencers who can market the product</li>
+    <li>[ ] Start posting content daily</li>
+  </ul>
+
+  <hr>
+
+  <h2>Planned Campaigns</h2>
+
+  <ol>
+    <li>TV show dialogue analysis → personality types of characters (blog, Reddit post in TV show subreddit and MBTI subreddit)</li>
+    <li>Reddit free analysis in MBTI subreddits (for initial testimonials)</li>
+    <li>Top X influencers analysis (blog + X thread)</li>
+    <li>Top LinkedIn influencers (maybe later)</li>
+    <li>Quora: answer key questions, also use for content ideas</li>
+    <li>Free compatibility report if you invite your friend or special someone 😉 (for organic growth)</li>
+    <li>Community hook: "Most of you are mistyped — do you actually believe you are just one of 16?" (polarizing to grab attention)</li>
+    <li>Productivity subreddits: "Knowing yourself is the most important step."</li>
+    <li>Emotional ads about finding yourself (experimental)</li>
+    <li>Possible future markets: health coaches, therapists, teams</li>
+  </ol>
+
+  <hr>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
