@@ -834,6 +834,26 @@ export default {
 
   <hr>
           `
+        },
+        {
+          id:21,
+          title:'100 days of entrepreneurship day 26',
+          slug:'100-days-of-entrepreneurship-day-26',
+          day:'26',
+          date:'August 23, 2025',
+          snippet:"Things never work out the way you actually plan them",
+          content:`
+          <p>Things never work out the way you actually plan them. I thought implementing the app would be straightforward, but as luck would have it, LangChain’s chat loaders don’t work anymore. I wasted a lot of time trying to figure out how they worked, with no results. So now, I’ll have to build custom chat loaders, which is going to be a long and tedious task. Because of this, I’m cutting down the scope of my product.</p>
+
+  <p>For the MVP, I’ll only include 4 options: Reddit and X for public social media content, and Instagram and WhatsApp for chats. I chose Instagram and WhatsApp because they’re the most widely used text apps among Gen-Z and millennials. That should be good enough for now.</p>
+
+  <p>I also tried making the “vibe card” concept along with a report based on my types—and I loved it. It felt like a Pokémon card, but about me. I shared it with a few people and got mixed reviews: some liked it horizontal, some preferred borders, others without borders—but everyone loved the concept. Honestly, it was confusing as hell. So I’ve decided to just give users two versions.</p>
+
+  <p>I’ve also been more active on Reddit and X recently, and I’m starting to get the hang of it. I get a lot of engagement on Reddit, but X is tough. Still, it seems like consistency is the key. I even found an Australian guy who’s super hardcore into typology, and he’ll probably be really helpful in my journey. Thanks, Reddit!</p>
+
+  <p>One more thing—I’ve decided I won’t write or count Sundays anymore. That’s going to be my day off.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
