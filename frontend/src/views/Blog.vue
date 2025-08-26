@@ -854,6 +854,27 @@ export default {
   <p>One more thing—I’ve decided I won’t write or count Sundays anymore. That’s going to be my day off.</p>
 
           `
+        },
+        {
+          id:22,
+          title:'100 days of entrepreneurship day 27',
+          slug:'100-days-of-entrepreneurship-day-27',
+          day:'27',
+          date:'August 25, 2025',
+          snippet:"Alcohol is poison.",
+          content:`
+          <p>Hello readers, </p>
+          <p>Alcohol is poison. Yesterday, I drank about three large glasses of whiskey. Today, I woke up at 4:30 with a headache and couldn’t fall back asleep for about two hours. After that, I woke up again at 11 a.m., and the headache was still there. I didn’t feel like doing anything, and even my Whoop band showed 1% recovery, telling me to take a relaxing day. I honestly don’t even know how the day passed&mdash;it feels like I just woke up, and now it’s already over. I hate alcohol. I used to be able to drink without any problems, but nowadays it’s not the same.</p>
+
+  <p>As for work, I didn’t do much. I just checked out Peerlist, Product Hunt, Indie Hackers, and other product launch websites, and I made accounts on them. I plan to be a little active there so that when I launch my product, I can get some good traction. I’m planning to launch <strong>Sitchat</strong> on Product Hunt just to see what it’s like. I can’t launch it right now though, since you can only launch a week after joining.</p>
+
+  <p>I also had two more wild ideas. My current product, <strong>VibeMyType</strong>, does personality analysis based on personal chats or public posts/comments on Reddit/X. If this works, I could create a competitor called <strong>MyVibeType</strong>, where you can just chat with an AI for a few minutes and get your personality type without compromising your privacy.</p>
+
+  <p>The other idea is <strong>Vibe Dating</strong>, where users swipe “vibe cards” with personalized avatars and compatibility ratings. I think VibeMyType, if it works, could be a $1&ndash;2M ARR business. But Vibe Dating could easily reach $100M.</p>
+
+  <p>Today felt wasted, but I’m going to work hard tomorrow. I’ve also realized something: the reason I’ve been having trouble sleeping is because I overthink what I want to do and what I could do with my products. I think I do this because I’m not working as much as I should during the day. I procrastinate a lot, and then I overthink at night to make myself feel like I’m working. So tomorrow, I’m going to try working harder and see if this theory is right.</p>
+</body>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
