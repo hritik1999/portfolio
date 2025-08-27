@@ -875,6 +875,24 @@ export default {
   <p>Today felt wasted, but I’m going to work hard tomorrow. I’ve also realized something: the reason I’ve been having trouble sleeping is because I overthink what I want to do and what I could do with my products. I think I do this because I’m not working as much as I should during the day. I procrastinate a lot, and then I overthink at night to make myself feel like I’m working. So tomorrow, I’m going to try working harder and see if this theory is right.</p>
 </body>
           `
+        },
+        {
+          id:23,
+          title:'100 days of entrepreneurship day 28',
+          slug:'100-days-of-entrepreneurship-day-28',
+          day:'28',
+          date:'August 26, 2025',
+          snippet:"It was a somewhat productive day.",
+          content:`
+          <p>Hello readers, </p>
+           <p>It was a somewhat productive day. I finally got the second-to-last piece to work, and now I can move on to the final part—making the report and the vibe card. I’m really excited to see it come together, but also a bit scared that it might not work and the results could just turn out to be random hallucinations.</p>
+
+    <p>On Twitter, I’ve crossed 20 followers just by posting every day, which is nice. On Reddit, I’m engaging more and starting to get somewhat known in the community. I just hope that when I begin marketing there, I don’t get banned.</p>
+
+    <p>I’ve still been procrastinating a lot, and most of my mornings are wasted by lazing around. My nights often go into meeting friends and talking with my girlfriend. I think the only way to be more productive is to optimize my mornings for work. I don’t want to stop meeting friends or talking to my girlfriend, since I see that as an important part of life.</p>
+
+    <p>This Sunday I have exams, so I need to start preparing for them too. That means product progress will slow down a little, but I still think I’ll be able to launch by the end of the first week of September.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
