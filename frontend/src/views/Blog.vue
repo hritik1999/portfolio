@@ -893,6 +893,27 @@ export default {
 
     <p>This Sunday I have exams, so I need to start preparing for them too. That means product progress will slow down a little, but I still think I’ll be able to launch by the end of the first week of September.</p>
           `
+        },
+        {
+          id:24,
+          title:'100 days of entrepreneurship day 29',
+          slug:'100-days-of-entrepreneurship-day-29',
+          day:'29',
+          date:'August 27, 2025',
+          snippet:"Today I had some other work aside from my product.",
+          content:`
+              <p>Hello readers,</p>
+
+    <p>Today I had some other work aside from my product. First of all, Rajesh uncle called me to discuss some potential projects. The ideas he wants me to work on are interesting and fun. He wants me to build an AI toy for kids that can voice-clone their parents and teach them. Another project is about extracting leads from LinkedIn, Yellow Pages, and other sources, and then reaching out to them using AI—making the outreach more personal and increasing conversion rates. I want to work on both of these and have told him I’ll commit 2–3 hours a day to them once I’m back to full health.</p>
+
+    <p>For these tasks, I’ll have access to his team, so my role will be more like a product manager. This will also give me the chance to develop some management skills.</p>
+
+    <p>As for my current product, I had some authentication issues, so I spent a good amount of time fixing those. After that, I developed a reports page where the user will be redirected after making a payment. I also did a lot of research on how I can analyze different personality types using AI, and specifically, what the minimum amount of text is that I need for a good analysis.</p>
+
+    <p>Based on my research, here’s the plan: I’ll chunk the messages using semantic chunking and then add contextual data. Each chunk will then be analyzed for typologies. After that, I’ll combine the results using both mathematical methods and LLM-based analysis to produce a final personality typology. Finally, I’ll use this typology to create a holistic report for the user. This system should significantly increase accuracy and actually provide meaningful insights.</p>
+
+    <p>On the social side, Twitter and Reddit engagement is ongoing, but the results aren’t that great yet.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
