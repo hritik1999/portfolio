@@ -914,6 +914,35 @@ export default {
 
     <p>On the social side, Twitter and Reddit engagement is ongoing, but the results aren’t that great yet.</p>
           `
+        },
+        {
+          id:25,
+          title:'100 days of entrepreneurship day 30',
+          slug:'100-days-of-entrepreneurship-day-30',
+          day:'30',
+          date:'August 278, 2025',
+          snippet:"",
+          content:`
+          <p>Hello readers</p>
+
+            <p>After having a somewhat consistent streak of work, I relapsed today. I wasted the whole day doing nothing but scrolling Twitter, Reddit, and watching TV shows while constantly thinking that I should have been working. It’s not like I was getting a lot done before, but still, something is better than nothing. I don’t know why I do this. I have big ambitions, I want to achieve great things, and I have the ability to do so — then why do I choose inaction? Why do I keep wasting time instead of working toward my goals? I have no idea.</p>
+
+  <p>Is it because we are animals and tend to follow habits, and I’ve built up very bad ones? Is it because I’ve never really had to work hard to get by in life — exams and everything else always came easily to me? Is it because we tend to flow into things, and I often choose to start with the wrong activities? Is it because I was suicidal until the age of 20 and remain somewhat nihilistic, so I don’t see much value in long-term things? Is it because I fear failure? Or is it because I want to maintain the illusion of the potential I believe I have?</p>
+
+  <p>Why is it that when a new episode of a show drops, I feel an urgency to watch it immediately, but when it comes to my ambitions, I tell myself I’ll do it tomorrow? It doesn’t make sense.</p>
+
+  <p>I don’t have answers to any of these questions. I don’t understand why I am like this. Why can’t I be like my idols, who work at least 8–10 hours a day to achieve what they want in life? Why can’t I do that?</p>
+
+  <p>It’s not that I’m not interested in coding or working — because when I do work, I get very excited and lost in it. But then I take a break due to exhaustion, and that’s when I derail.</p>
+
+  <p>I have no sense of urgency in my life to achieve my goals as quickly as possible, and I don’t know why. I’m working on one feature at a speed that feels painfully slow, especially in this era of AI where people can build apps like mine in just a few hours. Why don’t I have that same sense of urgency? Is it because my father still supports me financially at the age of 25? If I moved out, would I develop that urgency? Maybe. Maybe not. I don’t know.</p>
+
+  <p>I’m just fed up with myself. Why can’t I do what needs to be done? Why am I my own worst enemy? How are other people so responsible?</p>
+
+  <p>I want to be able to work at least 8 hours a day, but I don’t know how to make that happen.</p>
+
+  <p>I have an exam on Sunday, so I’ll be preparing for it over the next two days. The next blog I write will be on Monday.</p>
+          `  
         }
         // Future blog posts will be added here with their own unique slug
       ] 
