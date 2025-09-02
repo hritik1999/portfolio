@@ -920,8 +920,8 @@ export default {
           title:'100 days of entrepreneurship day 30',
           slug:'100-days-of-entrepreneurship-day-30',
           day:'30',
-          date:'August 278, 2025',
-          snippet:"",
+          date:'August 28, 2025',
+          snippet:"After having a somewhat consistent streak of work, I relapsed today.",
           content:`
           <p>Hello readers</p>
 
@@ -943,6 +943,32 @@ export default {
 
   <p>I have an exam on Sunday, so I’ll be preparing for it over the next two days. The next blog I write will be on Monday.</p>
           `  
+        },
+        {
+          id:26,
+          title:'100 days of entrepreneurship day 31',
+          slug:'100-days-of-entrepreneurship-day-31',
+          day:'31',
+          date:'Settember 2, 2025',
+          snippet:"I’ve been so locked in that I almost forgot I even write a blog. ",
+          content:`
+          <p>Hello readers</p>
+          <p>I’ve been so locked in that I almost forgot I even write a blog. I don’t know exactly what’s happening, but I’ve been able to work the whole day and actually enjoy it. The only problem is I can’t seem to sleep more than 6 hours. This started on Thursday when I began using Quorogel ointment for my wound. Maybe I’m just making baseless theories, but I can’t help wondering if there’s a connection.</p>
+
+  <p>I used to think my sleep struggles came from not being productive enough during the day, but back then if I worked hard, I could sleep 8 hours. Now I’m productive the whole day, yet I’m still struggling to fall asleep—and staying asleep has also become a challenge. I don’t know what’s going on.</p>
+
+  <p>That said, I wish every day felt like this. I’m so happy being this productive instead of wasting my days. If only I could crack the sleep part.</p>
+
+  <p>On another note, my exam went 10/10. There was even a meme question as an optional one, and I chose to answer it because it felt more challenging and fun.</p>
+
+  <p>I also bought X Premium and ChatGPT Premium to increase my reach and speed up development. I thought X Premium would help me gain followers, but it’s been two days and nothing has changed 😭.</p>
+
+  <p>Recently, I’ve been active on Product Hunt and enjoying it. I decided to launch <b>Sitchat</b> there just to see how it works. The launch failed and ended up in 90th place. I noticed that the products doing well on Product Hunt usually have proper planning and strategy behind them. So for <b>VibeMyType</b>, I’ll need to figure out a solid plan before launch to maximize my reach.</p>
+
+  <p>Meanwhile, there’s been a lot of progress on the product. I analyzed a few chats, and it’s working really well. When I read my description, it felt very accurate—though I still need a few more iterations to perfect it.</p>
+
+  <p>I think the MVP will be ready this week. Next week, I’ll need to focus on SEO, payments, and building a GTM strategy to make sure the launch is successful.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
