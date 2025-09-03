@@ -969,6 +969,30 @@ export default {
 
   <p>I think the MVP will be ready this week. Next week, I’ll need to focus on SEO, payments, and building a GTM strategy to make sure the launch is successful.</p>
           `
+        },
+        {
+          id:27,
+          title:'100 days of entrepreneurship day 32',
+          slug:'100-days-of-entrepreneurship-day-32',
+          day:'32',
+          date:'Settember 3, 2025',
+          snippet:"Still locked in today, but I got a good night’s sleep.",
+          content:`
+          <p>Hello readers</p>
+          <p>Still locked in today, but I got a good night’s sleep. I don’t know why, but after sleeping well I was more relaxed and okay with not working as much as I do when I’m sleep-deprived. I think being in crisis mode can make you more productive, but I can’t sleep-deprive myself for that—it’s not good long term.</p>
+
+  <p>I spent the whole day improving my reports. It was tedious—tweak, read, tweak again—but the report is now in a good enough place that I can move forward with integrating it with the frontend and implementing the vibe-card feature. I’m really excited about this. I’ll try to complete it tomorrow. After that, the only things left for the MVP will be integrating X, Reddit, and Instagram; a few blogs; SEO optimization; and payments. I think I can finish all of this by next weekend and be ready for launch. The rest I can keep implementing afterward.</p>
+
+  <p>My follower count on X increased from 23 to 30 in two days, which is awesome. On Reddit, I’m getting a lot of recognition for my comments as well.</p>
+
+  <p>I’m anxious about the launch, though, since my marketing plans for Sitchat were a big flop when I expected them to work easily.</p>
+
+  <p>My plan is to post the vibe card on relevant subreddits and on X, and write about what I’ve made. That’ll be the first step. Next, I’ll analyze content from famous people and characters, create their vibe card and report, and share them in the right places. I’ll also write in self-help subreddits about how useful personality types are. I may even make some rage-bait content in MBTI subreddits. I’ll focus on X and Reddit for the first month. In the second month I’ll start short-form content marketing, and if I make some revenue I’ll definitely do influencer marketing, then post that content from my account and boost it with ads.</p>
+
+  <p>Let’s see how the second product’s distribution goes.</p>
+
+  <p>That’s it for today’s blog.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
