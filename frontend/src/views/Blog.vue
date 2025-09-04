@@ -993,6 +993,31 @@ export default {
 
   <p>That’s it for today’s blog.</p>
           `
+        },
+        {
+          id:28,
+          title:'100 days of entrepreneurship day 33',
+          slug:'100-days-of-entrepreneurship-day-33',
+          day:'33',
+          date:'Settember 4, 2025',
+          snippet:"I accomplished everything I said I would in yesterday’s blog! Well, that’s a first. What a great feeling.",
+          content:`
+          <p>Hello readers</p>
+          <p>I accomplished everything I said I would in yesterday’s blog! Well, that’s a first. What a great feeling. Well, almost everything—because vibe cards aren’t working yet, but the code is there.</p>
+
+  <p>There’s something really crazy about community and movement. One person tweeted that from September 1st until the end of the year, it’s time to be locked in—and a bunch of other people joined him, including me. I think one of the main reasons I’m working this hard right now is because of that.</p>
+
+  <p>I started reading <em>The Mom Test</em> yesterday, which is about how to talk to customers. The concept is basically this: if you ask your mom directly, <em>“Mom, I have a business idea,”</em> then tell her what it is and ask if it’s good, she’ll say yes because she loves you. And most other people will also say yes just to make you feel good. So the book teaches how to ask better questions. The first rule is: don’t talk about the idea or the problem—talk about the customer’s life and experiences.</p>
+
+  <p>There were some examples that sparked an idea in me, so I posted in the MBTI subreddit asking people how and why they got into MBTI. I got a lot of answers, which gave me a better idea of how to position my product. Now I’m wondering: what should I include on my landing page to convert properly? I’m going to keep posting questions like this to learn more about people who are into MBTI. Next, I’ll ask about what tests they’ve tried, which ones they found best, and which ones they thought were the worst.</p>
+
+  <p>Man, I’ve been rapidly gaining followers on X. Yesterday I had 30, today I have 39—that’s crazy.</p>
+
+  <p>Now for the sad part. Although the momentum of my work has been going really well for the last 3–4 days, I’ll have to pause this weekend because one of my close friends, Tada, is coming to town. I was the one who invited him, so I’ve got to receive him and keep him company until Sunday. I’m really happy he’s coming—we’re meeting after 3–4 years—but I still didn’t want to break the momentum.</p>
+
+  <p>The next things I need to implement are: report-to-PDF and email, then integration of X, Reddit, and Twitter, and finally payments and SEO. That should take 3–4 days max, so I should still be able to launch next week. I’ve been hyping my mystery product launch on X, so I have to follow through. I think that’s also why I’ve been gaining so many followers.</p>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
