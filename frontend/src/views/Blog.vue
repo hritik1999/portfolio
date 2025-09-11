@@ -1018,6 +1018,57 @@ export default {
   <p>The next things I need to implement are: report-to-PDF and email, then integration of X, Reddit, and Twitter, and finally payments and SEO. That should take 3–4 days max, so I should still be able to launch next week. I’ve been hyping my mystery product launch on X, so I have to follow through. I think that’s also why I’ve been gaining so many followers.</p>
 
           `
+        },
+        {
+          id:29,
+          title:'100 days of entrepreneurship day 34',
+          slug:'100-days-of-entrepreneurship-day-34',
+          day:'34',
+          date:'Settember 11, 2025',
+          snippet:"Shit, I did it again—another 5-day break. As I mentioned in my last blog, my friend was coming over and I wasn’t planning to work on the blog for the next 3 days, but it ended up turning into 5. :(",
+          content:`
+          <p>Hello readers</p>
+          <!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Update</title>
+</head>
+<body>
+
+  <p>Shit, I did it again—another 5-day break. As I mentioned in my last blog, my friend was coming over and I wasn’t planning to work on the blog for the next 3 days, but it ended up turning into 5. :(</p>
+
+  <p>It was really nice meeting Tada after so many years. Our friendship felt exactly the same as it did back in college. It didn’t feel like we were meeting after such a long time—it was just like the day we left. But that was also part of the problem. Back in college we partied hard, and even though we’d left that behind, as soon as we met we kept saying “for old time’s sake” and pushed way beyond our limits. The 3 days were hardcore.</p>
+
+  <p>After he left, I slept straight for 15 hours and woke up with both a hangover and a fever. Tada texted me saying the same thing happened to him. I guess we’re not 21 anymore.</p>
+
+  <p>On the brighter side, I went to the doctor today and I don’t need to wear a dressing anymore. Finally—after 3 months since my surgery, I’m free. The bedrest was rough, but it’s done, and I can get back to normal life now.</p>
+
+  <p>Yesterday I started working again, but I forgot about the blog. So, it starts again from today.</p>
+
+  <p>I’ve made a lot of progress with my product. All the features are now done. What’s left is X, Reddit, and IG integration, SEO optimization, blogs, and payments. Hopefully, I’ll complete all of this over the weekend and launch next Monday.</p>
+
+  <p>For the launch, I’m planning a breaking-news style video using AI models. It’ll go something like: <em>“Breaking news: AI can now decode your personality. In the wrong hands, this can be disastrous—but in your hands, it can be immensely powerful.”</em> Then I’ll do a breakdown of Elon Musk’s (or someone else’s) personality. I’ll boost it on X. Launch videos are big these days, and this will be a fun experiment.</p>
+
+  <p>On top of that, I’ve started another product with my friend Deepankar: <strong>BananaPPT</strong>. Everyone’s been using the NanoBanana image model for amazing things, but no one’s using it to make out-of-this-world presentations. We’re targeting MBA and BBA students who have to give hundreds of presentations every semester. We’ll handle the research, create the presentations, and even provide speaker notes. It should be fun and (hopefully) work. More importantly, this is my first time working with another programmer. He’s a professional, so I’ll get to learn a lot.</p>
+
+  <p>My new (and final) term is about to start. I’ve taken three subjects:</p>
+
+  <ul>
+    <li><strong>Web Dev Labs</strong>: Full-stack app development using Node.js, React, Express, PostgreSQL, and JWT auth.</li>
+    <li><strong>Data Science Labs</strong>: Data cleaning, processing, pipelines, ML, deep learning, computer vision, LLMs, etc.</li>
+    <li><strong>MLOps</strong>: Everything from DevOps to data versioning, model versioning, and serverless.</li>
+  </ul>
+
+  <p>Most of this will be a revision for me, except Node, React, and the MLOps part. But I’m excited—it’ll be fun.</p>
+
+  <p>With all this, I’m basically becoming a one-man IT department. I’ll be learning, building, doing marketing for my product, and handling accounting for my company. A walking corporate. Like in <em>Foundation</em> where Cleons say, <em>“I am Empire.”</em> I’m like, <em>“I am Corporate.”</em></p>
+
+  <p>Let’s see how everything pans out. I’m both scared and excited for what’s ahead.</p>
+
+</body>
+</html>
+
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
