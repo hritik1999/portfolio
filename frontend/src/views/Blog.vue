@@ -1076,7 +1076,7 @@ export default {
           slug:'100-days-of-entrepreneurship-day-35',
           day:'35',
           date:'Settember 12, 2025',
-          snippet:"",
+          snippet:"<p>For my second product, I tried the new GitHub Copilot Speckit. ",
           content:`
           <p>Hello readers</p>
             <p>For my second product, I tried the new GitHub Copilot Speckit. The concept is fascinating: first, you describe what you want and why you want it. Then you decide how to do it—what tech stack to use, etc. It forms a list of tasks and then executes them, some even in parallel. So for the second product, Deepankar and I used it today, and the product was ready in 30 minutes. It was crazy. But I didn’t want to run it because I knew it wouldn’t work and would just be frustrating. So I told Deepankar to run it. As expected, the backend server didn’t start, the frontend server didn’t start, and he couldn’t even set up the virtual environment. That made me doubt his technical abilities—I may have overestimated him. There were already other signals, but this experiment is exactly for testing whether we can actually work together.</p>
