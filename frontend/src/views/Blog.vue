@@ -1069,6 +1069,28 @@ export default {
 </html>
 
           `
+        },
+        {
+          id:30,
+          title:'100 days of entrepreneurship day 35',
+          slug:'100-days-of-entrepreneurship-day-35',
+          day:'35',
+          date:'Settember 12, 2025',
+          snippet:"",
+          content:`
+          <p>Hello readers</p>
+            <p>For my second product, I tried the new GitHub Copilot Speckit. The concept is fascinating: first, you describe what you want and why you want it. Then you decide how to do it—what tech stack to use, etc. It forms a list of tasks and then executes them, some even in parallel. So for the second product, Deepankar and I used it today, and the product was ready in 30 minutes. It was crazy. But I didn’t want to run it because I knew it wouldn’t work and would just be frustrating. So I told Deepankar to run it. As expected, the backend server didn’t start, the frontend server didn’t start, and he couldn’t even set up the virtual environment. That made me doubt his technical abilities—I may have overestimated him. There were already other signals, but this experiment is exactly for testing whether we can actually work together.</p>
+
+  <p>For my main product, everything is basically ready. All the features are working. Now I get an email with the vibe cards, the analysis report, and the vibe report. All that’s left is to integrate with X, Instagram, and Reddit; then add character and celebrity analysis as content examples for users; handle SEO; and set up payments. After that, I can launch. I think I’ll be able to cover all of this over the weekend. Lastly, I need to do “benefit maxxing” for the landing page. Then I’ll be ready to launch.</p>
+
+  <p>I updated the vibe card prompt today, and it’s good now.</p>
+
+  <p>But it’s not all smooth. The analysis isn’t working properly. Different chats are showing different personalities, but today I noticed it gave the same typology for both participants. That means keeping the other person’s chat as context is doing more harm than good. I’ll remove the context and try again. Maybe that was the cause of the problem, and now it’ll show the types much more accurately.</p>
+
+  <p>At this point, I started having second thoughts—what if it’s useless and no one shows up? What if no one buys, and I become a laughing stock for making something so stupid? Launching is giving me anxiety, but I guess that’s part of the process. This might work, it might not—but I’ve been optimistic until now, so I should keep the optimism up. Being a little delusional is part of the job.</p>
+
+  <p>I don’t know why I’m scared, but I have to go through this. If I’m going to fail, I’d rather fail fast. I don’t have much time left—I need to settle down soon.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
