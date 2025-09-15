@@ -1091,6 +1091,24 @@ export default {
 
   <p>I don’t know why I’m scared, but I have to go through this. If I’m going to fail, I’d rather fail fast. I don’t have much time left—I need to settle down soon.</p>
           `
+        },
+        {
+          id:31,
+          title:'100 days of entrepreneurship day 36',
+          slug:'100-days-of-entrepreneurship-day-36',
+          day:'36',
+          date:'Settember 15, 2025',
+          snippet:"As I get closer to launch, I’ve started having second thoughts—really bad ones.",
+          content:`
+          <p>Hello readers</p>
+          <p>As I get closer to launch, I’ve started having second thoughts—really bad ones. On Saturday and Sunday, I spent the whole time just tweaking prompts and chunking strategies. My thought was that since different chats were giving different results, they should all be consistent. To fix this, I ended up over-optimizing the prompt so much that it actually got worse. By Sunday, I simplified it again but kept a few useful tweaks. Now I usually get ENTP, INTP, or INFP, which makes sense. Honestly, the simplest solution is just to add a note saying: <em>“Upload a chat where you’re most authentic to get the most accurate results.”</em> But because of my anxiety, I overdid everything.</p>
+
+  <p>Today, I spent the entire day researching and implementing Reddit and X integrations. It was a nightmare. X’s API costs $200/month—which I can’t afford—and most alternatives don’t work because of recent changes. After hours of struggle, I finally found one that works. Reddit was simple in comparison. Still, my whole day was wasted.</p>
+
+  <p>My plan was to launch today, but I still need to deploy, integrate Instagram, implement payments, and refine my landing page. My new target is Wednesday. Tomorrow morning, I’ll deploy and implement payments by the afternoon. Then I’ll integrate Instagram by night. The day after, I’ll optimize my landing page for benefits and SEO. After that, I’ll do a soft launch across subreddits and X.</p>
+
+  <p>Hopefully, it works out. Right now, I’m constantly swinging between <em>“this won’t work”</em> and <em>“this is the best idea ever.”</em> I’m finally starting to understand why people say entrepreneurship is hard—and I haven’t even properly started yet.</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
