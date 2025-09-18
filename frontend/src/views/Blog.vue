@@ -1109,6 +1109,40 @@ export default {
 
   <p>Hopefully, it works out. Right now, I’m constantly swinging between <em>“this won’t work”</em> and <em>“this is the best idea ever.”</em> I’m finally starting to understand why people say entrepreneurship is hard—and I haven’t even properly started yet.</p>
           `
+        },
+        {
+          id:32,
+          title:'100 days of entrepreneurship day 37',
+          slug:'100-days-of-entrepreneurship-day-37',
+          day:'37',
+          date:'Settember 17, 2025',
+          snippet:"I wasted two whole days because of my ignorance and over-reliance on AI.",
+          content:`
+          <p>Hello readers</p>
+            <p>I wasted two whole days because of my ignorance and over-reliance on AI. My Codex limit was over, so I had to take a three-day break for it to reset. During that time, I decided to finally deploy. The plan was simple: create Docker images, write a Docker YAML, and deploy using Coolify. Easy, right? Nope.</p>
+
+  <p>First problem: the server wouldn’t connect. It should’ve been a simple process—paste the private key into Coolify and the public key into the server’s <code>ssh/authorized_keys</code>. Last time I did this, it worked instantly. This time, no luck. I went to AI for help, and it kept giving me different “solutions.” I tried every variant for hours, only to realize that the very first thing I tried had actually worked, even though it hadn’t worked in the last 2–3 attempts.</p>
+
+  <p>But it didn’t end there. Next was the CI/CD pipeline. The pipeline was created, the site deployed, and it was live—but I had forgotten to change the API URL in the frontend. When I redeployed, the deployment failed due to server connection issues. At that point, I gave up. The next day, I tried again—same error. I fell back into the same loop: AI suggestions, hours wasted, nothing working. I was on the verge of tears.</p>
+
+  <p>Finally, I opened an issue in the Coolify Discord. I explained the problem, but again, I got the same recycled advice I had already tried. Luckily, the founder saw the thread, emailed me, and said he was looking into it. Four to five hours later, it was fixed.</p>
+
+  <p>Then came the real pain: a certificate error between the frontend and backend API. Again, I fell into the loop of trying random fixes until 1 a.m. Out of desperation, I checked the Docker logs for the backend and—boom—turns out it was just a missing environment variable. I fixed it, and everything worked. Two days of blood, sweat, and no results… all because of one missing env variable.</p>
+
+  <p>I had even announced on X that I’d launch “tomorrow,” but that’s not happening anymore. Now I’m locking in <strong>Monday</strong> as the final launch date.</p>
+
+  <p>What’s left:</p>
+  <ul>
+    <li>IG and Discord integration</li>
+    <li>Payments and resources</li>
+    <li>SEO optimization</li>
+    <li>A bit of marketing content</li>
+  </ul>
+
+  <p>Then I can finally launch. What I thought would be a 2-week sprint has dragged into a month.</p>
+
+  <p>But hey—it’s deployed now. That alone is a blissful feeling. Time to push through and get ready for Monday’s launch.</p>
+          `,
         }
         // Future blog posts will be added here with their own unique slug
       ] 
