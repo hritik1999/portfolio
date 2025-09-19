@@ -1143,6 +1143,24 @@ export default {
 
   <p>But hey—it’s deployed now. That alone is a blissful feeling. Time to push through and get ready for Monday’s launch.</p>
           `,
+        },
+        {
+          id:33,
+          title:'100 days of entrepreneurship day 38',
+          slug:'100-days-of-entrepreneurship-day-38',
+          day:'38',
+          date:'Settember 19, 2025',
+          snippet:"I missed a day again. After the deployment was successful, I spent the whole day optimizing the landing page to the best of my understanding. ",
+          content:`
+          <p>Hello Readers,</p>
+            <p>I missed a day again. After the deployment was successful, I spent the whole day optimizing the landing page to the best of my understanding. I believe the landing page is the most important part, as it’s my 24/7 salesperson. I think I’ve done a good job, but only time will tell. Sadly, I ended up spending the entire day on this. After that, I worked on SEO optimization, and the day was over.</p>
+
+  <p>Today, I added some blogs and built a personality database where analyses and reports on TV show characters, anime characters, celebrities, etc. will be available. I think this will be really useful as marketing content. I can post these in their respective subreddits and also in different typology subreddits, leading to a lot of views and hopefully some conversions.</p>
+
+  <p>I also got approval from Dodopayments to accept payments. So, I started learning how the payment process works and how to implement it. It looks straightforward: the frontend sends the details to the backend, the backend creates a checkout link, and once the payment is complete, they send a callback to my webhook to update the status. Now I just need to code it out. I’ll do this tomorrow along with Discord and Instagram integration.</p>
+
+  <p>After that, I’ll create a lot of marketing content on Sunday. The launch is planned for Monday. <strong>That’s the plan—let’s see how it goes.</strong></p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
