@@ -47,7 +47,7 @@ export default {
           <div
             class="relative before:absolute before:inset-0 before:animate-spin-slow before:rounded-full before:bg-gradient-to-b before:from-primary before:via-secondary before:to-primary before:content-[''] before:-z-10 before:[mask:linear-gradient(white,transparent_70%)]"
           >
-            <Avatar class="size-45 border-4 border-background bg-gradient-to-b from-primary/20 to-primary/5 backdrop-blur-lg">
+            <Avatar class="size-40 border-4 border-background bg-gradient-to-b from-primary/20 to-primary/5 backdrop-blur-lg">
               <AvatarImage
                 :src="Pic"
                 alt="@Hritik Gupta"

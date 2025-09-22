@@ -27,6 +27,8 @@ export default {
           logo: TypeMyvibeLogo,
           tagline:'Your Personality Decoded!',
           description:'An AI psychoanlyst that analyzes your Social media post / personal chats and tells you your mbti,enneagram, big 5, apttitudinal psyche and Alignment. It uses those to give you insights about your personality and help you understand yourself.',
+          url:'https://typemyvibe.ai',
+          features: ['MBTI', 'Enneagram', 'Big 5', 'Apttitudinal Psyche', 'Alignment','Self-Understanding','Growth']
         }
       ],
       socialLinks: [
