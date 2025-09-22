@@ -4,7 +4,7 @@ import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Terminal, Github, Linkedin, Mail,X} from 'lucide-vue-next';
-import ProfilePic from '../assets/IMG_0397_2.jpg'
+import ProfilePic from '../assets/profile_pic.png'
 export default {
   name: 'Home',
   data() {
