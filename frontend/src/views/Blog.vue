@@ -1149,18 +1149,20 @@ export default {
           title:'100 days of entrepreneurship day 38',
           slug:'100-days-of-entrepreneurship-day-38',
           day:'38',
-          date:'Settember 19, 2025',
-          snippet:"I missed a day again. After the deployment was successful, I spent the whole day optimizing the landing page to the best of my understanding. ",
+          date:'Settember 22, 2025',
+          snippet:"I’m getting launch anxiety. I keep optimizing random things, and I’ve changed my prompts at least 20 times.",
           content:`
-          <p>Hello Readers,</p>
-            <p>I missed a day again. After the deployment was successful, I spent the whole day optimizing the landing page to the best of my understanding. I believe the landing page is the most important part, as it’s my 24/7 salesperson. I think I’ve done a good job, but only time will tell. Sadly, I ended up spending the entire day on this. After that, I worked on SEO optimization, and the day was over.</p>
+          <p>Hello readers</p>
+             <p>I’m getting launch anxiety. I keep optimizing random things, and I’ve changed my prompts at least 20 times. Now I don’t even know if the results are better or worse. On top of that, I’m procrastinating. I need to make an ad, but I’m not doing it.</p>
 
-  <p>Today, I added some blogs and built a personality database where analyses and reports on TV show characters, anime characters, celebrities, etc. will be available. I think this will be really useful as marketing content. I can post these in their respective subreddits and also in different typology subreddits, leading to a lot of views and hopefully some conversions.</p>
+  <p>I already spent a month building this, and I know I should be focusing on marketing now.</p>
 
-  <p>I also got approval from Dodopayments to accept payments. So, I started learning how the payment process works and how to implement it. It looks straightforward: the frontend sends the details to the backend, the backend creates a checkout link, and once the payment is complete, they send a callback to my webhook to update the status. Now I just need to code it out. I’ll do this tomorrow along with Discord and Instagram integration.</p>
+  <p>My original plan was to create a “breaking news” style video about how AI can decode your personality. I also wanted to make posts in self-help groups about how knowing yourself is the most important thing, and then plug my product in between. Another plan was to do personality analyses of celebrities and fictional characters—using their tweets, TV shows, anime, movies with subtitles, or YouTube videos. I could post those daily in relevant subreddits and typology communities.</p>
 
-  <p>After that, I’ll create a lot of marketing content on Sunday. The launch is planned for Monday. <strong>That’s the plan—let’s see how it goes.</strong></p>
-          `
+  <p>But instead of moving ahead with any of this, I’m stuck optimizing my site, when I should have already started marketing. Launch anxiety feels very real, and it’s hard.</p>
+
+  <p><strong>The good news is payments are working—and I already got one payment from a friend!</strong></p>
+  `
         }
         // Future blog posts will be added here with their own unique slug
       ] 

@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Github, Linkedin, Mail, X } from 'lucide-vue-next'
 import SitchatLogo from '@/assets/sitchat.jpg'
+import TypeMyvibeLogo from '@/assets/typemyvibe.JPEG'
 
 export default {
   name: 'Products',
@@ -19,6 +20,13 @@ export default {
           description: 'A storytelling platform where you can create new episodes and listen to them, watch them, read them, or even experience them in an interactive group chat.',
           url: 'https://sitchat.ai',
           features: ['Listen', 'Watch', 'Read', 'Interactive Chat', 'AI-Powered']
+        },
+        {
+          id:2,
+          name:'TypeMyvibe.ai',
+          logo: TypeMyvibeLogo,
+          tagline:'Your Personality Decoded!',
+          description:'An AI psychoanlyst that analyzes your Social media post / personal chats and tells you your mbti,enneagram, big 5, apttitudinal psyche and Alignment. It uses those to give you insights about your personality and help you understand yourself.',
         }
       ],
       socialLinks: [
