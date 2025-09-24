@@ -1166,7 +1166,7 @@ export default {
           id:34,
           title:'100 days of entrepreneurship day 39',
           slug:'100-days-of-entrepreneurship-day-39',
-          day:'38',
+          day:'39',
           date:'Settember 22, 2025',
           snippet:"I’m getting launch anxiety. I keep optimizing random things, and I’ve changed my prompts at least 20 times.",
           content:`
@@ -1181,6 +1181,48 @@ export default {
 
   <p><strong>The good news is payments are working—and I already got one payment from a friend!</strong></p>
   `
+        },
+        {
+          id:35,
+          title:'100 days of entrepreneurship day 40',
+          slug:'100-days-of-entrepreneurship-day-40',
+          day:'40',
+          date:'Settember 22, 2025',
+          snippet:"I thought launch videos were a big thing these days, so I decided to make one too. ",
+          content:`
+          <p>Hello readers</p>
+             <p>
+    I thought launch videos were a big thing these days, so I decided to make one too. 
+    My idea was to create a news-style video: <i>“Breaking news—the AI can decode your personality”</i> 
+    and then explain the product.
+  </p>
+
+  <p>
+    It took me six hours to make a 40-second clip using Veo 3 and Nano Banana. 
+    It was frustrating—the image model rarely worked as expected. 
+    I had to retry 4–5 times before getting anything decent, 
+    and the same thing happened with the video model. 
+    Eventually, it worked.
+  </p>
+
+  <p>
+    The final video wasn’t the <i>“banger”</i> I had imagined. 
+    I debated whether to post it, but in the end, I shared it with an honest story. 
+    It didn’t perform too well: <b>200 views, 6 likes, 10–20 site visitors, and 2 sign-ups—no sales.</b>
+  </p>
+
+  <p>
+    The good thing is that I’m done with the launch. 
+    The anxiety is gone, and now I can focus on consistent posting and daily marketing.
+  </p>
+
+  <p>
+    My current plan is to analyze the personalities of famous people using their Twitter accounts 
+    and share the results on Twitter, their subreddits, the MBTI subreddit, and other related communities daily. 
+    Hopefully, this will attract readers, and some of them will decide to get their vibe checked. 
+    Let’s see how this strategy goes.
+  </p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
