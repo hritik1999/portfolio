@@ -1223,6 +1223,32 @@ export default {
     Let’s see how this strategy goes.
   </p>
           `
+        },
+        {
+          id:35,
+          title:'100 days of entrepreneurship day 40-43',
+          slug:'100-days-of-entrepreneurship-day-40-43',
+          day:'40-43',
+          date:'Settember 26, 2025',
+          snippet:"I didn’t write a blog for the last 3 days because I was busy with product marketing. ",
+          content:`
+          <p>Hello readers</p>
+          <p>Sorry for missing three days — I got so caught up in work that I completely forgot about this blog. After the launch, I couldn’t sleep because I was expecting replies, users, and activity… but nothing happened. Instead, I just ended up sleep-deprived.</p>
+
+  <p>After that disappointing launch, I made some minor improvements to the site based on feedback I received. Then I made a post on Reddit about Elon Musk. It lasted only 5 minutes before being removed from the subreddit, but in that short time, it got 3k views and 10–20 comments, most of which told me to “suck Elon’s dick.” Like, what the hell? The mod removed it and banned me from the subreddit. At night, I posted the same Elon content in a more relevant subreddit — the amount of hate Elon gets was shocking. The comments were unbelievable.</p>
+
+  <p>My Twitter posts were useless — no reach, no views, nothing. On the first day, I managed to get just 6 signups and 30 visitors.</p>
+
+  <p>That night, before sleeping, I quickly set up Google Ads in about 10 minutes. When I woke up, I saw 30 new signups and 78 new visitors. Google charged me ₹1.2k, but it was crazy to see that kind of traction — still, no purchases. I had no idea why people weren’t buying.</p>
+
+  <p>So, I set up PostHog for product analytics, and now I can see every move users make on the site. I also sent all of them an email saying I noticed they logged in but didn’t get their report. I explained why they should buy and gave them a 50% off coupon code — still, no sales.</p>
+
+  <p>At night, instead of more celebrity-content marketing, I decided to comment on the MBTITypeme subreddit, giving users their analysis. This brought me some traffic and signups, but the volume was too low. Meanwhile, my Twitter post with typos cost me 6 followers. Sleep deprivation really hurts.</p>
+
+  <p>So far, I’ve had 119 visitors, 42 signups, and one person who almost bought. Today I’ve set up Reddit ads — let’s see how that goes.</p>
+
+  <p>I had a long list of things I wanted to do today, but I’ve got a really bad headache and I don’t think I can work like this. So I’m writing this blog and going to rest. Today feels wasted. :(</p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
