@@ -1249,6 +1249,43 @@ export default {
 
   <p>I had a long list of things I wanted to do today, but I’ve got a really bad headache and I don’t think I can work like this. So I’m writing this blog and going to rest. Today feels wasted. :(</p>
           `
+        },
+        {
+          id:36,
+          title:'100 days of entrepreneurship day 44',
+          slug:'100-days-of-entrepreneurship-day-44',
+          day:'44',
+          date:'Settember 27, 2025',
+          snippet:"Okay so i got my first customer today. I made money online with something i built. Thats crazy and today was just day 4 since the launch. ",
+          content:`
+          <p>Hello readers</p>
+          <p>Okay, so I got my first customer today. I actually made money online with something I built. That’s crazy—and today is just day 4 since launch.</p>
+
+  <p>So far, I’ve had <strong>205 visitors</strong>, <strong>66 signups</strong>, and <strong>2 sales</strong>. Yes, I just got another sale.</p>
+
+  <p>I’m shutting down Google Ads now because the traffic it brought was low quality. With Reddit ads, I also messed up—I didn’t specify a location, so I was getting low-quality traffic there too. In total, I spent $20 on marketing, which was basically wasted, but I learned a lot. At this stage, it’s not about profit anyway.</p>
+
+  <p>I’ve now fixed the Reddit ads targeting so only first-world countries are included. But at $10 per day, Reddit says I’ll only get 10–20 clicks. Still, the quality should be higher, so let’s see.</p>
+
+  <p>Getting that first sale was unbelievable. I was so excited and happy that I posted it everywhere—even on my WhatsApp status. The fact that something I made, sitting in my room, earned money online from a random stranger in the UK is just… crazy.</p>
+
+  <p>One thing I noticed: I made a lot of free content and shared it with people, which got me visitors and signups. But the actual sale came from a simple comment where I directly explained the product. That’s something to think about.</p>
+
+  <p>After watching PostHog session recordings, I’m spotting small issues that could be hurting conversions. For example, people are trying to scroll the carousel—it’s broken, so I need to fix that. Nobody is opening the reports by clicking, so I’ll add text to make it clear they can. People are also checking for a privacy policy, so I need to fix that page. Some struggled with login because there’s no password confirmation field—another fix.</p>
+
+  <p>I’ve also seen users reach the payment stage but not complete it. I need to push them over the line. Instead of “Get Report,” maybe I should use stronger CTAs like <em>“Unlock Your Report”</em> or <em>“Uncover the Real You.”</em> That might convert better.</p>
+
+  <p>A lot of people were confused by my instructions and left. That needs improvement too.</p>
+
+  <p><strong>I have a lot of work ahead.</strong></p>
+
+  <p>But honestly, I’ve learned and grown more in these three days than in an entire year. That’s exactly how I feel right now.</p>
+
+  <p>The problem is… my final semester started on Monday, and I haven’t even begun studying. I don’t feel like studying anymore—I just want to build and market. Studying is the last thing I want to do. But I’ve already studied for four years and reached the final semester, so I can’t drop it now. Just three more months and I’ll have my degree. I need to make time for that too.</p>
+
+  <p>I think this might be the longest blog I’ve written since the first one. That’s crazy.</p>
+          `
+
         }
         // Future blog posts will be added here with their own unique slug
       ] 
