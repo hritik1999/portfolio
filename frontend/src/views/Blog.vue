@@ -1286,6 +1286,37 @@ export default {
   <p>I think this might be the longest blog I’ve written since the first one. That’s crazy.</p>
           `
 
+        },
+        {
+          id:37,
+          title:'100 days of entrepreneurship day 45-46',
+          slug:'100-days-of-entrepreneurship-day-45-46',
+          day:'44-46',
+          date:'October 1, 2025',
+          snippet:"",
+          content:`
+          <p>Hello readers</p>
+          <p>After getting my first sale, I got too fired up. I’ve been working day and night on this. Nothing else interests me anymore. Even anime, which I once wasted so much of my life watching, feels boring compared to building this. This is the most alive I have ever felt. I now have 5 sales—back in my last blog, I only had 2.</p>
+
+  <p>I got so into work that I forgot about writing here. But I promised 100 days ago that I’d write for 100 days straight, no matter what.</p>
+
+  <p>I’ve been coding non-stop, making small changes to improve customer experience and remove friction points I notice from analytics. Things like people trying to sign up from the login page, people not uploading their photos for the custom vibe card, or customers reaching the payment page but dropping off. I’m working hard on fixing all of these frictions.</p>
+
+  <p>On top of that, I think I’ve made a real breakthrough. I’ve cracked the algorithm to type people accurately. The system is very sophisticated but logically sound. Anyone who understands typology would see why it works. I’m debating whether I should make this method public—not the exact prompts, but the overall approach. Doing so could build transparency and trust. I’ll think more about it.</p>
+
+  <p>I worked two 12-hour days back-to-back to push this forward. And now, across Reddit, Twitter, my girlfriend’s chat, and conversations with my friends, the system consistently types me as INTP 5w4. That’s insane. This could even be turned into a research paper. The five customers so far all received accurate results too.</p>
+
+  <p>So far, I’ve had 117 signups and 5 sales. That’s less than 5%—I need to raise this conversion rate.</p>
+
+  <p>Starting tomorrow, I’ll be focusing more on marketing. Up until now, I’ve been too focused on development and letting paid ads do the heavy lifting. But the cost of acquisition is too high—I’ve spent almost $100 to make $50. And that’s not even counting AI costs and server costs. I need to figure this out fast if I want to become profitable. That means I have to get serious about organic marketing.</p>
+
+  <p>This week, I’ve learned more about business than I have in my entire life. I <strong>have</strong> to succeed at this, no matter what. I truly believe it can work.</p>
+
+  <p>The only thing that’s not going right is my sleep. I barely sleep. I code until I pass out, and as soon as I wake up, I go back to work. I don’t know how to fix this. Oh, and I almost forgot—I still haven’t started studying for my final term. I need to pass this semester no matter what.</p>
+
+  <p>That’s it for today. Tomorrow, I’ll start focusing on organic marketing—beginning with SEO.</p>
+          
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
