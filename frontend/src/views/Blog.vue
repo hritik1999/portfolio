@@ -1293,7 +1293,7 @@ export default {
           slug:'100-days-of-entrepreneurship-day-45-46',
           day:'44-46',
           date:'October 1, 2025',
-          snippet:"",
+          snippet:"After getting my first sale, I got too fired up. I’ve been working day and night on this. Nothing else interests me anymore.",
           content:`
           <p>Hello readers</p>
           <p>After getting my first sale, I got too fired up. I’ve been working day and night on this. Nothing else interests me anymore. Even anime, which I once wasted so much of my life watching, feels boring compared to building this. This is the most alive I have ever felt. I now have 5 sales—back in my last blog, I only had 2.</p>
@@ -1316,6 +1316,33 @@ export default {
 
   <p>That’s it for today. Tomorrow, I’ll start focusing on organic marketing—beginning with SEO.</p>
           
+          `
+        },
+        {
+          id:38,
+          title:'100 days of entrepreneurship day 47',
+          slug:'100-days-of-entrepreneurship-day-47',
+          day:'47',
+          date:'October 2, 2025',
+          snippet:"Today was a weird day. I’m not sure if it was productive or if I just wasted it in a way that looked productive.",
+          content:`
+          <p>Hello readers</p>
+          <p>Today was a weird day. I’m not sure if it was productive or if I just wasted it in a way that <em>looked</em> productive. I woke up, checked the analytics—nothing special. Then I started working on blogs and minor fixes.</p>
+
+  <p>After that, I got the idea to offer free analyses in the MBTI subreddit, so I did. At first, I got some reactions, but then the mods banned me for 7 days. I thought that was unfair and said so, which got extended to 20 days. When I pushed back again, they gave me a lifetime ban. That really sucks. This subreddit was a goldmine for my product, and now it’s gone. I’ll have to figure out a different way to market there.</p>
+
+  <p>I then moved to the MBTITypeMe subreddit. It’s much smaller (less than 50k members), but I wasn’t banned there. I analyzed over 20 people. The algorithm got many of their types right, but it also got several wrong. Still, that’s valuable data to help improve the algorithm. Of course, there’s also the chance those people were mistyped and my algorithm was actually correct. Tomorrow I’ll dive into the details and make adjustments accordingly. By the time I wrapped this up, it was 7 PM and half my day was already gone.</p>
+
+  <p>Later, I noticed my CI/CD pipeline was broken, and the rest of the day disappeared fixing that.</p>
+
+  <p>Even though I got 5 sales today, I’m still having second thoughts about whether this will actually work. That uncertainty was probably why I didn’t feel very productive. I made $50, but I’ve already spent $100. At this pace, even with sales, I’m operating at a loss, and I don’t know how to turn it profitable.</p>
+
+  <p>Right now, I’m asking for money upfront in a transparent way. But maybe I should let people generate their reports first—show them the introduction—and then lock the rest until they pay. That might increase revenue.</p>
+
+  <p>I really need to figure out how to make this profitable fast because I don’t have much money to waste.</p>
+
+  <p>Tomorrow, I’ll get an Ahrefs subscription and start optimizing for SEO. In this industry, SEO could make a big difference. I’ll also go through the cases where the algorithm got people’s types “wrong” and refine it accordingly.</p>
+
           `
         }
         // Future blog posts will be added here with their own unique slug
