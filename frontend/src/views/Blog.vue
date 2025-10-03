@@ -1344,6 +1344,37 @@ export default {
   <p>Tomorrow, I’ll get an Ahrefs subscription and start optimizing for SEO. In this industry, SEO could make a big difference. I’ll also go through the cases where the algorithm got people’s types “wrong” and refine it accordingly.</p>
 
           `
+        },
+        {
+          id:39,
+          title:'100 days of entrepreneurship day 48',
+          slug:'100-days-of-entrepreneurship-day-48',
+          day:'48',
+          date:'October 3, 2025',
+          snippet:"I don’t even know how the day went by. I woke up and decided I should move to a freemium model instead of a hard paywall.",
+          content:`
+          <p>Hello readers</p>
+          <p>I don’t even know how the day went by. I woke up and decided I should move to a freemium model instead of a hard paywall. I paused the Reddit ads and started planning how to do it. Once I finalized the approach, I began implementing it using AI. Things were going really well, and by 3 PM it was almost done—just a few finishing touches left.</p>
+
+  <p>Then boom. I messed it up. I asked the AI to fix something, and it decided the “fix” was to remove all the changes. Everything I had worked on was gone. I tried asking it to bring the work back, but it couldn’t. Luckily, the entire chat history was still there. I pasted it back in and asked the AI to re-implement everything. This time, because the context window had narrowed, the implementation came back full of bugs and with worse quality code. By now it was 7 PM.</p>
+
+  <p>Still, I felt hopeful. I thought the freemium model would definitely increase conversions. I was excited to see the results.</p>
+
+  <p>Next, I decided to capitalize on the 156 users I had already captured. I wanted to email them all, telling them analysis was now free on TypeMyVibe. But I had never sent an email to 150 people before, so I decided to make a Python script to handle it. It worked—but I messed it up again. I had a typo in the subject line. Then I had to send another email with the fixed subject. Hopefully, someone comes back to analyze their type. That mistake cost me another hour.</p>
+
+  <p>After that, I re-enabled the ads, hoping the freemium model would start converting better.</p>
+
+  <p>When I went back to analyze things, I was hit with more bugs: vibe cards not forming, custom vibe cards not saving in the bucket, emails not sending, parsing errors during report generation. The next 2–3 hours went into debugging and pushing fixes to the server.</p>
+
+  <p>By the end of it, I was completely exhausted. I just lay back and watched some anime. I’m not sure if this was a productive day, or just me doing busy work while feeling productive.</p>
+
+  <p>I had promised myself I’d study today no matter what, but I didn’t. Tomorrow I <b>have</b> to study, otherwise I’ll definitely fall behind.</p>
+
+  <p>Also, I really need to start doing organic marketing. Paid ads aren’t sustainable. They bring in traffic, but not high-intent traffic. I need to think of some strong strategies here.</p>
+
+          
+          `
+
         }
         // Future blog posts will be added here with their own unique slug
       ] 
