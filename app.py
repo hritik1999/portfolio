@@ -25,8 +25,7 @@ def change_tone():
             return jsonify({"error": "Missing tone or context"}), 400
         
         llm = ChatOpenAI(
-            model="gpt-5",
-            temperature=0.7,
+            model="gpt-5-mini",
             api_key=os.getenv("OPENAI_API_KEY")
         )
                 
@@ -140,7 +139,8 @@ def change_style():
         )
 
         # Create and send messages to the LLM
-        chat = ChatOpenAI(model="gpt-5-mini", temperature=0.3)
+        chat = ChatOpenAI(model="gpt-5",   
+                          api_key=os.getenv("OPENAI_API_KEY"))
         messages = [
             SystemMessage(content=system_message),
             HumanMessage(content=prompt)
