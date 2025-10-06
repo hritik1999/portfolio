@@ -1375,6 +1375,21 @@ export default {
           
           `
 
+        },
+        {
+          id:40,
+          title:'100 days of entrepreneurship day 49',
+          slug:'100-days-of-entrepreneurship-day-49',
+          day:'49',
+          date:'October 6, 2025',
+          snippet:" I kind of wasted the day today — just thinking, planning, and studying, but no actual output.",
+          content:`
+          <p>Hello readers</p>
+          I kind of wasted the day today — just thinking, planning, and studying, but no actual output. Yesterday was Sunday, and I spent the whole day at my friend’s engagement.
+          From tomorrow onwards, it’s full discipline mode. I’ll be starting morning runs at 6 a.m. and working from early morning. Let’s see how this goes. There are so many people who live and die by the 5 a.m. philosophy — time to test it out and see how it works for me.
+          My plan is simple: 3 hours of development, 3 hours of marketing, 3 hours of study, and 1 hour of workout every day.
+          One thing I’ve realized in these 12 days since the launch is that discipline and consistency are everything. Working based on emotions and feelings doesn’t work. From tomorrow onwards — it’s all about disciplined, consistent action.
+                    `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
