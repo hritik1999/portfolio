@@ -1390,6 +1390,37 @@ export default {
           My plan is simple: 3 hours of development, 3 hours of marketing, 3 hours of study, and 1 hour of workout every day.
           One thing I’ve realized in these 12 days since the launch is that discipline and consistency are everything. Working based on emotions and feelings doesn’t work. From tomorrow onwards — it’s all about disciplined, consistent action.
                     `
+        },
+        {
+          id:41,
+          title:'100 days of entrepreneurship day 50-52',
+          slug:'100-days-of-entrepreneurship-day-50-52',
+          day:'50-52',
+          date:'October 9, 2025',
+          snippet:"",
+          content:`
+          <p>Hello readers</p>
+            <p>I’ve started running 5 km every morning and studying consistently. Dev work is going well too, with steady progress each day. My social life is also in a good place.</p>
+
+  <p>The areas that are suffering are marketing, reading, and writing this blog. If I can nail those too, I’ll finally have my perfect routine.</p>
+
+  <p>Dev work never really ends — I keep adding new fixes and features, and my to-do list just keeps growing. Today, I implemented a referral system where users can unlock sections of the report for every 2 invites, and at 10 invites, the full report is unlocked. Giving feedback also rewards them with a vibe card plus their strengths and weaknesses. I had high hopes that this feature would create some virality. I’m still unsure about the number of friends required though — 20 seems too high, but setting it at 5 might undervalue the product. Let’s see how it goes and whether people actually participate.</p>
+
+  <p>Yesterday, I added a strict requirement for Reddit and X users because people with very few contributions were getting poor results. I also updated the landing page to include more information about myself to build user trust, and added proper instructions for WhatsApp and Instagram uploads with screenshots, so more users can use those options.</p>
+
+  <p>Now, I’m thinking of revamping the landing page to make it more appealing. The hero section currently says <i>“The fastest way to find your Enneagram, MBTI, and more.”</i> I’m considering changing it to something like <i>“The 20-page report that will transform your life.”</i></p>
+
+  <p>I’m also thinking of removing the 50% launch discount and testing a $19.99 price point — maybe users will value it more that way. I need to improve the report prompts too so they give more value. And of course, there are a million small things I could improve on the website.</p>
+
+  <p>After three days of no sales, I finally got one today — from the USA.</p>
+
+  <p>I still haven’t done any proper organic marketing, and I need to start. Ads are bringing traffic but at a loss, and they barely convert — only two sales came from ads, while five came from organic posts and comments. This should be my top priority, but I keep getting pulled back into dev work. I need to come up with content ideas and post daily — that’s the most important thing right now. But I always think, “Let me just finish this feature first,” and end up coding instead.</p>
+
+  <p>Lastly, I’ve started studying again, but I can’t focus. I keep rewinding because my mind drifts back to the business. I really need to figure out a way to handle this.</p>
+
+  <p><b>A little more discipline, and I’ll have everything I’ve been working toward. I can see it’s possible.<br>
+  LFG!</b></p>
+          `
         }
         // Future blog posts will be added here with their own unique slug
       ] 
